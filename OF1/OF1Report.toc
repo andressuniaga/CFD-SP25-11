@@ -3,6 +3,6 @@
 \contentsline {section}{\numberline {3}Flow at Re = 10}{3}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Plots of Velocity}{3}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Solution Refinement}{3}{subsection.3.2}%
-\contentsline {section}{\numberline {4}Force on the Lid}{4}{section.4}%
-\contentsline {section}{\numberline {5}Conclusion}{4}{section.5}%
+\contentsline {section}{\numberline {4}Force on the Lid}{5}{section.4}%
+\contentsline {section}{\numberline {5}Conclusion}{5}{section.5}%
 \contentsline {section}{\numberline {A}Code}{}{appendix.A}%
