@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.15)  8 FEB 2025 13:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.15)  9 FEB 2025 21:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/andre/Downloads/bash_home/UT-TeX-Coursework/CFD COE347/OF1/OF1Report.tex"
-(c:/Users/andre/Downloads/bash_home/UT-TeX-Coursework/CFD COE347/OF1/OF1Report.tex
+**"c:/Users/andre/Downloads/bash_home/UT-TeX-Coursework/CFD COE347/CFD-SP25-11/OF1/OF1Report.tex"
+(c:/Users/andre/Downloads/bash_home/UT-TeX-Coursework/CFD COE347/CFD-SP25-11/OF1/OF1Report.tex
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-30>
 (c:/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -462,10 +462,38 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 [2]
+<images/Velocity_Component_Plot_for_gridsize_20x20.png, id=58, 578.16pt x 433.62pt>
+File: images/Velocity_Component_Plot_for_gridsize_20x20.png Graphic file (type png)
+<use images/Velocity_Component_Plot_for_gridsize_20x20.png>
+Package pdftex.def Info: images/Velocity_Component_Plot_for_gridsize_20x20.png  used on input line 49.
+(pdftex.def)             Requested size: 232.52643pt x 174.39108pt.
+<images/Velocity_Component_Plot_for_gridsize_40x40.png, id=60, 578.16pt x 433.62pt>
+File: images/Velocity_Component_Plot_for_gridsize_40x40.png Graphic file (type png)
+<use images/Velocity_Component_Plot_for_gridsize_40x40.png>
+Package pdftex.def Info: images/Velocity_Component_Plot_for_gridsize_40x40.png  used on input line 53.
+(pdftex.def)             Requested size: 232.52643pt x 174.39108pt.
+<images/Velocity_Component_Plot_for_gridsize_80x80.png, id=61, 578.16pt x 433.62pt>
+File: images/Velocity_Component_Plot_for_gridsize_80x80.png Graphic file (type png)
+<use images/Velocity_Component_Plot_for_gridsize_80x80.png>
+Package pdftex.def Info: images/Velocity_Component_Plot_for_gridsize_80x80.png  used on input line 59.
+(pdftex.def)             Requested size: 232.52643pt x 174.39108pt.
+<images/Velocity_Component_Plot_for_gridsize_160x160.png, id=62, 578.16pt x 433.62pt>
+File: images/Velocity_Component_Plot_for_gridsize_160x160.png Graphic file (type png)
+<use images/Velocity_Component_Plot_for_gridsize_160x160.png>
+Package pdftex.def Info: images/Velocity_Component_Plot_for_gridsize_160x160.png  used on input line 63.
+(pdftex.def)             Requested size: 232.52643pt x 174.39108pt.
+<images/Refinement_Measure.png, id=63, 578.16pt x 433.62pt>
+File: images/Refinement_Measure.png Graphic file (type png)
+<use images/Refinement_Measure.png>
+Package pdftex.def Info: images/Refinement_Measure.png  used on input line 74.
+(pdftex.def)             Requested size: 399.29463pt x 299.46939pt.
 
-[3]
 
-[4]
+[3 <./images/Velocity_Component_Plot_for_gridsize_20x20.png> <./images/Velocity_Component_Plot_for_gridsize_40x40.png> <./images/Velocity_Component_Plot_for_gridsize_80x80.png> <./images/Velocity_Component_Plot_for_gridsize_160x160.png>]
+
+[4 <./images/Refinement_Measure.png>]
+
+[5]
 
 [1]
 
@@ -473,8 +501,8 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.68 \end{document}
-                    [2] (./OF1Report.aux)
+l.108 \end{document}
+                     [2] (./OF1Report.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-30>
@@ -483,18 +511,18 @@ Package rerunfilecheck Info: File `OF1Report.out' has not changed.
 (rerunfilecheck)             Checksum: 2B6B7FE5FD810BA5C7F61C49159C559F;1064.
  ) 
 Here is how much of TeX's memory you used:
- 13201 strings out of 473579
- 206771 string characters out of 5732257
- 611395 words of memory out of 5000000
- 35900 multiletter control sequences out of 15000+600000
+ 13261 strings out of 473579
+ 209255 string characters out of 5732257
+ 611605 words of memory out of 5000000
+ 35957 multiletter control sequences out of 15000+600000
  568049 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,79p,616b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on OF1Report.pdf (6 pages, 65168 bytes).
+ 75i,8n,79p,628b,548s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on OF1Report.pdf (7 pages, 227764 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
- 16 named destinations out of 1000 (max. 500000)
- 65 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 129 PDF objects out of 1000 (max. 8388607)
+ 97 compressed objects within 1 object stream
+ 19 named destinations out of 1000 (max. 500000)
+ 90 words of extra memory for PDF output out of 10000 (max. 10000000)
 
