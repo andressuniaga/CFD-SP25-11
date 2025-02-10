@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-U = "C:\\Users\\Nicole\\Desktop\\coe347\\cavity\\0.5\\U"
+U = r"OF1\data\cavity.original\0.5\U"
 
 with open(U, 'r') as file:
     lines = file.readlines()
@@ -63,8 +63,8 @@ center_index = grid_size[0] // 2
 u_profile = u_grid[:, center_index]  # u at x = 0.5 for all y
 v_profile = v_grid[:, center_index]  # v at x = 0.5 for all y
 plt.figure(figsize=(6, 5))
-plt.plot(y, u_profile, label="u-velocity", color="blue")
-plt.plot(y, v_profile, label="v-velocity", color="red")
+plt.plot(u_profile, y, label="u/U", color="blue")
+plt.plot(v_profile*100, y, label="v/U * 100", color="red")
 plt.xlabel("Velocity")
 plt.ylabel("y")
 plt.title("Velocity Profiles at x = 0.5")

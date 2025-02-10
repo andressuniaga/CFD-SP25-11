@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.15)  10 FEB 2025 11:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.15)  10 FEB 2025 14:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -461,39 +461,93 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
-[2]
-<images/Velocity_Component_Plot_for_gridsize_20x20.png, id=58, 578.16pt x 433.62pt>
+[2{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+<images/ux_paraview.png, id=59, 820.56563pt x 618.05907pt>
+File: images/ux_paraview.png Graphic file (type png)
+<use images/ux_paraview.png>
+Package pdftex.def Info: images/ux_paraview.png  used on input line 73.
+(pdftex.def)             Requested size: 232.52643pt x 175.13956pt.
+<images/uy_paraview.png, id=61, 825.0825pt x 594.72188pt>
+File: images/uy_paraview.png Graphic file (type png)
+<use images/uy_paraview.png>
+Package pdftex.def Info: images/uy_paraview.png  used on input line 77.
+(pdftex.def)             Requested size: 232.52643pt x 167.60088pt.
+<images/u_velocity.png, id=62, 433.62pt x 361.35pt>
+File: images/u_velocity.png Graphic file (type png)
+<use images/u_velocity.png>
+Package pdftex.def Info: images/u_velocity.png  used on input line 86.
+(pdftex.def)             Requested size: 232.52643pt x 193.77522pt.
+<images/v_velocity.png, id=63, 433.62pt x 361.35pt>
+File: images/v_velocity.png Graphic file (type png)
+<use images/v_velocity.png>
+Package pdftex.def Info: images/v_velocity.png  used on input line 90.
+(pdftex.def)             Requested size: 232.52643pt x 193.77522pt.
+<images/center_velocity.png, id=64, 433.62pt x 361.35pt>
+File: images/center_velocity.png Graphic file (type png)
+<use images/center_velocity.png>
+Package pdftex.def Info: images/center_velocity.png  used on input line 98.
+(pdftex.def)             Requested size: 305.33789pt x 254.45955pt.
+
+
+[3 <./images/ux_paraview.png> <./images/uy_paraview.png> <./images/u_velocity.png> <./images/v_velocity.png>]
+<images/paraview_U_20.png, id=75, 1495.5875pt x 922.44624pt>
+File: images/paraview_U_20.png Graphic file (type png)
+<use images/paraview_U_20.png>
+Package pdftex.def Info: images/paraview_U_20.png  used on input line 107.
+(pdftex.def)             Requested size: 232.52643pt x 143.41402pt.
+<images/paraview_U_40.png, id=76, 1495.5875pt x 922.44624pt>
+File: images/paraview_U_40.png Graphic file (type png)
+<use images/paraview_U_40.png>
+Package pdftex.def Info: images/paraview_U_40.png  used on input line 111.
+(pdftex.def)             Requested size: 232.52643pt x 143.41402pt.
+<images/paraview_U_80.png, id=77, 1495.5875pt x 922.44624pt>
+File: images/paraview_U_80.png Graphic file (type png)
+<use images/paraview_U_80.png>
+Package pdftex.def Info: images/paraview_U_80.png  used on input line 117.
+(pdftex.def)             Requested size: 232.52643pt x 143.41402pt.
+<images/paraview_U_160.png, id=78, 1495.5875pt x 922.44624pt>
+File: images/paraview_U_160.png Graphic file (type png)
+<use images/paraview_U_160.png>
+Package pdftex.def Info: images/paraview_U_160.png  used on input line 121.
+(pdftex.def)             Requested size: 232.52643pt x 143.41402pt.
+
+
+[4 <./images/center_velocity.png>]
+<images/Velocity_Component_Plot_for_gridsize_20x20.png, id=85, 578.16pt x 433.62pt>
 File: images/Velocity_Component_Plot_for_gridsize_20x20.png Graphic file (type png)
 <use images/Velocity_Component_Plot_for_gridsize_20x20.png>
-Package pdftex.def Info: images/Velocity_Component_Plot_for_gridsize_20x20.png  used on input line 52.
+Package pdftex.def Info: images/Velocity_Component_Plot_for_gridsize_20x20.png  used on input line 134.
 (pdftex.def)             Requested size: 232.52643pt x 174.39108pt.
-<images/Velocity_Component_Plot_for_gridsize_40x40.png, id=60, 578.16pt x 433.62pt>
+<images/Velocity_Component_Plot_for_gridsize_40x40.png, id=86, 578.16pt x 433.62pt>
 File: images/Velocity_Component_Plot_for_gridsize_40x40.png Graphic file (type png)
 <use images/Velocity_Component_Plot_for_gridsize_40x40.png>
-Package pdftex.def Info: images/Velocity_Component_Plot_for_gridsize_40x40.png  used on input line 56.
+Package pdftex.def Info: images/Velocity_Component_Plot_for_gridsize_40x40.png  used on input line 138.
 (pdftex.def)             Requested size: 232.52643pt x 174.39108pt.
-<images/Velocity_Component_Plot_for_gridsize_80x80.png, id=61, 578.16pt x 433.62pt>
+<images/Velocity_Component_Plot_for_gridsize_80x80.png, id=87, 578.16pt x 433.62pt>
 File: images/Velocity_Component_Plot_for_gridsize_80x80.png Graphic file (type png)
 <use images/Velocity_Component_Plot_for_gridsize_80x80.png>
-Package pdftex.def Info: images/Velocity_Component_Plot_for_gridsize_80x80.png  used on input line 62.
+Package pdftex.def Info: images/Velocity_Component_Plot_for_gridsize_80x80.png  used on input line 144.
 (pdftex.def)             Requested size: 232.52643pt x 174.39108pt.
-<images/Velocity_Component_Plot_for_gridsize_160x160.png, id=62, 578.16pt x 433.62pt>
+<images/Velocity_Component_Plot_for_gridsize_160x160.png, id=88, 578.16pt x 433.62pt>
 File: images/Velocity_Component_Plot_for_gridsize_160x160.png Graphic file (type png)
 <use images/Velocity_Component_Plot_for_gridsize_160x160.png>
-Package pdftex.def Info: images/Velocity_Component_Plot_for_gridsize_160x160.png  used on input line 66.
+Package pdftex.def Info: images/Velocity_Component_Plot_for_gridsize_160x160.png  used on input line 148.
 (pdftex.def)             Requested size: 232.52643pt x 174.39108pt.
-<images/Refinement_Measure.png, id=63, 578.16pt x 433.62pt>
+
+
+[5 <./images/paraview_U_20.png> <./images/paraview_U_40.png> <./images/paraview_U_80.png> <./images/paraview_U_160.png>]
+<images/Refinement_Measure.png, id=99, 578.16pt x 433.62pt>
 File: images/Refinement_Measure.png Graphic file (type png)
 <use images/Refinement_Measure.png>
-Package pdftex.def Info: images/Refinement_Measure.png  used on input line 77.
+Package pdftex.def Info: images/Refinement_Measure.png  used on input line 159.
 (pdftex.def)             Requested size: 399.29463pt x 299.46939pt.
 
 
-[3 <./images/Velocity_Component_Plot_for_gridsize_20x20.png> <./images/Velocity_Component_Plot_for_gridsize_40x40.png> <./images/Velocity_Component_Plot_for_gridsize_80x80.png> <./images/Velocity_Component_Plot_for_gridsize_160x160.png>]
+[6 <./images/Velocity_Component_Plot_for_gridsize_20x20.png> <./images/Velocity_Component_Plot_for_gridsize_40x40.png> <./images/Velocity_Component_Plot_for_gridsize_80x80.png> <./images/Velocity_Component_Plot_for_gridsize_160x160.png>]
 
-[4 <./images/Refinement_Measure.png>]
+[7 <./images/Refinement_Measure.png>]
 
-[5]
+[8]
 
 [1]
 
@@ -501,28 +555,28 @@ Package pdftex.def Info: images/Refinement_Measure.png  used on input line 77.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.111 \end{document}
+l.191 \end{document}
                      [2] (./OF1Report.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-30>
  ***********
 Package rerunfilecheck Info: File `OF1Report.out' has not changed.
-(rerunfilecheck)             Checksum: 2B6B7FE5FD810BA5C7F61C49159C559F;1064.
+(rerunfilecheck)             Checksum: 59DBD4E85F04174CD135029C4111FE1D;971.
  ) 
 Here is how much of TeX's memory you used:
- 13261 strings out of 473579
- 209255 string characters out of 5732257
- 611605 words of memory out of 5000000
- 35957 multiletter control sequences out of 15000+600000
- 568049 words of font info for 72 fonts, out of 8000000 for 9000
+ 13357 strings out of 473579
+ 211613 string characters out of 5732257
+ 616949 words of memory out of 5000000
+ 36040 multiletter control sequences out of 15000+600000
+ 571107 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,79p,628b,548s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on OF1Report.pdf (7 pages, 229960 bytes).
+ 75i,8n,79p,628b,592s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on OF1Report.pdf (10 pages, 1968346 bytes).
 PDF statistics:
- 129 PDF objects out of 1000 (max. 8388607)
- 97 compressed objects within 1 object stream
- 19 named destinations out of 1000 (max. 500000)
- 90 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 186 PDF objects out of 1000 (max. 8388607)
+ 122 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
+ 127 words of extra memory for PDF output out of 10000 (max. 10000000)
 
