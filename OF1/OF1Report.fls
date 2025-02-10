@@ -1,8 +1,8 @@
-PWD c:/Users/andre/Downloads/bash_home/UT-TeX-Coursework/CFD COE347/OF1
+PWD c:/Users/andre/Downloads/bash_home/UT-TeX-Coursework/CFD COE347/CFD-SP25-11/OF1
 INPUT c:/texlive/2024/texmf.cnf
 INPUT c:/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/andre/Downloads/bash_home/UT-TeX-Coursework/CFD COE347/OF1/OF1Report.tex
+INPUT c:/Users/andre/Downloads/bash_home/UT-TeX-Coursework/CFD COE347/CFD-SP25-11/OF1/OF1Report.tex
 OUTPUT OF1Report.log
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -208,6 +208,31 @@ INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm
 OUTPUT OF1Report.toc
 INPUT c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT ./images/Velocity_Component_Plot_for_gridsize_20x20.png
+INPUT ./images/Velocity_Component_Plot_for_gridsize_20x20.png
+INPUT ./images/Velocity_Component_Plot_for_gridsize_20x20.png
+INPUT ./images/Velocity_Component_Plot_for_gridsize_20x20.png
+INPUT ./images/Velocity_Component_Plot_for_gridsize_20x20.png
+INPUT ./images/Velocity_Component_Plot_for_gridsize_40x40.png
+INPUT ./images/Velocity_Component_Plot_for_gridsize_40x40.png
+INPUT ./images/Velocity_Component_Plot_for_gridsize_40x40.png
+INPUT ./images/Velocity_Component_Plot_for_gridsize_40x40.png
+INPUT ./images/Velocity_Component_Plot_for_gridsize_40x40.png
+INPUT ./images/Velocity_Component_Plot_for_gridsize_80x80.png
+INPUT ./images/Velocity_Component_Plot_for_gridsize_80x80.png
+INPUT ./images/Velocity_Component_Plot_for_gridsize_80x80.png
+INPUT ./images/Velocity_Component_Plot_for_gridsize_80x80.png
+INPUT ./images/Velocity_Component_Plot_for_gridsize_80x80.png
+INPUT ./images/Velocity_Component_Plot_for_gridsize_160x160.png
+INPUT ./images/Velocity_Component_Plot_for_gridsize_160x160.png
+INPUT ./images/Velocity_Component_Plot_for_gridsize_160x160.png
+INPUT ./images/Velocity_Component_Plot_for_gridsize_160x160.png
+INPUT ./images/Velocity_Component_Plot_for_gridsize_160x160.png
+INPUT ./images/Refinement_Measure.png
+INPUT ./images/Refinement_Measure.png
+INPUT ./images/Refinement_Measure.png
+INPUT ./images/Refinement_Measure.png
+INPUT ./images/Refinement_Measure.png
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT OF1Report.aux
@@ -215,5 +240,7 @@ INPUT ./OF1Report.out
 INPUT ./OF1Report.out
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb

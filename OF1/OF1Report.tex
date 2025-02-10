@@ -43,6 +43,46 @@
 \subsection{Plots of Velocity}
 
 \subsection{Solution Refinement}
+\begin{figure}[H]
+   \centering
+   \begin{subfigure}{0.495\linewidth}
+      \includegraphics[width=\textwidth]{images/Velocity_Component_Plot_for_gridsize_20x20.png}
+      \caption{Original}
+   \end{subfigure}
+   \begin{subfigure}{0.495\linewidth}
+      \includegraphics[width=\textwidth]{images/Velocity_Component_Plot_for_gridsize_40x40.png}
+      \caption{First Refinement}
+   \end{subfigure}
+   \vspace{5mm}
+
+   \begin{subfigure}{0.495\linewidth}
+      \includegraphics[width=\textwidth]{images/Velocity_Component_Plot_for_gridsize_80x80.png}
+      \caption{Third Refinement}
+   \end{subfigure}
+   \begin{subfigure}{0.495\linewidth}
+      \includegraphics[width=\textwidth]{images/Velocity_Component_Plot_for_gridsize_160x160.png}
+      \caption{Fourth Refinement}
+   \end{subfigure}
+   \vspace{2.5mm}
+
+   \caption{Effect of increased gridsize and decreased time step size on $\tilde{u}$, $\tilde{v}$ vs. $\tilde{y}$}
+   \label{velocityrefine}
+\end{figure}
+
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=0.85\textwidth]{images/Refinement_Measure.png}
+   \caption{Execution time per step $C$ increases with higher gridpoints $N$}
+   \label{timerefine}
+\end{figure}
+
+\begin{center}
+   \fbox{\begin{minipage}{0.9\textwidth}
+      \textbf{Q:} What can you conclude about the increase in wallclock time as you refine the grid?
+   \end{minipage}}
+\end{center}
+
+\textbf{A:} Higher refinement will take longer per iteration than at lower refinement. It is clear in Fig. \ref{timerefine} with our estimate of $\alpha = 1.087$ in the fit $C = \beta N^{\alpha}$ that with an order of magnitude increase in gridpoints there is an order of magnitude increase in the execution time per step.
 
 \pagebreak
 
