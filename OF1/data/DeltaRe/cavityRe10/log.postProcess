@@ -1,0 +1,198 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 7
+Exec   : postProcess -func sample
+Date   : Feb 10 2025
+Time   : 16:13:36
+Host   : "c203-008.frontera.tacc.utexas.edu"
+PID    : 99872
+I/O    : uncollated
+Case   : /work2/10531/andressuniaga/frontera/COE-347-SP25/run/cavity
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Reading set description:
+    line1
+
+Time = 0
+
+Reading fields:
+    volScalarFields: p
+    volVectorFields: U
+
+Executing functionObjects
+
+Time = 0.025
+
+Reading fields:
+    volScalarFields: p
+    volVectorFields: U
+
+Executing functionObjects
+
+Time = 0.05
+
+Reading fields:
+    volScalarFields: p
+    volVectorFields: U
+
+Executing functionObjects
+
+Time = 0.075
+
+Reading fields:
+    volScalarFields: p
+    volVectorFields: U
+
+Executing functionObjects
+
+Time = 0.1
+
+Reading fields:
+    volScalarFields: p
+    volVectorFields: U
+
+Executing functionObjects
+
+Time = 0.125
+
+Reading fields:
+    volScalarFields: p
+    volVectorFields: U
+
+Executing functionObjects
+
+Time = 0.15
+
+Reading fields:
+    volScalarFields: p
+    volVectorFields: U
+
+Executing functionObjects
+
+Time = 0.175
+
+Reading fields:
+    volScalarFields: p
+    volVectorFields: U
+
+Executing functionObjects
+
+Time = 0.2
+
+Reading fields:
+    volScalarFields: p
+    volVectorFields: U
+
+Executing functionObjects
+
+Time = 0.225
+
+Reading fields:
+    volScalarFields: p
+    volVectorFields: U
+
+Executing functionObjects
+
+Time = 0.25
+
+Reading fields:
+    volScalarFields: p
+    volVectorFields: U
+
+Executing functionObjects
+
+Time = 0.275
+
+Reading fields:
+    volScalarFields: p
+    volVectorFields: U
+
+Executing functionObjects
+
+Time = 0.3
+
+Reading fields:
+    volScalarFields: p
+    volVectorFields: U
+
+Executing functionObjects
+
+Time = 0.325
+
+Reading fields:
+    volScalarFields: p
+    volVectorFields: U
+
+Executing functionObjects
+
+Time = 0.35
+
+Reading fields:
+    volScalarFields: p
+    volVectorFields: U
+
+Executing functionObjects
+
+Time = 0.375
+
+Reading fields:
+    volScalarFields: p
+    volVectorFields: U
+
+Executing functionObjects
+
+Time = 0.4
+
+Reading fields:
+    volScalarFields: p
+    volVectorFields: U
+
+Executing functionObjects
+
+Time = 0.425
+
+Reading fields:
+    volScalarFields: p
+    volVectorFields: U
+
+Executing functionObjects
+
+Time = 0.45
+
+Reading fields:
+    volScalarFields: p
+    volVectorFields: U
+
+Executing functionObjects
+
+Time = 0.475
+
+Reading fields:
+    volScalarFields: p
+    volVectorFields: U
+
+Executing functionObjects
+
+Time = 0.5
+
+Reading fields:
+    volScalarFields: p
+    volVectorFields: U
+
+Executing functionObjects
+
+End
+
