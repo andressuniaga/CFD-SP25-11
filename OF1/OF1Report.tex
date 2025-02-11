@@ -21,7 +21,7 @@
 
 
 \title{\bf OF-1 Report : \\[2mm] Computational Simulations of a Lid-driven Cavity}
-\author{Terry Murray, Nicole Olvera (no4342), Andres Suniaga}
+\author{Terry Murray (tnm3843), Nicole Olvera (no4342), Andres Suniaga (aas5778)}
 \date{02/11/2025}
 
 \begin{document}
@@ -33,14 +33,11 @@
 \pagebreak
 
 \section{Introduction}
-The incompressible \& steady form of the Navier-Stokes equations is considered for the case of a 2D lid driven cavity with height = H, length = L, and lid velocity = U. 
-The nondimensional forms of the continuity and momentum equations is recorded. After visualizing the solution for Re = 10, we experiment with the grid size to compare wallclock times with the refined solutions. 
-We then estimate the relationship between wallclock time and the total number of grid points. We compute and plot the nondimensional stress along the lid at Reynolds numbers between 10 and 500. 
-Finally, we compute the resulting force on the lid apect ratios 1/2, 1, and 2 and Reynolds numbers between 10 and 500. "TBR"
+The incompressible \& steady form of the Navier-Stokes equations is considered for the case of a 2-D lid-driven cavity with height = $H$, length = $L$, and lid velocity = $U$. The non-dimensional forms of the continuity and momentum equations are recorded. After visualizing the solution for Re = 10, we experiment with the size of the grid to compare wallclock times with the refined solutions. We then estimate the relationship between wallclock time and the total number of grid points. We compute and plot the non-dimensional stress along the lid at Reynolds numbers between 10 and 500. Finally, we compute the resulting force on the lid aspect ratios 1/2, 1, and 2 and Reynolds numbers between 10 and 500. "TBR"
 
 
 \section{Nondimensional Navier-Stokes equations}
-The incompressible, constant density, $\rho$ and viscocity, $\mu$, steady form of the Navier-Stokes equations govern the prescribed two-dimensional fluid flow problem. The continuity and momentum equations are non-dimensionalized according to the following scales:
+The incompressible, constant density, $\rho$, and viscocity, $\mu$, steady form of the Navier-Stokes equations govern the prescribed two-dimensional fluid flow problem. The continuity and momentum equations are non-dimensionalized according to the following scales:
 \begin{itemize}
     \item Length scale L = $\dfrac{x}{\tilde{x}}$ = $\dfrac{y}{\tilde{y}}$
     \item Velocity scale U = $\dfrac{u}{\tilde{u}}$ = $\dfrac{v}{\tilde{v}}$
@@ -62,6 +59,59 @@ The incompressible, constant density, $\rho$ and viscocity, $\mu$, steady form o
 \begin{equation*}
     \tilde{u} \frac{\partial \tilde{v}}{\partial \tilde{x}} + \tilde{v} \frac{\partial \tilde{v}}{\partial \tilde{y}} = -\frac{\partial \tilde{p}}{\partial \tilde{y}} + \frac{1}{Re}\left(\frac{\partial^2 \tilde{v}}{\partial \tilde{x}^2} + \frac{\partial^2 \tilde{v}}{\partial \tilde{y}^2}\right)
 \end{equation*}
+
+In the momentum equations, the only non-dimensional number that appears is the Reynolds number. When the Reynolds number becomes very large ($Re \rightarrow \infty$), the viscous terms on the RHS of the equations become negligible, implying inviscid flow, reducing the momentum equations to the Euler equations. When the Reynolds number becomes very small ($Re \rightarrow 0$), the viscous terms on the RHS of the equations become very large, implying a highly viscous flow, reducing the momentum equations to the Stokes equations. The Stokes and Euler equations are listed below. 
+\vspace{5mm}
+
+\subsection*{Euler Equations:}
+
+\vspace{5mm}
+
+\textbf{Continuity as $Re \rightarrow \infty$:}
+\begin{equation*}
+\frac{\partial \tilde{u}}{\partial \tilde{x}} + \frac{\partial \tilde{v}}{\partial \tilde{y}} = 0
+\end{equation*}
+
+\vspace{2.5mm}
+
+\textbf{X-Momentum as $Re \rightarrow \infty$:}
+\[
+\tilde{u} \frac{\partial \tilde{u}}{\partial \tilde{x}} + \tilde{v} \frac{\partial \tilde{u}}{\partial \tilde{y}} = -\frac{\partial \tilde{p}}{\partial \tilde{x}}
+\]
+
+\vspace{2.5mm}
+
+\textbf{Y-Momentum as $Re \rightarrow \infty$:}
+\[
+\tilde{u} \frac{\partial \tilde{v}}{\partial \tilde{x}} + \tilde{v} \frac{\partial \tilde{v}}{\partial \tilde{y}} = -\frac{\partial \tilde{p}}{\partial \tilde{y}}
+\]
+
+\vspace{5mm}
+
+\subsection*{Stokes Equations:}
+
+
+\vspace{5mm}
+
+\textbf{Continuity as $Re \rightarrow 0$:}
+\[
+\frac{\partial \tilde{u}}{\partial \tilde{x}} + \frac{\partial \tilde{v}}{\partial \tilde{y}} = 0
+\]
+
+\vspace{2.5mm}
+
+\textbf{X-Momentum as $Re \rightarrow 0$:}
+\[
+0 = -\frac{\partial \tilde{p}}{\partial \tilde{x}} + \frac{1}{Re} \left( \frac{\partial^2 \tilde{u}}{\partial \tilde{x}^2} + \frac{\partial^2 \tilde{u}}{\partial \tilde{y}^2} \right)
+\]
+
+\vspace{2.5mm}
+
+\textbf{Y-Momentum as $Re \rightarrow 0$:}
+\[
+0 = -\frac{\partial \tilde{p}}{\partial \tilde{y}} + \frac{1}{Re} \left( \frac{\partial^2 \tilde{v}}{\partial \tilde{x}^2} + \frac{\partial^2 \tilde{v}}{\partial \tilde{y}^2} \right)
+\]
+
 
 \pagebreak
 
@@ -176,8 +226,15 @@ There is a noticable variation in the scaled up y-component of $\textbf{U}$ as w
 \pagebreak
 
 \section{Force on the Lid}
+Now we want to investigate the dependance of the force on Reynolds number. We define a few nondimensionalized terms,
+\begin{itemize}
+   \item $\tilde{F} = \dfrac{F}{\mu U} = \displaystyle \int_{0}^{1} \tilde{\tau}(\tilde{x})\, d\tilde{x}$
+   \vspace{2.5mm}
 
+   \item $\tilde{\tau} = \dfrac{\tau L}{\mu U} = \dfrac{\partial\tilde{u}}{\partial\tilde{y}}$
+\end{itemize}
 
+With these terms and our solution for Re = 10 (using the 80x80 grid), we generate a plot $\tilde{\tau}$ vs. $\tilde{x}$
 
 \pagebreak
 \appendix
