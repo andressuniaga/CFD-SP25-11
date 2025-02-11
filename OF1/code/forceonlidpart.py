@@ -37,7 +37,7 @@ for r in range(len(Re)):
     u = np.array(u,dtype=float)
 
     Ux = np.zeros([Nx,Ny])
-
+     
 
     # Mean x-component velocity in each row starting from row y=1 to y=0
     for i in range(Nx):
@@ -46,8 +46,17 @@ for r in range(len(Re)):
 
     x = np.linspace(0,L,Ny)/L
     dx=dy=1/Nx
+    
+    tau = np.zeros(Nx)
 
-    tau = (Ux[0]-Ux[1])/(dy)
+    n = 4 #rows to fit over
+    y=1 #evaluate derivative at this point
+
+    #polynomial fitting
+    for i in range(Nx):
+        a,b,c = np.polyfit(x[0:n],Ux[0:n,i],2)
+        tau[i] = 2*a*(y) + b
+
 
     figRe = plt.figure(0,figsize=(8,6))
     figRe.canvas.manager.set_window_title("Nondimensional Stress vs. x")
