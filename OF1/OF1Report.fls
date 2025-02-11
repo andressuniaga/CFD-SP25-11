@@ -207,8 +207,8 @@ INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm
 OUTPUT OF1Report.toc
 INPUT c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT ./images/ux_paraview.png
 INPUT ./images/ux_paraview.png
 INPUT ./images/ux_paraview.png
@@ -286,6 +286,8 @@ INPUT ./images/Velocity_Component_Plot_for_gridsize_160x160.png
 INPUT ./images/Velocity_Component_Plot_for_gridsize_160x160.png
 INPUT ./images/Velocity_Component_Plot_for_gridsize_160x160.png
 INPUT ./images/Velocity_Component_Plot_for_gridsize_160x160.png
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
 INPUT ./images/Refinement_Measure.png
 INPUT ./images/Refinement_Measure.png
 INPUT ./images/Refinement_Measure.png
