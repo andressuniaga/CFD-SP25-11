@@ -12,7 +12,7 @@
 \usepackage{cancel}
 \usepackage{subcaption}
 \usepackage{caption}
-
+ 
 \newcommand{\bm}{\boldsymbol}
 \newcommand{\bI}{\mathbb{I}}
 \newcommand{\bR}{\mathbb{R}}
@@ -33,29 +33,32 @@
 \pagebreak
 
 \section{Introduction}
-The incompressible, constant properties steady form of the Navier-Stokes equations is considered for the case of a 2D lid driven cavity with height = H, length = L, and lid velocity = U. 
+The incompressible \& steady form of the Navier-Stokes equations is considered for the case of a 2D lid driven cavity with height = H, length = L, and lid velocity = U. 
 The nondimensional forms of the continuity and momentum equations is recorded. After visualizing the solution for Re = 10, we experiment with the grid size to compare wallclock times with the refined solutions. 
 We then estimate the relationship between wallclock time and the total number of grid points. We compute and plot the nondimensional stress along the lid at Reynolds numbers between 10 and 500. 
 Finally, we compute the resulting force on the lid apect ratios 1/2, 1, and 2 and Reynolds numbers between 10 and 500. "TBR"
 
 
 \section{Nondimensional Navier-Stokes equations}
-The incompressible, constant density, $\rho$ and viscocity, $\mu$, properties steady form of the Navier-Stokes equations govern the prescribed two dimensional fluid flow problem. The continuity and momentum equations are non-dimensionalized according to the following scales:
+The incompressible, constant density, $\rho$ and viscocity, $\mu$, steady form of the Navier-Stokes equations govern the prescribed two-dimensional fluid flow problem. The continuity and momentum equations are non-dimensionalized according to the following scales:
 \begin{itemize}
     \item Length scale L = $\dfrac{x}{\tilde{x}}$ = $\dfrac{y}{\tilde{y}}$
     \item Velocity scale U = $\dfrac{u}{\tilde{u}}$ = $\dfrac{v}{\tilde{v}}$
     \item Pressure Scale $\tilde{P}$ = $\dfrac{P}{\rho U^2}$
-    \item Reynolds number Re = $\frac{\rho UL}{\mu}$
+    \item Reynolds number Re = $\dfrac{\rho UL}{\mu} = \dfrac{UL}{\nu}$ where $\nu = \mu/\rho$ is the kinematic viscocity
 \end{itemize}
 
+\subsection*{Continuity}
 \begin{equation*}
     \frac{\partial \tilde{u}}{\partial \tilde{x}} + \frac{\partial \tilde{v}}{\partial \tilde{y}} = 0
 \end{equation*}
 
+\subsection*{X-Momentum}
 \begin{equation*}
     \tilde{u} \frac{\partial \tilde{u}}{\partial \tilde{x}} + \tilde{v} \frac{\partial \tilde{u}}{\partial \tilde{y}} = -\frac{\partial \tilde{p}}{\partial \tilde{x}} + \frac{1}{Re}\left(\frac{\partial^2 \tilde{u}}{\partial \tilde{x}^2} + \frac{\partial^2 \tilde{u}}{\partial \tilde{y}^2}\right)
 \end{equation*}
 
+\subsection*{Y-Momentum}
 \begin{equation*}
     \tilde{u} \frac{\partial \tilde{v}}{\partial \tilde{x}} + \tilde{v} \frac{\partial \tilde{v}}{\partial \tilde{y}} = -\frac{\partial \tilde{p}}{\partial \tilde{y}} + \frac{1}{Re}\left(\frac{\partial^2 \tilde{v}}{\partial \tilde{x}^2} + \frac{\partial^2 \tilde{v}}{\partial \tilde{y}^2}\right)
 \end{equation*}
@@ -124,8 +127,6 @@ The incompressible, constant density, $\rho$ and viscocity, $\mu$, properties st
    \caption{Visualizing effect of gridpoint refinement on $U$ in \textit{Paraview}}
    \label{paraviewrefine}
 \end{figure}
-
-NOTE: Positive x-direction to the right.
    
 
 \begin{figure}[H]
@@ -154,12 +155,15 @@ NOTE: Positive x-direction to the right.
    \label{velocityrefine}
 \end{figure}
 
+There is a noticable variation in the scaled up y-component of $\textbf{U}$ as we refine the mesh further. The x-component of $\textbf{U}$ seems to curve more and reach closer to $u/U = 1$ at $\tilde{y}=1$ as the mesh is futher refined too. 
+
+\pagebreak
 \begin{figure}[H]
    \centering
    \includegraphics[width=0.85\textwidth]{images/Refinement_Measure.png}
    \caption{Execution time per step $C$ increases with higher gridpoints $N$}
    \label{timerefine}
-\end{figure}
+\end{figure} 
 
 \begin{center} 
    \fbox{\begin{minipage}{0.9\textwidth}
@@ -172,6 +176,7 @@ NOTE: Positive x-direction to the right.
 \pagebreak
 
 \section{Force on the Lid}
+
 
 
 \pagebreak
