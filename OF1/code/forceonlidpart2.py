@@ -38,7 +38,6 @@ for r in range(len(Re)):
 
     Ux = np.zeros([Nx,Ny])
 
-
     # Mean x-component velocity in each row starting from row y=1 to y=0
     for i in range(Nx):
         for j in range(Ny):
@@ -47,12 +46,24 @@ for r in range(len(Re)):
     x = np.linspace(0,L,Ny)/L
     dx=dy=1/Nx
 
-    tau = (Ux[0]-Ux[1])/(dy)
+    tau = np.zeros(Nx)
+    n = 3 # rows to fit 
+
+    #polynomial fitting
+    for i in range(Nx):
+        a,b,c = np.polyfit(x[0:n],Ux[0:n,i],2)
+        tau[i] = 2*a*(1) + b
+
+    #Finite Difference Approximation 
+    tau2 = np.zeros(Nx)   
+    for i in range(Nx):
+        tau[i] = (U[0] - U[1])/dy
 
     figRe = plt.figure(0,figsize=(8,6))
     figRe.canvas.manager.set_window_title("Nondimensional Stress vs. x")
 
-    plt.plot(x,tau,linewidth=2,label=f"Re = {Re[r]}")
+    plt.plot(x,abs(tau),linewidth=2,label=f"Re = {Re[r]}")
+    plt.plot(x,abs(tau2),linewidth=2,label=f"Re = {Re[r]} tau2")
     plt.title("$\\tilde{\\tau}$ vs. $\\tilde{x}$, Meshsize = " f"{Nx}x{Ny}", fontsize = 16)
     plt.ylabel(r"$\tilde{\tau}$         ",fontsize=14,rotation=0)
     plt.xlabel(r"$\tilde{x}$",fontsize=14)
@@ -61,10 +72,11 @@ for r in range(len(Re)):
 
     F.append(trapezoid(tau,x,dx=dx))
 
+F = np.array(F)
 
 figRe = plt.figure(1,figsize=(8,6))
 figRe.canvas.manager.set_window_title("Nondimensional Force vs. Re")
-plt.plot(Re,F,'rs',markersize=7)
+plt.plot(Re,abs(F),'rs',markersize=7)
 plt.title("$\\tilde{F}$ vs. Re, Meshsize = " f"{Nx}x{Ny}", fontsize = 16)
 plt.ylabel(r"$\tilde{F}$         ",fontsize=14,rotation=0)
 plt.xlabel(r"Re",fontsize=14)
