@@ -33,7 +33,13 @@
 \pagebreak
 
 \section{Introduction}
-The incompressible \& steady form of the Navier-Stokes equations is considered for the case of a 2-D lid-driven cavity with height = $H$, length = $L$, and lid velocity = $U$. The non-dimensional forms of the continuity and momentum equations are recorded. After visualizing the solution for Re = 10, we experiment with the size of the grid to compare wallclock times with the refined solutions. We then estimate the relationship between wallclock time and the total number of grid points. We compute and plot the non-dimensional stress along the lid at Reynolds numbers between 10 and 500. Finally, we compute the resulting force on the lid aspect ratios 1/2, 1, and 2 and Reynolds numbers between 10 and 500. "TBR"
+This report invesitages the canonical case of CFD, a lid-driven cavity. The \textit{OpenFOAM} software is used to compute the velocity and pressure fields at a given Reynolds number, which is the sole non-dimensional property that dictates the flow for the cavity. Thus we consider the nondimensionalized form of the incompressible, steady Navier-Stokes equations. \textit{Paraview} software is used for visualizations of the velocity and pressure fields of the cavity which are included in the report.
+\vspace{2.5mm}
+
+Experiments between different mesh refinments and Reynolds numbers are conducted to show changes in velocity fields, nondimensionalized shear stresses, nondimensionalized forces, and the execution or \textit{wallclock} time per step of each refinement. 
+
+
+% The incompressible \& steady form of the Navier-Stokes equations is considered for the case of a 2-D lid-driven cavity with height = $H$, length = $L$, and lid velocity = $U$. The non-dimensional forms of the continuity and momentum equations are recorded. After visualizing the solution for Re = 10, we experiment with the size of the grid to compare \textit{wallclock} or execution times with the refined solutions. We then estimate the relationship between \textit{wallclock} time and the total number of grid points. We compute and plot the non-dimensional shear stress along the lid at a few Reynolds numbers between 10 and 500. Finally, we compute the resulting force on the lid aspect ratios 1/2, 1, and 2 and Reynolds numbers between 10 and 500. "TBR"
 
 
 \section{Nondimensional Navier-Stokes equations}
@@ -59,6 +65,7 @@ The incompressible, constant density, $\rho$, and viscocity, $\mu$, steady form 
 \begin{equation*}
     \tilde{u} \frac{\partial \tilde{v}}{\partial \tilde{x}} + \tilde{v} \frac{\partial \tilde{v}}{\partial \tilde{y}} = -\frac{\partial \tilde{p}}{\partial \tilde{y}} + \frac{1}{Re}\left(\frac{\partial^2 \tilde{v}}{\partial \tilde{x}^2} + \frac{\partial^2 \tilde{v}}{\partial \tilde{y}^2}\right)
 \end{equation*}
+\vspace{2.5mm}
 
 In the momentum equations, the only non-dimensional number that appears is the Reynolds number. When the Reynolds number becomes very large ($Re \rightarrow \infty$), the viscous terms on the RHS of the equations become negligible, implying inviscid flow, reducing the momentum equations to the Euler equations. When the Reynolds number becomes very small ($Re \rightarrow 0$), the viscous terms on the RHS of the equations become very large, implying a highly viscous flow, reducing the momentum equations to the Stokes equations. The Stokes and Euler equations are listed below. 
 \vspace{5mm}
@@ -226,7 +233,7 @@ There is a noticable variation in the scaled up y-component of $\textbf{U}$ as w
 \pagebreak
 
 \section{Force on the Lid}
-Now we want to investigate the dependance of the force on Reynolds number. We define a few nondimensionalized terms,
+Now we want to investigate the dependance of the force on Reynolds number. We define a few nondimensionalized terms, I love you andres
 \begin{itemize}
    \item $\tilde{F} = \dfrac{F}{\mu U} = \displaystyle \int_{0}^{1} \tilde{\tau}(\tilde{x})\, d\tilde{x}$
    \vspace{2.5mm}
@@ -235,7 +242,47 @@ Now we want to investigate the dependance of the force on Reynolds number. We de
 \end{itemize}
 
 With these terms and our solution for Re = 10 (using the 80x80 grid), we generate a plot $\tilde{\tau}$ vs. $\tilde{x}$:
+\begin{figure}[H]
+   \centering
+   \includegraphics[width = \textwidth]{images/Nondimensional_Stress_vs._x.png}
+   \caption{Shear stress has a major decrease over the center of the cavity}
+   \label{shear}
+\end{figure}
 
+\begin{figure}[H]
+   \centering
+   \includegraphics[width = 0.8\textwidth]{images/80mesh_extractingstress.png}
+   \caption{Extracting shear stress through polynomial fitting on top $4$ rows $80$x$80$ Mesh}
+   \label{80meshstress}
+\end{figure}
+
+To obtain the nondimensionalized shear stress curves as shown in Fig. \ref{shear}, we fit a second-order polynomial as a function of $y$ through the first four rows of the $80$x$80$ grid as seen in Fig. \ref{80meshstress}. That is,
+\begin{equation*}
+   u_{i}(y) = a_{i}y^{2} + b_{i}y + c_{i}
+\end{equation*}
+\vspace{1mm}
+
+where $i$ is the gridpoint $1$ to $80$ along the line. Recall $\tilde{\tau} = \dfrac{\partial\tilde{u}}{\partial\tilde{y}}$. We obtain $\tilde{\tau}$ on the lid by differentiating $u_{i}(y)$ which turns out to be $u'_{i}(y) = 2a_{i}y + b_{i}$ and evaluate it at $y=1$ which is the position of the lid of the cavity. 
+\vspace{1.5mm}
+
+NOTE: At higher Reynolds, the end time of the simulation had to be increased for convergence.
+\vspace{3.5mm}
+
+Integrating the $\tilde{\tau}$ curves via trapezoidal method we are able to get a relationship between the nondimensionalized force versus the Reynolds number, $\tilde{F}$ vs. $Re$:
+
+\begin{figure}[H]
+   \centering
+   \includegraphics[width = \textwidth]{images/Nondimensional_Force_vs._Re.png}
+   \caption{Force increases with higher Reynolds flow}
+   \label{force}
+\end{figure}
+
+The trapezoidal method of integration,
+\begin{equation*}
+   \displaystyle \int_{0}^{1} \tilde{\tau}(\tilde{x})\, d\tilde{x} = \sum_{i=0}^{80} \dfrac{\tilde{\tau}_{i}+\tilde{\tau}_{i+1}}{2} \Delta{\tilde{x}}
+\end{equation*}
+
+where $\Delta{\tilde{x}} = \frac{1}{80}$.
 
 
 \pagebreak
@@ -251,5 +298,7 @@ With these terms and our solution for Re = 10 (using the 80x80 grid), we generat
 \hypertarget{code}{}
 \section{Code}
 PDF of code starts on next page.
+
+\includepdf[pages=-]{CFD OF1 Code.pdf}
 
 \end{document}
