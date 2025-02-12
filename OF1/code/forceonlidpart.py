@@ -73,7 +73,7 @@ for r in range(len(Re)):
 
 figRe = plt.figure(1,figsize=(8,6))
 figRe.canvas.manager.set_window_title("Nondimensional Force vs. Re")
-plt.plot(Re,F,'rs',markersize=7)
+plt.plot(Re,F,'r-s',markersize=7)
 plt.title("$\\tilde{F}$ vs. Re, Meshsize = " f"{Nx}x{Ny}", fontsize = 16)
 plt.ylabel(r"$\tilde{F}$         ",fontsize=14,rotation=0)
 plt.xlabel(r"Re",fontsize=14)
