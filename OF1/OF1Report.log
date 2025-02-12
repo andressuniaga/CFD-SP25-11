@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.15)  11 FEB 2025 20:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.15)  11 FEB 2025 21:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -571,23 +571,23 @@ Package pdftex.def Info: images/Nondimensional_Force_vs._Re.png  used on input l
 [10 <./images/Nondimensional_Force_vs._Re.png>]
 
 [1]
-<CFD OF1 Code.pdf, id=144, 614.295pt x 794.97pt>
+<CFD OF1 Code.pdf, id=145, 614.295pt x 794.97pt>
 File: CFD OF1 Code.pdf Graphic file (type pdf)
 <use CFD OF1 Code.pdf>
-Package pdftex.def Info: CFD OF1 Code.pdf  used on input line 302.
+Package pdftex.def Info: CFD OF1 Code.pdf  used on input line 305.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: CFD OF1 Code.pdf Graphic file (type pdf)
 <use CFD OF1 Code.pdf>
-Package pdftex.def Info: CFD OF1 Code.pdf  used on input line 302.
+Package pdftex.def Info: CFD OF1 Code.pdf  used on input line 305.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<CFD OF1 Code.pdf, id=147, page=1, 614.295pt x 794.97pt>
+<CFD OF1 Code.pdf, id=148, page=1, 614.295pt x 794.97pt>
 File: CFD OF1 Code.pdf Graphic file (type pdf)
 <use CFD OF1 Code.pdf, page 1>
-Package pdftex.def Info: CFD OF1 Code.pdf , page1 used on input line 302.
+Package pdftex.def Info: CFD OF1 Code.pdf , page1 used on input line 305.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: CFD OF1 Code.pdf Graphic file (type pdf)
 <use CFD OF1 Code.pdf, page 1>
-Package pdftex.def Info: CFD OF1 Code.pdf , page1 used on input line 302.
+Package pdftex.def Info: CFD OF1 Code.pdf , page1 used on input line 305.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 
 
@@ -595,15 +595,15 @@ Package pdftex.def Info: CFD OF1 Code.pdf , page1 used on input line 302.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.302 \includepdf[pages=-]{CFD OF1 Code.pdf}
+l.305 \includepdf[pages=-]{CFD OF1 Code.pdf}
                                              [2]
 File: CFD OF1 Code.pdf Graphic file (type pdf)
 <use CFD OF1 Code.pdf, page 1>
-Package pdftex.def Info: CFD OF1 Code.pdf , page1 used on input line 302.
+Package pdftex.def Info: CFD OF1 Code.pdf , page1 used on input line 305.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: CFD OF1 Code.pdf Graphic file (type pdf)
 <use CFD OF1 Code.pdf, page 1>
-Package pdftex.def Info: CFD OF1 Code.pdf , page1 used on input line 302.
+Package pdftex.def Info: CFD OF1 Code.pdf , page1 used on input line 305.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 
 
@@ -611,23 +611,23 @@ Package pdftex.def Info: CFD OF1 Code.pdf , page1 used on input line 302.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.302 \includepdf[pages=-]{CFD OF1 Code.pdf}
+l.305 \includepdf[pages=-]{CFD OF1 Code.pdf}
                                             
 File: CFD OF1 Code.pdf Graphic file (type pdf)
 <use CFD OF1 Code.pdf, page 1>
-Package pdftex.def Info: CFD OF1 Code.pdf , page1 used on input line 302.
+Package pdftex.def Info: CFD OF1 Code.pdf , page1 used on input line 305.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [3
 
  <./CFD OF1 Code.pdf>]
-<CFD OF1 Code.pdf, id=189, page=2, 614.295pt x 794.97pt>
+<CFD OF1 Code.pdf, id=191, page=2, 614.295pt x 794.97pt>
 File: CFD OF1 Code.pdf Graphic file (type pdf)
 <use CFD OF1 Code.pdf, page 2>
-Package pdftex.def Info: CFD OF1 Code.pdf , page2 used on input line 302.
+Package pdftex.def Info: CFD OF1 Code.pdf , page2 used on input line 305.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: CFD OF1 Code.pdf Graphic file (type pdf)
 <use CFD OF1 Code.pdf, page 2>
-Package pdftex.def Info: CFD OF1 Code.pdf , page2 used on input line 302.
+Package pdftex.def Info: CFD OF1 Code.pdf , page2 used on input line 305.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 
 
@@ -635,23 +635,23 @@ Package pdftex.def Info: CFD OF1 Code.pdf , page2 used on input line 302.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.302 \includepdf[pages=-]{CFD OF1 Code.pdf}
+l.305 \includepdf[pages=-]{CFD OF1 Code.pdf}
                                             
 File: CFD OF1 Code.pdf Graphic file (type pdf)
 <use CFD OF1 Code.pdf, page 2>
-Package pdftex.def Info: CFD OF1 Code.pdf , page2 used on input line 302.
+Package pdftex.def Info: CFD OF1 Code.pdf , page2 used on input line 305.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [4
 
  <./CFD OF1 Code.pdf>]
-<CFD OF1 Code.pdf, id=203, page=3, 614.295pt x 794.97pt>
+<CFD OF1 Code.pdf, id=205, page=3, 614.295pt x 794.97pt>
 File: CFD OF1 Code.pdf Graphic file (type pdf)
 <use CFD OF1 Code.pdf, page 3>
-Package pdftex.def Info: CFD OF1 Code.pdf , page3 used on input line 302.
+Package pdftex.def Info: CFD OF1 Code.pdf , page3 used on input line 305.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: CFD OF1 Code.pdf Graphic file (type pdf)
 <use CFD OF1 Code.pdf, page 3>
-Package pdftex.def Info: CFD OF1 Code.pdf , page3 used on input line 302.
+Package pdftex.def Info: CFD OF1 Code.pdf , page3 used on input line 305.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 
 
@@ -659,23 +659,23 @@ Package pdftex.def Info: CFD OF1 Code.pdf , page3 used on input line 302.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.302 \includepdf[pages=-]{CFD OF1 Code.pdf}
+l.305 \includepdf[pages=-]{CFD OF1 Code.pdf}
                                             
 File: CFD OF1 Code.pdf Graphic file (type pdf)
 <use CFD OF1 Code.pdf, page 3>
-Package pdftex.def Info: CFD OF1 Code.pdf , page3 used on input line 302.
+Package pdftex.def Info: CFD OF1 Code.pdf , page3 used on input line 305.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [5
 
  <./CFD OF1 Code.pdf>]
-<CFD OF1 Code.pdf, id=212, page=4, 614.295pt x 794.97pt>
+<CFD OF1 Code.pdf, id=214, page=4, 614.295pt x 794.97pt>
 File: CFD OF1 Code.pdf Graphic file (type pdf)
 <use CFD OF1 Code.pdf, page 4>
-Package pdftex.def Info: CFD OF1 Code.pdf , page4 used on input line 302.
+Package pdftex.def Info: CFD OF1 Code.pdf , page4 used on input line 305.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: CFD OF1 Code.pdf Graphic file (type pdf)
 <use CFD OF1 Code.pdf, page 4>
-Package pdftex.def Info: CFD OF1 Code.pdf , page4 used on input line 302.
+Package pdftex.def Info: CFD OF1 Code.pdf , page4 used on input line 305.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 
 
@@ -683,23 +683,23 @@ Package pdftex.def Info: CFD OF1 Code.pdf , page4 used on input line 302.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.302 \includepdf[pages=-]{CFD OF1 Code.pdf}
+l.305 \includepdf[pages=-]{CFD OF1 Code.pdf}
                                             
 File: CFD OF1 Code.pdf Graphic file (type pdf)
 <use CFD OF1 Code.pdf, page 4>
-Package pdftex.def Info: CFD OF1 Code.pdf , page4 used on input line 302.
+Package pdftex.def Info: CFD OF1 Code.pdf , page4 used on input line 305.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [6
 
  <./CFD OF1 Code.pdf>]
-<CFD OF1 Code.pdf, id=221, page=5, 614.295pt x 794.97pt>
+<CFD OF1 Code.pdf, id=223, page=5, 614.295pt x 794.97pt>
 File: CFD OF1 Code.pdf Graphic file (type pdf)
 <use CFD OF1 Code.pdf, page 5>
-Package pdftex.def Info: CFD OF1 Code.pdf , page5 used on input line 302.
+Package pdftex.def Info: CFD OF1 Code.pdf , page5 used on input line 305.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: CFD OF1 Code.pdf Graphic file (type pdf)
 <use CFD OF1 Code.pdf, page 5>
-Package pdftex.def Info: CFD OF1 Code.pdf , page5 used on input line 302.
+Package pdftex.def Info: CFD OF1 Code.pdf , page5 used on input line 305.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 
 
@@ -707,23 +707,23 @@ Package pdftex.def Info: CFD OF1 Code.pdf , page5 used on input line 302.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.302 \includepdf[pages=-]{CFD OF1 Code.pdf}
+l.305 \includepdf[pages=-]{CFD OF1 Code.pdf}
                                             
 File: CFD OF1 Code.pdf Graphic file (type pdf)
 <use CFD OF1 Code.pdf, page 5>
-Package pdftex.def Info: CFD OF1 Code.pdf , page5 used on input line 302.
+Package pdftex.def Info: CFD OF1 Code.pdf , page5 used on input line 305.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [7
 
  <./CFD OF1 Code.pdf>]
-<CFD OF1 Code.pdf, id=225, page=6, 614.295pt x 794.97pt>
+<CFD OF1 Code.pdf, id=227, page=6, 614.295pt x 794.97pt>
 File: CFD OF1 Code.pdf Graphic file (type pdf)
 <use CFD OF1 Code.pdf, page 6>
-Package pdftex.def Info: CFD OF1 Code.pdf , page6 used on input line 302.
+Package pdftex.def Info: CFD OF1 Code.pdf , page6 used on input line 305.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: CFD OF1 Code.pdf Graphic file (type pdf)
 <use CFD OF1 Code.pdf, page 6>
-Package pdftex.def Info: CFD OF1 Code.pdf , page6 used on input line 302.
+Package pdftex.def Info: CFD OF1 Code.pdf , page6 used on input line 305.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 
 
@@ -731,11 +731,11 @@ Package pdftex.def Info: CFD OF1 Code.pdf , page6 used on input line 302.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.302 \includepdf[pages=-]{CFD OF1 Code.pdf}
+l.305 \includepdf[pages=-]{CFD OF1 Code.pdf}
                                             
 File: CFD OF1 Code.pdf Graphic file (type pdf)
 <use CFD OF1 Code.pdf, page 6>
-Package pdftex.def Info: CFD OF1 Code.pdf , page6 used on input line 302.
+Package pdftex.def Info: CFD OF1 Code.pdf , page6 used on input line 305.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [8
 
@@ -748,18 +748,18 @@ Package rerunfilecheck Info: File `OF1Report.out' has not changed.
 (rerunfilecheck)             Checksum: 59DBD4E85F04174CD135029C4111FE1D;971.
  ) 
 Here is how much of TeX's memory you used:
- 13422 strings out of 473579
- 213546 string characters out of 5732257
+ 13425 strings out of 473579
+ 213579 string characters out of 5732257
  621253 words of memory out of 5000000
- 36093 multiletter control sequences out of 15000+600000
- 571728 words of font info for 86 fonts, out of 8000000 for 9000
+ 36095 multiletter control sequences out of 15000+600000
+ 571896 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,17n,79p,859b,592s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on OF1Report.pdf (18 pages, 5389057 bytes).
+<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on OF1Report.pdf (18 pages, 5402871 bytes).
 PDF statistics:
- 290 PDF objects out of 1000 (max. 8388607)
- 187 compressed objects within 2 object streams
+ 296 PDF objects out of 1000 (max. 8388607)
+ 191 compressed objects within 2 object streams
  35 named destinations out of 1000 (max. 500000)
  187 words of extra memory for PDF output out of 10000 (max. 10000000)
 
