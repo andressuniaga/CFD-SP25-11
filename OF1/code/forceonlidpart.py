@@ -1,4 +1,4 @@
-# Script for OF1 : Refining the Solution part
+# Script for OF1 : Force on Lid part
 
 
 #--------------------------------#
