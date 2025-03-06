@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.15)  6 MAR 2025 12:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.15)  6 MAR 2025 14:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -460,7 +460,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 {c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<images/IntroParaviewImage.png, id=65, 1495.5875pt x 922.44624pt>
+<images/IntroParaviewImage.png, id=80, 1495.5875pt x 922.44624pt>
 File: images/IntroParaviewImage.png Graphic file (type png)
 <use images/IntroParaviewImage.png>
 Package pdftex.def Info: images/IntroParaviewImage.png  used on input line 56.
@@ -468,7 +468,7 @@ Package pdftex.def Info: images/IntroParaviewImage.png  used on input line 56.
 
 
 [2{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-<images/IntroImage.png, id=76, 352.152pt x 239.805pt>
+<images/IntroImage.png, id=91, 352.152pt x 239.805pt>
 File: images/IntroImage.png Graphic file (type png)
 <use images/IntroImage.png>
 Package pdftex.def Info: images/IntroImage.png  used on input line 63.
@@ -476,12 +476,12 @@ Package pdftex.def Info: images/IntroImage.png  used on input line 63.
 
 
 [3 <./images/IntroParaviewImage.png> <./images/IntroImage.png>]
-<images/meshverticesexample.png, id=87, 578.16pt x 433.839pt>
+<images/meshverticesexample.png, id=102, 578.16pt x 433.62pt>
 File: images/meshverticesexample.png Graphic file (type png)
 <use images/meshverticesexample.png>
 Package pdftex.def Info: images/meshverticesexample.png  used on input line 78.
-(pdftex.def)             Requested size: 469.75502pt x 352.49332pt.
-<images/meshverticesexample3D.png, id=89, 462.528pt x 346.896pt>
+(pdftex.def)             Requested size: 469.75502pt x 352.31538pt.
+<images/meshverticesexample3D.png, id=104, 462.528pt x 346.896pt>
 File: images/meshverticesexample3D.png Graphic file (type png)
 <use images/meshverticesexample3D.png>
 Package pdftex.def Info: images/meshverticesexample3D.png  used on input line 86.
@@ -491,22 +491,22 @@ Package pdftex.def Info: images/meshverticesexample3D.png  used on input line 86
 [4 <./images/meshverticesexample.png>]
 
 [5 <./images/meshverticesexample3D.png>]
-<visuals/re20_UX.png, id=109, 1160.335pt x 862.22125pt>
+<visuals/re20_UX.png, id=124, 1160.335pt x 862.22125pt>
 File: visuals/re20_UX.png Graphic file (type png)
 <use visuals/re20_UX.png>
 Package pdftex.def Info: visuals/re20_UX.png  used on input line 106.
 (pdftex.def)             Requested size: 232.52643pt x 172.78326pt.
-<visuals/re20_UY.png, id=110, 1160.335pt x 862.22125pt>
+<visuals/re20_UY.png, id=125, 1160.335pt x 862.22125pt>
 File: visuals/re20_UY.png Graphic file (type png)
 <use visuals/re20_UY.png>
 Package pdftex.def Info: visuals/re20_UY.png  used on input line 112.
 (pdftex.def)             Requested size: 232.52643pt x 172.78326pt.
-<visuals/re20_p.png, id=111, 1160.335pt x 862.22125pt>
+<visuals/re20_p.png, id=126, 1160.335pt x 862.22125pt>
 File: visuals/re20_p.png Graphic file (type png)
 <use visuals/re20_p.png>
 Package pdftex.def Info: visuals/re20_p.png  used on input line 120.
 (pdftex.def)             Requested size: 232.52643pt x 172.78326pt.
-<visuals/re20_streamlines.png, id=112, 729.27pt x 542.025pt>
+<visuals/re20_streamlines.png, id=127, 729.27pt x 542.025pt>
 File: visuals/re20_streamlines.png Graphic file (type png)
 <use visuals/re20_streamlines.png>
 Package pdftex.def Info: visuals/re20_streamlines.png  used on input line 130.
@@ -529,28 +529,28 @@ Package pdftex.def Info: visuals/re20_streamlines.png  used on input line 130.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.169 \end{document}
+l.174 \end{document}
                      [2] (./OF2Report.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-30>
  ***********
 Package rerunfilecheck Info: File `OF2Report.out' has not changed.
-(rerunfilecheck)             Checksum: 0CE4AEF3A0CAE6317F2A41E588F706B8;2014.
+(rerunfilecheck)             Checksum: 4DF3C509377FF9ADC83D2E6CC8F8F28A;2582.
  ) 
 Here is how much of TeX's memory you used:
- 13326 strings out of 473579
- 209588 string characters out of 5732257
- 613581 words of memory out of 5000000
- 36000 multiletter control sequences out of 15000+600000
+ 13332 strings out of 473579
+ 209678 string characters out of 5732257
+ 614581 words of memory out of 5000000
+ 36003 multiletter control sequences out of 15000+600000
  571576 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,8n,79p,765b,600s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on OF2Report.pdf (12 pages, 3547721 bytes).
+Output written on OF2Report.pdf (12 pages, 3358999 bytes).
 PDF statistics:
- 216 PDF objects out of 1000 (max. 8388607)
- 159 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 231 PDF objects out of 1000 (max. 8388607)
+ 174 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 145 words of extra memory for PDF output out of 10000 (max. 10000000)
 
