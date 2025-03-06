@@ -8,9 +8,9 @@
 Build  : 7
 Exec   : checkMesh
 Date   : Mar 05 2025
-Time   : 00:02:49
-Host   : "c201-023.frontera.tacc.utexas.edu"
-PID    : 107979
+Time   : 20:59:49
+Host   : "c204-036.frontera.tacc.utexas.edu"
+PID    : 13498
 I/O    : uncollated
 Case   : /work2/09578/nicoleolv/frontera/coe347/circular-cylinder
 nProcs : 1
@@ -64,19 +64,19 @@ Checking patch topology for multiply connected surfaces...
     defaultFaces        17000    17530    ok (non-closed singly connected)  
 
 Checking geometry...
-    Overall domain bounding box (-5 -2 -0.1) (6 2 0.1)
+    Overall domain bounding box (-4 -4 -0.05) (8 4 0.05)
     Mesh has 2 geometric (non-empty/wedge) directions (1 1 0)
     Mesh has 2 solution (non-empty) directions (1 1 0)
     All edges aligned with or perpendicular to non-empty directions.
-    Boundary openness (-6.24485e-19 -2.78874e-17 -1.40612e-16) OK.
-    Max cell openness = 2.07562e-16 OK.
-    Max aspect ratio = 26.4119 OK.
-    Minimum face area = 0.000554402. Maximum face area = 0.104637.  Face area magnitudes OK.
-    Min volume = 0.00011088. Max volume = 0.00829083.  Total volume = 8.64296.  Cell volumes OK.
-    Mesh non-orthogonality Max: 43.4821 average: 12.8671
+    Boundary openness (-2.80593e-19 -8.90772e-18 -3.52318e-16) OK.
+    Max cell openness = 2.16389e-16 OK.
+    Max aspect ratio = 12.6414 OK.
+    Minimum face area = 0.0007007. Maximum face area = 0.0901947.  Face area magnitudes OK.
+    Min volume = 7.007e-05. Max volume = 0.00901947.  Total volume = 9.52148.  Cell volumes OK.
+    Mesh non-orthogonality Max: 43.3859 average: 12.6085
     Non-orthogonality check OK.
     Face pyramids OK.
-    Max skewness = 0.968729 OK.
+    Max skewness = 0.903887 OK.
     Coupled point location match (average 0) OK.
 
 Mesh OK.
