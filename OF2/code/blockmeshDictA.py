@@ -63,12 +63,12 @@ convertToMeters 1.0;
 vertices
 (   
 """
-    z = -5e-01
+    z = -5e-02
     for i in range(N):
         vertex = f"     ({vertices[0,i]:.13e} {vertices[1,i]:4e} {z:.13e}) // {i}\n"
         verts +=vertex
 
-    z = 5e-01
+    z = 5e-02
     for i in range(N):
         vertex = f"     ({vertices[0,i]:.13e} {vertices[1,i]:4e} {z:.13e}) // {i+N}\n"
         verts +=vertex
