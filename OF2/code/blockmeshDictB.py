@@ -81,10 +81,10 @@ blocks
 """
 
     resX = 25
-    resY = 40
+    resY = 50
     resZ = 1
-    gradeX = 2
-    gradeY = 1
+    gradeX = 2.5
+    gradeY = 1.5
     gradeZ = 1
 
     for i in range(N - (N//4+N//8)):
