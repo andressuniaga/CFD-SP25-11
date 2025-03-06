@@ -168,6 +168,36 @@ def blockmesh_2D(inner,outer,inlet,top,outlet,bottom,N=32):
 
         return points
 
+def arcmidpoints(z,points,D,R,N=32):
+    midpoints = np.zeros([3,N//2])
+    midpoints[2,:] = z
+
+    for i in range(N//2-1):
+        if i<N//4-1:
+            theta_x = np.acos((points[0,i+1]*2/D)) + np.acos((points[0,i]*2/D))
+            theta_y = np.asin((points[1,i+1]*2/D)) + np.asin((points[1,i]*2/D))
+            midpoints[0,i] = D/2*np.cos(theta_x/2)
+            midpoints[1,i] = D/2*np.sin(theta_y/2)
+        elif i == N//4-1:
+            theta_x = np.acos((points[0,0]*2/D)) + np.acos((points[0,i]*2/D))
+            theta_y = np.asin((points[1,0]*2/D)) + np.asin((points[1,i]*2/D))
+            midpoints[0,i] = D/2*np.cos(theta_x/2)
+            midpoints[1,i] = D/2*np.sin(theta_y/2)  
+        elif N//4-1<i<N//2-1:
+            theta_x = np.acos((points[0,i+1]/R)) + np.acos((points[0,i]/R))
+            theta_y = np.asin((points[1,i+1]/R)) + np.asin((points[1,i]/R))
+            midpoints[0,i] = R*np.cos(theta_x/2)
+            midpoints[1,i] = R*np.sin(theta_y/2)
+
+        theta_x = np.acos((points[0,N//4]/R)) + np.acos((points[0,N//2-1]/R))
+        theta_y = np.asin((points[1,N//4]/R)) + np.asin((points[1,N//2-1]/R))
+        midpoints[0,-1] = R*np.cos(theta_x/2)
+        midpoints[1,-1] = R*np.sin(theta_y/2)
+
+
+    return midpoints
+
+
        
 if __name__ == "__main__":
     # Initial Parameters
@@ -190,6 +220,10 @@ if __name__ == "__main__":
           "inlet:\n", inlet,'\n',"outlet:\n",outlet,'\n')
     
     vertices = blockmesh_2D(cylinder,outer,inlet,top,outlet,bottom,N)
+    z=0 
+    arcP = arcmidpoints(z,vertices,D,R)
+
+    print(arcP)
 
     # for arcs
     cylinder = drawcircle(D/2)
@@ -260,12 +294,14 @@ if __name__ == "__main__":
 
     for i in range(N//4):
         plt.plot(edgesout_remain[0,2*i:2+2*i],edgesout_remain[1,2*i:2+2*i],'k')
-        
+    
 
     plt.plot(cylinder[0],cylinder[1],'k',boundarycircle[0],boundarycircle[1],'k')
     plt.plot(verts[0],verts[1],'k')
-    plt.plot(vertices[0],vertices[1],'r.')
+    plt.plot(vertices[0],vertices[1],'r.',label="Vertices")
+    plt.plot(arcP[0,:],arcP[1,:],'b.',label="Arc Midpoints")
     plt.grid()
+    plt.legend(fontsize=10)
 
     # 3D PLOT
     plt.figure()
@@ -274,6 +310,9 @@ if __name__ == "__main__":
     y = vertices[1]
     z1 = -5e-02
     z2 = 5e-02
+
+    arcpoints1 = arcmidpoints(z1,vertices,D,R)
+    arcpoints2 = arcmidpoints(z2,vertices,D,R)
 
     ax.plot(cylinder[0],cylinder[1],z1,'k')
     ax.plot(cylinder[0],cylinder[1],z2,'k')
@@ -314,10 +353,13 @@ if __name__ == "__main__":
     for i in range(2*N):
         plt.plot(edges3d[0,2*i:2+2*i],edges3d[1,2*i:2+2*i],edges3d[2,2*i:2+2*i],'k')
     
+    ax.plot(arcpoints1[0],arcpoints1[1],arcpoints1[2],'g.',label="Arc Midpoints")
+    ax.plot(arcpoints2[0],arcpoints2[1],arcpoints2[2],'g.')
     ax.plot(boundarycircle[0],boundarycircle[1],z1,'k')
     ax.plot(boundarycircle[0],boundarycircle[1],z2,'k')
-    ax.plot(x,y,z1,'r.')
-    ax.plot(x,y,z2,'b.')
+    ax.plot(x,y,z1,'r.',label=f"Vertices at z={z1:.2e}")
+    ax.plot(x,y,z2,'b.',label=f"Vertices at z={z2:.2e}")
     ax.grid()
 
+    ax.legend(fontsize=10)
     plt.show()
