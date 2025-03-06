@@ -63,12 +63,12 @@ convertToMeters 1.0;
 vertices
 (   
 """
-    z = -5e-01
+    z = -5e-02
     for i in range(N):
         vertex = f"     ({vertices[0,i]:.13e} {vertices[1,i]:4e} {z:.13e}) // {i}\n"
         verts +=vertex
 
-    z = 5e-01
+    z = 5e-02
     for i in range(N):
         vertex = f"     ({vertices[0,i]:.13e} {vertices[1,i]:4e} {z:.13e}) // {i+N}\n"
         verts +=vertex
@@ -80,11 +80,11 @@ blocks
 (
 """
 
-    resX = 25
-    resY = 50
+    resX = 50
+    resY = 60
     resZ = 1
-    gradeX = 2.5
-    gradeY = 1.5
+    gradeX = 2
+    gradeY = 1
     gradeZ = 1
 
     for i in range(N - (N//4+N//8)):
