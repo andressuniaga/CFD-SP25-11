@@ -68,9 +68,8 @@ vertices
         vertex = f"     ({vertices[0,i]:.13e} {vertices[1,i]:4e} {z:.13e}) // {i}\n"
         verts +=vertex
 
-    z = 5e-02
     for i in range(N):
-        vertex = f"     ({vertices[0,i]:.13e} {vertices[1,i]:4e} {z:.13e}) // {i+N}\n"
+        vertex = f"     ({vertices[0,i]:.13e} {vertices[1,i]:4e} {-z:.13e}) // {i+N}\n"
         verts +=vertex
 
     verts = verts + ");"
@@ -81,7 +80,7 @@ blocks
 """
 
     resX = 25
-    resY = 50
+    resY = 40
     resZ = 1
     gradeX = 2
     gradeY = 1
@@ -121,7 +120,7 @@ blocks
         if N//4+N//8 < i <= N//4+N//8+2:
             block = f"\
             // block {i}\n\
-            hex ({i+N//4+3} {i-1} {i-2} {i+N//4+2} {i+N//4+3+N} {i+N-1} {i+N-2} {i+N//4+3+N-1}) ({resX+5} {resY} {resZ}) simpleGrading ({1.5*gradeX:.4e} {gradeY:.4e} {gradeZ:.1e})\n\n"
+            hex ({i+N//4+3} {i-1} {i-2} {i+N//4+2} {i+N//4+3+N} {i+N-1} {i+N-2} {i+N//4+3+N-1}) ({resX+5} {resY} {resZ}) simpleGrading ({1.25*gradeX:.4e} {gradeY:.4e} {gradeZ:.1e})\n\n"
             blocks+=block
         if i == N//4+N//8 + 3:
             block = f"\
@@ -148,44 +147,36 @@ blocks
 
     # NOTE: Arcs and Faces from example given shall remain the same given D,R = 1 and N=32
 
+    midpoints1 = arcmidpoints(z,vertices,D,R)
+    midpoints2 = arcmidpoints(-z,vertices,D,R)
+    [a,b]=np.shape(midpoints1)
+
+    arcindex1 = np.zeros([2,b])
+    arcindex2 = np.zeros([2,b])
+    for i in range(b):
+        arcindex1[0,i] = i
+        arcindex2[0,i] = i+N
+        if i != b-1:
+            arcindex1[1,i] = i+1
+            arcindex2[1,i] = i+1+N
+        else:
+            arcindex1[1,i] = b/2
+            arcindex2[1,i] = b/2+N
+
+    arcindex1[1,N//4-1] = arcindex1[0,0]
+    arcindex2[1,N//4-1] = arcindex2[0,0]
+    
     arcs = """
 edges
 (
+"""
+    for i in range(b):
+        arcs += f"arc {arcindex1[0,i]} {arcindex1[1,i]} ( {midpoints1[0,i]:.5e} {midpoints1[1,i]:.5e} {midpoints1[2,i]:.5e})\n"
 
-arc 0 1 ( 4.61940e-01  1.91342e-01 -5.00000e-02)
-arc 8 9 ( 9.23880e-01  3.82683e-01 -5.00000e-02)
-arc 32 33 ( 4.61940e-01  1.91342e-01  5.00000e-02)
-arc 40 41 ( 9.23880e-01  3.82683e-01  5.00000e-02)
-arc 1 2 ( 1.91342e-01  4.61940e-01 -5.00000e-02)
-arc 9 10 ( 3.82683e-01  9.23880e-01 -5.00000e-02)
-arc 33 34 ( 1.91342e-01  4.61940e-01  5.00000e-02)
-arc 41 42 ( 3.82683e-01  9.23880e-01  5.00000e-02)
-arc 2 3 (-1.91342e-01  4.61940e-01 -5.00000e-02)
-arc 10 11 (-3.82683e-01  9.23880e-01 -5.00000e-02)
-arc 34 35 (-1.91342e-01  4.61940e-01  5.00000e-02)
-arc 42 43 (-3.82683e-01  9.23880e-01  5.00000e-02)
-arc 3 4 (-4.61940e-01  1.91342e-01 -5.00000e-02)
-arc 11 12 (-9.23880e-01  3.82683e-01 -5.00000e-02)
-arc 35 36 (-4.61940e-01  1.91342e-01  5.00000e-02)
-arc 43 44 (-9.23880e-01  3.82683e-01  5.00000e-02)
-arc 4 5 (-4.61940e-01 -1.91342e-01 -5.00000e-02)
-arc 12 13 (-9.23880e-01 -3.82683e-01 -5.00000e-02)
-arc 36 37 (-4.61940e-01 -1.91342e-01  5.00000e-02)
-arc 44 45 (-9.23880e-01 -3.82683e-01  5.00000e-02)
-arc 5 6 (-1.91342e-01 -4.61940e-01 -5.00000e-02)
-arc 13 14 (-3.82683e-01 -9.23880e-01 -5.00000e-02)
-arc 37 38 (-1.91342e-01 -4.61940e-01  5.00000e-02)
-arc 45 46 (-3.82683e-01 -9.23880e-01  5.00000e-02)
-arc 6 7 ( 1.91342e-01 -4.61940e-01 -5.00000e-02)
-arc 14 15 ( 3.82683e-01 -9.23880e-01 -5.00000e-02)
-arc 38 39 ( 1.91342e-01 -4.61940e-01  5.00000e-02)
-arc 46 47 ( 3.82683e-01 -9.23880e-01  5.00000e-02)
-arc 7 0 ( 4.61940e-01 -1.91342e-01 -5.00000e-02)
-arc 15 8 ( 9.23880e-01 -3.82683e-01 -5.00000e-02)
-arc 39 32 ( 4.61940e-01 -1.91342e-01  5.00000e-02)
-arc 47 40 ( 9.23880e-01 -3.82683e-01  5.00000e-02)
+    for i in range(b):
+        arcs += f"arc {arcindex2[0,i]} {arcindex2[1,i]} ( {midpoints2[0,i]:.5e} {midpoints2[1,i]:.5e} {midpoints2[2,i]:.5e})\n"
 
-);\n"""
+    arcs = arcs +");\n"
 
     faces = """
 boundary

@@ -7,4 +7,7 @@
 \contentsline {section}{\numberline {4}Improving the Mesh}{8}{section.4}%
 \contentsline {section}{\numberline {5}Unsteady Flow: Strouhal Number of the vortex shedding}{9}{section.5}%
 \contentsline {section}{\numberline {6}Steady Flow: velocity in the boundary layer, separation length, and rate of strain at the cylinder's wall}{10}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Radial and Tangential velocity}{10}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Rate of strain}{10}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Length of recirculation region}{10}{subsection.6.3}%
 \contentsline {section}{\numberline {A}Code}{}{appendix.A}%
