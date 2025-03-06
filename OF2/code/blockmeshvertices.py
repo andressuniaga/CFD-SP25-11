@@ -10,6 +10,14 @@ import matplotlib.pyplot as plt
 
 #-------------------------------#
 
+def drawcircle(R):
+    theta = np.linspace(0,2*np.pi,1000)
+    circ=np.zeros([2,len(theta)])
+    for i in range(len(theta)):
+        circ[0,i] = R*np.cos(theta[i])
+        circ[1,i] = R*np.sin(theta[i])
+    return circ
+
 def arcvertices(D,R,N=32):
     '''
     Inputs: 
@@ -90,7 +98,7 @@ def walls(Lf,Lw,H,outer, N=32):
         top[0,-N//16] = corners[0,1]
         top[1,-N//16] = corners[1,1]
 
-        bottom[0,-N//16] = corners[0,2]
+        bottom[0,-N//16] = -corners[0,2] # negated for programming purposes
         bottom[1,-N//16] = corners[1,2]
         
         inlet[0,-N//16] = corners[0,3]
@@ -104,7 +112,7 @@ def walls(Lf,Lw,H,outer, N=32):
         for i in range(N//8):
             topnew[0,i] = top[0,a-i]
             topnew[1,i] = top[1,a-i]
-            bottomnew[0,i] = bottom[0,a-i]
+            bottomnew[0,i] = -bottom[0,a-i]
             bottomnew[1,i] = bottom[1,a-i]
             inletnew[0,i] = inlet[0,a-i]
             inletnew[1,i] = inlet[1,a-i]
@@ -112,7 +120,7 @@ def walls(Lf,Lw,H,outer, N=32):
         top = topnew
         bottom = bottomnew
         inlet = inletnew
-                        
+                     
         return top,bottom,inlet,outlet
 
 def blockmesh_2D(inner,outer,inlet,top,outlet,bottom,N=32):
@@ -161,15 +169,14 @@ def blockmesh_2D(inner,outer,inlet,top,outlet,bottom,N=32):
         return points
 
        
-
 if __name__ == "__main__":
     # Initial Parameters
     N = 32 # number of points (multiples of 16)
 
     D = 1 # diameter of cylinder
 
-    Lf = 10
-    Lw = 20
+    Lf = 4
+    Lw = 6
     R = 1 
     H = 5
 
@@ -177,20 +184,86 @@ if __name__ == "__main__":
     top,bottom,inlet,outlet = walls(Lf,Lw,H,outer,N)
 
     # 2D PLOT
-    plt.figure(figsize=(12,4))
-    # plt.plot(cylinder[0],cylinder[1],'r.')
-    # plt.plot(outer[0],outer[1],'r.')
-    # plt.plot(top[0],top[1],'k.')
-    # plt.plot(bottom[0],bottom[1],'k.')
-    # plt.plot(inlet[0],inlet[1],'k.')
-    # plt.plot(outlet[0],outlet[1],'k.')
-
-
-    # print("top:\n", top,'\n',"bottom:\n",bottom,'\n'
-    #       "inlet:\n", inlet,'\n',"outlet:\n",outlet,'\n')
+    plt.figure(figsize=(8,6))
+    
+    print("top:\n", top,'\n',"bottom:\n",bottom,'\n'
+          "inlet:\n", inlet,'\n',"outlet:\n",outlet,'\n')
     
     vertices = blockmesh_2D(cylinder,outer,inlet,top,outlet,bottom,N)
 
+    # for arcs
+    cylinder = drawcircle(D/2)
+    boundarycircle = drawcircle(R+D/2)
+
+
+    # for box 
+    verts = np.zeros([2,N//2+1])
+    for i in range(N//2):
+        verts[0,i] = vertices[0,i+N//2]
+        verts[1,i] = vertices[1,i+N//2]
+    verts[0,-1] = vertices[0,16]
+    verts[1,-1] = vertices[1,16]
+
+    # inside edges
+    edgesin = np.zeros([2,N//2])
+    j = 1
+    for i in range(N//2):
+        if i%2==0:
+            edgesin[0,i] = vertices[0,i//2]
+            edgesin[1,i] = vertices[1,i//2]
+        else:
+            edgesin[0,i] = vertices[0,i+N//4-j]
+            edgesin[1,i] = vertices[1,i+N//4-j]
+            j += 1
+
+    # outside edges
+    j = 1
+    edgesout = np.zeros([2,N//2])
+    for i in range(N//2):
+        if i%2==0:
+            edgesout[0,i] = vertices[0,(i//2+N//4)]
+            edgesout[1,i] = vertices[1,(i//2+N//4)]
+        else:
+            if j%3==0:
+                j = 1
+                edgesout[0,i] = vertices[0,i+N//2-j]
+                edgesout[1,i] = vertices[1,i+N//2-j]
+            else:
+                edgesout[0,i] = vertices[0,i+N//2-j]
+                edgesout[1,i] = vertices[1,i+N//2-j]
+            j+=1
+
+    # remaining outside edges
+    x_remain = []
+    y_remain = []
+    p = 2
+    for i in range(N//8):
+        x_remain.append(N//4+1+i*2)
+        y_remain.append(N//2+3+2*i*p)
+        
+    edgesout_remain = np.zeros([2,N//4])
+    j = 1
+    for i in range(N//4):
+        if i%2==0:
+            edgesout_remain[0,i] = vertices[0,x_remain[i//2]]
+            edgesout_remain[1,i] = vertices[1,x_remain[i//2]]
+        else:
+            edgesout_remain[0,i] = vertices[0,y_remain[i-j]]
+            edgesout_remain[1,i] = vertices[1,y_remain[i-j]] 
+            j+=1
+
+    for i in range(N//2):
+        plt.plot(edgesin[0,0+2*i:2+2*i],edgesin[1,0+2*i:2+2*i],'k')
+    
+    for i in range(N//2):
+        plt.plot(edgesout[0,0+2*i:2+2*i],edgesout[1,0+2*i:2+2*i],'k')
+
+    for i in range(N//4):
+        plt.plot(edgesout_remain[0,2*i:2+2*i],edgesout_remain[1,2*i:2+2*i],'k')
+        
+
+    plt.plot(cylinder[0],cylinder[1],'k',boundarycircle[0],boundarycircle[1],'k')
+    plt.plot(verts[0],verts[1],'k')
     plt.plot(vertices[0],vertices[1],'r.')
     plt.grid()
 
@@ -199,11 +272,52 @@ if __name__ == "__main__":
     ax = plt.axes(projection = '3d')
     x = vertices[0]
     y = vertices[1]
-    z1 = -0.5
-    z2 = 0.5
-    ax.plot(x,y,z1,'r.')
-    ax.plot(x,y,z2,'k.')
+    z1 = -5e-02
+    z2 = 5e-02
 
-    # print(vertices)
+    ax.plot(cylinder[0],cylinder[1],z1,'k')
+    ax.plot(cylinder[0],cylinder[1],z2,'k')
+    ax.plot(verts[0],verts[1],z1,'k')
+    ax.plot(verts[0],verts[1],z2,'k')
+    for i in range(N//4):
+        ax.plot(edgesin[0,0+2*i:2+2*i],edgesin[1,0+2*i:2+2*i],z1,'k')
+        ax.plot(edgesin[0,0+2*i:2+2*i],edgesin[1,0+2*i:2+2*i],z2,'k')
+    
+    for i in range(N//4 + N//8):
+        ax.plot(edgesout[0,0+2*i:2+2*i],edgesout[1,0+2*i:2+2*i],z1,'k')
+        ax.plot(edgesout[0,0+2*i:2+2*i],edgesout[1,0+2*i:2+2*i],z2,'k')
+
+    for i in range(N//4):
+        plt.plot(edgesout_remain[0,2*i:2+2*i],edgesout_remain[1,2*i:2+2*i],z1,'k')
+        plt.plot(edgesout_remain[0,2*i:2+2*i],edgesout_remain[1,2*i:2+2*i],z2,'k')
+
+    # 3D Edges
+        vertices3d = np.zeros([3,2*N])
+        for i in range(N):
+            vertices3d[0,i] = vertices[0,i]
+            vertices3d[1,i] = vertices[1,i]
+            vertices3d[0,i+N] = vertices[0,i]
+            vertices3d[1,i+N] = vertices[1,i]
+            vertices3d[2,i] = z1
+            vertices3d[2,i+N] = z2
+
+    # rarrange for edges
+        edges3d = np.zeros([3,2*N])
+        j = 1
+        for i in range(2*N):
+            if i%2==0:
+                edges3d[:,i] = vertices3d[:,i//2]
+            else:
+                edges3d[:,i] = vertices3d[:,i+N-j]
+                j+=1
+
+    for i in range(2*N):
+        plt.plot(edges3d[0,2*i:2+2*i],edges3d[1,2*i:2+2*i],edges3d[2,2*i:2+2*i],'k')
+    
+    ax.plot(boundarycircle[0],boundarycircle[1],z1,'k')
+    ax.plot(boundarycircle[0],boundarycircle[1],z2,'k')
+    ax.plot(x,y,z1,'r.')
+    ax.plot(x,y,z2,'b.')
+    ax.grid()
 
     plt.show()
