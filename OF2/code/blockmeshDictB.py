@@ -21,10 +21,10 @@ def blockMeshDict(intro1,intro2,verts,blocks,edges,faces):
 
 
 if __name__ == "__main__":
-    # Parameters for Mesh B
+    # Parameters for Mesh B (INPUTS)
     D = 1 # diameter of cylinder
-    Lf = 10
-    Lw = 30
+    Lf = 5
+    Lw = 20
     R = 1 
     H = 4
     
@@ -80,8 +80,8 @@ blocks
 """
 
 
-    resX = 25
-    resY = 50
+    resX = 10*2
+    resY = 20
     resZ = 1
     gradeX = 2
     gradeY = 1
@@ -136,7 +136,7 @@ blocks
         if i == N//2 + 2:
             block = f"\
             // block {i}\n\
-            hex ({i+N//4+N//8-1} {i+N//4+N//8} {i+N//4+N//8+1} {i-3} {i+N//4+N//8+N-1} {i+N//4+N//8+N} {i+N//4+N//8+N+1} {i+N-3}) ({resX+10} {resY+10} {resZ}) simpleGrading ({2*gradeX:.4e} {2.5*gradeY:.4e} {gradeZ:.1e})\n\n"
+            hex ({i+N//4+N//8-1} {i+N//4+N//8} {i+N//4+N//8+1} {i-3} {i+N//4+N//8+N-1} {i+N//4+N//8+N} {i+N//4+N//8+N+1} {i+N-3}) ({resX+20} {resY+10} {resZ}) simpleGrading ({2*gradeX:.4e} {2.5*gradeY:.4e} {gradeZ:.1e})\n\n"
             blocks+=block
         if i == N - (N//4+N//8) - 1:
             block = f"\
