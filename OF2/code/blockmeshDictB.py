@@ -79,8 +79,9 @@ blocks
 (
 """
 
+
     resX = 25
-    resY = 40
+    resY = 50
     resZ = 1
     gradeX = 2
     gradeY = 1
@@ -90,17 +91,17 @@ blocks
         if i < N//4-1:
             block = f"\
             // block {i}\n\
-            hex ({i} {i+N//4} {i+N//4+1} {i+1} {i+N} {i+N//4+N} {i+N//4+N+1} {N+1}) ({resX} {resY} {resZ}) simpleGrading ({gradeX:.4e} {gradeY:.4e} {gradeZ:.1e})\n\n"
+            hex ({i} {i+N//4} {i+N//4+1} {i+1} {i+N} {i+N//4+N} {i+N//4+N+1} {N+i+1}) ({resX} {resY} {resZ}) simpleGrading ({gradeX:.4e} {gradeY:.4e} {gradeZ:.1e})\n\n"
             blocks+=block
         if i == N//4 - 1:
             block = f"\
             // block {i}\n\
-            hex ({i} {i+N//4} {N//4} {i-(N//4-1)} {i+N} {i+N//4+N} {i+N//4+1} {N}) ({resX} {resY} {resZ}) simpleGrading ({gradeX:.4e} {gradeY:.4e} {gradeZ:.1e})\n\n"
+            hex ({i} {i+N//4} {N//4} {i-(N//4-1)} {i+N} {i+N//4+N} {i+N+1} {N}) ({resX} {resY} {resZ}) simpleGrading ({gradeX:.4e} {gradeY:.4e} {gradeZ:.1e})\n\n"
             blocks+=block
         if i == N//4:
             block = f"\
             // block {i}\n\
-            hex ({i} {i+N//4} {i+N//4+1} {i+1} {i+N} {i+N//4+N} {i+N//4+1} {N+1+i}) ({resX+20} {resY} {resZ}) simpleGrading ({2*gradeX:.4e} {gradeY:.4e} {gradeZ:.1e})\n\n"
+            hex ({i} {i+N//4} {i+N//4+1} {i+1} {i+N} {i+N//4+N} {i+N+N//4+1} {N+1+i}) ({resX+20} {resY} {resZ}) simpleGrading ({2*gradeX:.4e} {gradeY:.4e} {gradeZ:.1e})\n\n"
             blocks+=block
         if i == N//4+1:
             block = f"\
