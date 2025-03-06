@@ -33,7 +33,61 @@
 \pagebreak
 
 \section{Introduction}
+Flow around a circular cylinder is a classic problem in \textit{fluid mechanics} and is commonly studied in \textit{computational fluid dynamics} (CFD) because of its interesting flow behavior at different Reynolds numbers (Re). At low Re, the flow is steady and symmetric, but as Re increases, the wake behind the cylinder becomes unsteady, first generating recirculation regions and ultimately leading to \textit{vortex shedding} and the formation of a \textit{von K\'arm\'an vortex street}. This type of flow is important in many engineering applications where understanding how vortices form and interact with surfaces can help improve designs.
 
+The goal of this project is to \textbf{simulate flow past a circular cylinder using OpenFOAM} and analyze how the flow changes at different Reynolds numbers. Specifically, we will:
+\begin{itemize}
+    \item \textbf{Generate and refine structured meshes} using \texttt{blockMesh} to see how grid resolution affects accuracy.
+    \item \textbf{Simulate steady and unsteady flow} at \(Re = 20\) (where flow remains steady) and \(Re = 110\) (where vortex shedding occurs).
+    \item \textbf{Analyze velocity, pressure, and forces}, including shear stress and drag.
+    \item \textbf{Validate our results} by comparing vortex shedding frequency (Strouhal number) and separation point locations with published data from \textit{Williamson (1988)} and \textit{Park et al. (1998)}.
+\end{itemize}
+
+The simulations will be performed using the \textbf{OpenFOAM}, for \textit{incompressible, laminar flow}. The computational setup includes \textbf{mesh generation, a no-slip boundary on the cylinder, and downstream data probes}. All variables are nondimensionalized using the cylinder diameter \((D = 1 \text{ m})\) and freestream velocity \((U = 1 \text{ m/s})\), which simplifies the Reynolds number to:
+\begin{equation}
+    Re = \frac{U D}{\nu} = \frac{1}{\nu}.
+\end{equation}
+
+
+
+In this report, we will go through the \textbf{mesh setup, simulation process, and post-processing results using ParaView} to understand how the flow behaves at different Reynolds numbers. By refining our meshes and analyzing key flow parameters, we aim to gain a better understanding of \textit{how OpenFOAM handles external flow simulations and how mesh quality affects the results}.
+
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=0.8\textwidth]{images/IntroParaviewImage.png}
+   \caption{Visualization of the computational domain and mesh in ParaView.}
+   \label{intro_paraview}
+\end{figure}
+
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=0.8\textwidth]{images/IntroImage.png}
+   \caption{Structured mesh used for the simulation.}
+   \label{intro_image}
+\end{figure}
+
+
+To illustrate the computational setup, Figure \ref{intro_paraview} shows the domain and mesh visualized in ParaView, and Figure \ref{intro_image} provides a detailed circular cylindar used in the study.
+
+\pagebreak
+
+\section{Assembly of preliminary meshes}
+
+\pagebreak
+
+\section{Solution for Re=20 and 110}
+
+\pagebreak
+
+\section{Improving the Mesh}
+
+\pagebreak
+
+\section{Unsteady Flow: Strouhal Number of the vortex shedding}
+
+\pagebreak
+
+\section{Steady Flow: velocity in the boundary layer, separation length, and rate of strain at the cylinder's wall}
 
 \pagebreak
 \appendix
