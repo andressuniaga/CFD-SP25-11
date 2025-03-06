@@ -171,10 +171,10 @@ edges
 (
 """
     for i in range(b):
-        arcs += f"arc {arcindex1[0,i]} {arcindex1[1,i]} ( {midpoints1[0,i]:.5e} {midpoints1[1,i]:.5e} {midpoints1[2,i]:.5e})\n"
+        arcs += f"arc {int(arcindex1[0,i])} {int(arcindex1[1,i])} ( {midpoints1[0,i]:.5e} {midpoints1[1,i]:.5e} {midpoints1[2,i]:.5e})\n"
 
     for i in range(b):
-        arcs += f"arc {arcindex2[0,i]} {arcindex2[1,i]} ( {midpoints2[0,i]:.5e} {midpoints2[1,i]:.5e} {midpoints2[2,i]:.5e})\n"
+        arcs += f"arc {int(arcindex2[0,i])} {int(arcindex2[1,i])} ( {midpoints2[0,i]:.5e} {midpoints2[1,i]:.5e} {midpoints2[2,i]:.5e})\n"
 
     arcs = arcs +");\n"
 
