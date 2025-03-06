@@ -37,8 +37,8 @@ def arcvertices(D,R,N=32):
             pinner[0,i] = (D/2)*np.cos(theta[i])
             pinner[1,i] = (D/2)*np.sin(theta[i])
 
-            pouter[0,i] = (D/2 + R)*np.cos(theta[i])
-            pouter[1,i] = (D/2 + R)*np.sin(theta[i])
+            pouter[0,i] = (R)*np.cos(theta[i])
+            pouter[1,i] = (R)*np.sin(theta[i])
 
         return pinner, pouter
 
@@ -177,7 +177,7 @@ if __name__ == "__main__":
 
     Lf = 4
     Lw = 6
-    R = 1 
+    R = 1
     H = 5
 
     cylinder,outer = arcvertices(D,R,N)
@@ -193,7 +193,7 @@ if __name__ == "__main__":
 
     # for arcs
     cylinder = drawcircle(D/2)
-    boundarycircle = drawcircle(R+D/2)
+    boundarycircle = drawcircle(R)
 
 
     # for box 
