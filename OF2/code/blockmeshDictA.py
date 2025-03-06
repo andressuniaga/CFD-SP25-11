@@ -24,8 +24,8 @@ if __name__ == "__main__":
     # Parameters for Mesh A
     D = 1 # diameter of cylinder
     Lf = 4
-    Lw = 8
-    R = 1 
+    Lw = 6
+    R = 1.0 
     H = 4
     
     N = 32 # NOTE: Treat this as a CONST variable
@@ -116,17 +116,17 @@ blocks
         if i == N//4+N//8:
             block = f"\
             // block {i}\n\
-            hex ({i+N//4+3} {i-1} {i+N//4+1} {i+N//4+2} {i+N//4+3+N} {i+N-1} {i+N//4+3+N-2} {i+N//4+3+N-1}) ({resX+5} {resY+10} {resZ}) simpleGrading ({1.5*gradeX:.4e} {4*gradeY:.4e} {gradeZ:.1e})\n\n"
+            hex ({i+N//4+3} {i-1} {i+N//4+1} {i+N//4+2} {i+N//4+3+N} {i+N-1} {i+N//4+3+N-2} {i+N//4+3+N-1}) ({resX+5} {resY+10} {resZ}) simpleGrading ({1.25*gradeX:.4e} {4*gradeY:.4e} {gradeZ:.1e})\n\n"
             blocks+=block
         if N//4+N//8 < i <= N//4+N//8+2:
             block = f"\
             // block {i}\n\
-            hex ({i+N//4+3} {i-1} {i-2} {i+N//4+2} {i+N//4+3+N} {i+N-1} {i+N-2} {i+N//4+3+N-1}) ({resX+5} {resY} {resZ}) simpleGrading ({1.5*gradeX:.4e} {gradeY:.4e} {gradeZ:.1e})\n\n"
+            hex ({i+N//4+3} {i-1} {i-2} {i+N//4+2} {i+N//4+3+N} {i+N-1} {i+N-2} {i+N//4+3+N-1}) ({resX+5} {resY} {resZ}) simpleGrading ({1.25*gradeX:.4e} {gradeY:.4e} {gradeZ:.1e})\n\n"
             blocks+=block
         if i == N//4+N//8 + 3:
             block = f"\
             // block {i}\n\
-            hex ({i+N//4+3} {i+N//4+N//8} {i-2} {i+N//4+2} {i+N//4+3+N} {i+N//4+N//8+N} {i+N-2} {i+N//4+2+N}) ({resX+5} {resY+10} {resZ}) simpleGrading ({1.5*gradeX:.4e} {2.5*gradeY:.4e} {gradeZ:.1e})\n\n"
+            hex ({i+N//4+3} {i+N//4+N//8} {i-2} {i+N//4+2} {i+N//4+3+N} {i+N//4+N//8+N} {i+N-2} {i+N//4+2+N}) ({resX+5} {resY+10} {resZ}) simpleGrading ({1.25*gradeX:.4e} {2.5*gradeY:.4e} {gradeZ:.1e})\n\n"
             blocks+=block
         if N//2 <= i <= N//2 + 1:
             block = f"\
