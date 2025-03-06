@@ -49,35 +49,92 @@ The simulations will be performed using the \textbf{OpenFOAM}, for \textit{incom
 \end{equation}
 
 
-
 In this report, we will go through the \textbf{mesh setup, simulation process, and post-processing results using ParaView} to understand how the flow behaves at different Reynolds numbers. By refining our meshes and analyzing key flow parameters, we aim to gain a better understanding of \textit{how OpenFOAM handles external flow simulations and how mesh quality affects the results}.
 
 \begin{figure}[H]
    \centering
    \includegraphics[width=0.8\textwidth]{images/IntroParaviewImage.png}
    \caption{Visualization of the computational domain and mesh in ParaView.}
-   \label{intro_paraview}
+   \label{paraviewintro}
 \end{figure}
 
 \begin{figure}[H]
    \centering
    \includegraphics[width=0.8\textwidth]{images/IntroImage.png}
    \caption{Structured mesh used for the simulation.}
-   \label{intro_image}
+   \label{intro}
 \end{figure}
 
 
-To illustrate the computational setup, Figure \ref{intro_paraview} shows the domain and mesh visualized in ParaView, and Figure \ref{intro_image} provides a detailed circular cylindar used in the study.
+To illustrate the computational setup, Figure \ref{paraviewintro} shows the domain and mesh visualized in ParaView, and Figure \ref{intro} provides a detailed circular cylindar used in the study.
 
 \pagebreak
 
 \section{Assembly of preliminary meshes}
 
+\subsection{Schematic of Mesh Generation}
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=\linewidth]{images/meshverticesexample.png}
+   \caption{Generating the block mesh in $\bR^{2}$}   
+\end{figure}
+
+The block mesh is characterized by the fore length $L_{f}$, wake length $L_{w}$, half-height $H$, outer circle radius $R$, and the diameter of the circular cylinder $D$. These parameters can be changed within the code (found in the \hyperlink{code}{Appendix}) to output new vertices, edges, and faces. 
+
+\begin{figure}[H]
+   \centering
+   \includegraphics[width = \linewidth]{images/meshverticesexample3D.png}
+   \caption{Visualization in $\bR^{3}$}   
+\end{figure}
+
+Since \textsc{OpenFOAM} is inherently a 3-dimensional solver, we generate our blocks in $\bR^{3}$ within a very small $z$ margin of $-0.05$ to $0.05$. This is the trick to keep it, for the most part, 2-dimensional.
+
+
+NOTE: Code included in the \hyperlink{code}{Appendix} to reproduce meshes.
+
+
+
 \pagebreak
 
 \section{Solution for Re=20 and 110}
+\subsection{Re=20}
 
-\pagebreak
+\begin{figure}[H]
+   \centering
+   \begin{subfigure}{0.495\linewidth}
+       \centering
+       \includegraphics[width=\linewidth]{visuals/re20_UX.png}
+       \caption{$u/U$}
+   \end{subfigure}
+   \hfill
+   \begin{subfigure}{0.495\linewidth}
+       \centering
+       \includegraphics[width=\linewidth]{visuals/re20_UY.png}
+       \caption{$v/U$}
+   \end{subfigure}
+   
+   \vspace{1em} % Adds spacing between rows
+
+   \begin{subfigure}{0.495\linewidth}
+       \centering
+       \includegraphics[width=\linewidth]{visuals/re20_p.png}
+       \caption{$p/\rho U^{2}$}
+   \end{subfigure}
+
+   \caption{Velocity and pressure distributions}
+\end{figure}
+
+
+\begin{figure}[H]
+   \centering
+   \includegraphics[width = 0.9\linewidth]{visuals/re20_streamlines.png}
+   \caption{Visulaizing streamlines for steady solution}
+\end{figure}
+
+
+\subsection{Re=110} 
+
+\pagebreak 
 
 \section{Improving the Mesh}
 
@@ -88,6 +145,7 @@ To illustrate the computational setup, Figure \ref{intro_paraview} shows the dom
 \pagebreak
 
 \section{Steady Flow: velocity in the boundary layer, separation length, and rate of strain at the cylinder's wall}
+
 
 \pagebreak
 \appendix
