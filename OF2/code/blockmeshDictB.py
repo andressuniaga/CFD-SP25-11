@@ -140,7 +140,7 @@ blocks
         if i == N - (N//4+N//8) - 1:
             block = f"\
             // block {i}\n\
-            hex ({i-N//8} {i+N//4+N//8} {i-N//8+1} {i-N//8-N//4+1} {i+N-N//8} {i+N + N//8 + N//4} {i+N-N//8+1} {i+N-N//8-N//4+1}) ({resX+10} {resY} {resZ}) simpleGrading ({2*gradeX:.4e} {gradeY:.4e} {gradeZ:.1e})\n\n"
+            hex ({i-N//8} {i+N//4+N//8} {i-N//8+1} {i-N//8-N//4+1} {i+N-N//8} {i+N + N//8 + N//4} {i+N-N//8+1} {i+N-N//8-N//4+1}) ({resX+20} {resY} {resZ}) simpleGrading ({2*gradeX:.4e} {gradeY:.4e} {gradeZ:.1e})\n\n"
             blocks+=block
 
     blocks = blocks + ");\n"
