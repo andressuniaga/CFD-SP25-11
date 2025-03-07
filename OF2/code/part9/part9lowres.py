@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 # 1 is for L/D Part
 # 2 is for ur,utheta
 
-select = 2
+select = 1
 
 
 match select:
@@ -115,9 +115,13 @@ match select:
         for i in range(len(x3pi4)):
             s3pi4[i] = np.sqrt(x3pi4[i]**2 + y3pi4[i]**2)
 
+
+        # distances
         spi4 = spi4-spi4[0]
         spi2 = spi2 - spi2[0]
         s3pi4 - s3pi4 - s3pi4[0]
+
+        #radial and tangential velcocities
 
         urpi4 = np.zeros(len(upi4))
         utpi4 = np.zeros(len(upi4))
@@ -129,8 +133,48 @@ match select:
         ut3pi4 = np.zeros(len(u3pi4))
 
         for i in range(len(upi4)):
-            urpi4[i] = np.sqrt(upi4[i]**2 + vpi4[i]**2)*np
-            utpi4[i] = 
+            urpi4[i] = upi4[i]*np.cos(np.pi/4) + vpi4[i]*np.sin(np.pi/4)
+            utpi4[i] = -upi4[i]*np.sin(np.pi/4) + vpi4[i]*np.cos(np.pi/4)
+
+        for i in range(len(upi2)):
+            urpi2[i] = upi2[i]*np.cos(np.pi/2) + vpi2[i]*np.sin(np.pi/2)
+            utpi2[i] = -upi2[i]*np.sin(np.pi/2) + vpi2[i]*np.cos(np.pi/2)
+
+        for i in range(len(u3pi4)):
+            ur3pi4[i] = u3pi4[i]*np.cos(3*np.pi/4) + v3pi4[i]*np.sin(3*np.pi/4)
+            ut3pi4[i] = -u3pi4[i]*np.sin(3*np.pi/4) + v3pi4[i]*np.cos(3*np.pi/4)
+
+
+        plt.figure(1,figsize=(8,6))
+        plt.plot(spi4,urpi4,linewidth=1.5,label="Radial Velocity")
+        plt.plot(spi4,utpi4,linewidth=1.5,label="Tangential Velocity")
+        plt.title(r"At $\pi/4$")
+        plt.ylabel("Velocity")
+        plt.xlabel("Distance from Cylinder")
+        plt.grid()
+        plt.legend()
+
+        plt.figure(2,figsize=(8,6))
+        plt.plot(spi2,urpi2,linewidth=1.5,label="Radial Velocity")
+        plt.plot(spi2,utpi2,linewidth=1.5,label="Tangential Velocity")
+        plt.title(r"At $\pi/2$")
+        plt.ylabel("Velocity")
+        plt.xlabel("Distance from Cylinder")
+        plt.grid()
+        plt.legend()
+
+        plt.figure(3,figsize=(8,6))
+        plt.plot(s3pi4,ur3pi4,linewidth=1.5,label="Radial Velocity")
+        plt.plot(s3pi4,ut3pi4,linewidth=1.5,label="Tangential Velocity")
+        plt.title(r"At $3\pi/4$")
+        plt.ylabel("Velocity")
+        plt.xlabel("Distance from Cylinder")
+        plt.grid()
+        plt.legend()
+    
+        plt.show()
+    
+
 
 
 
