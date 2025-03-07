@@ -80,8 +80,8 @@ blocks
 """
 
     resX = 10*2
-    resY = 20*2
-    resZ = 1*2
+    resY = 20
+    resZ = 1
     gradeX = 2
     gradeY = 1
     gradeZ = 1
