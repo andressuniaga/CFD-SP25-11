@@ -23,10 +23,10 @@ def blockMeshDict(intro1,intro2,verts,blocks,edges,faces):
 if __name__ == "__main__":
     # Parameters for Mesh A
     D = 1 # diameter of cylinder
-    Lf = 5
-    Lw = 10
+    Lf = 4
+    Lw = 8
     R = 1.0 
-    H = 5
+    H = 4
     
     N = 32 # NOTE: Treat this as a CONST variable
     # DO NOT CHANGE; this blockMeshDict creation does not adapt to higher number of vertices
