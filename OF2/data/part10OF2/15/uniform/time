@@ -4,23 +4,26 @@
    \\    /   O peration     | Website:  https://openfoam.org
     \\  /    A nd           | Version:  7
      \\/     M anipulation  |
--------------------------------------------------------------------------------
-Description
-    Writes out values of fields from cells nearest to specified locations.
-
 \*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "15/uniform";
+    object      time;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#includeEtc "caseDicts/postProcessing/probes/probes.cfg"
+value           15.000000000000945;
 
-fields (p U);
-probeLocations
-(
-   // each entry is a separate probe 
-   // make sure to change (x1 y1 z1) and (x2 y2 z2) to
-   // the probe coordinates
+name            "15";
 
-   (2.0 -0.5 0.0)
-   (2.0  0.5 0.0)
-);
+index           3000;
+
+deltaT          0.005;
+
+deltaT0         0.005;
+
 
 // ************************************************************************* //
