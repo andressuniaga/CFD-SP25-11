@@ -24,7 +24,7 @@ if __name__ == "__main__":
     # Parameters for Mesh A
     D = 1 # diameter of cylinder
     Lf = 4
-    Lw = 6
+    Lw = 8
     R = 1.0 
     H = 4
     

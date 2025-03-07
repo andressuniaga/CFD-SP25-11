@@ -1,0 +1,79 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 7
+Exec   : postProcess -func singleGraph
+Date   : Mar 06 2025
+Time   : 19:00:12
+Host   : "login4.frontera.tacc.utexas.edu"
+PID    : 40331
+I/O    : uncollated
+Case   : /work2/10531/andressuniaga/frontera/COE-347-SP25/run/circular-cylinder
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Reading set description:
+    front
+    back
+
+Time = 0
+
+Reading fields:
+    volScalarFields: p
+    volVectorFields: U
+
+Executing functionObjects
+
+Time = 5
+
+Reading fields:
+    volScalarFields: p
+    volVectorFields: U
+
+Executing functionObjects
+
+Time = 10
+
+Reading fields:
+    volScalarFields: p
+    volVectorFields: U
+
+Executing functionObjects
+
+Time = 15
+
+Reading fields:
+    volScalarFields: p
+    volVectorFields: U
+
+Executing functionObjects
+
+Time = 20
+
+Reading fields:
+    volScalarFields: p
+    volVectorFields: U
+
+Executing functionObjects
+
+Time = 25
+
+Reading fields:
+    volScalarFields: p
+    volVectorFields: U
+
+Executing functionObjects
+
+End
+

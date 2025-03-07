@@ -115,13 +115,13 @@ NOTE: Code included in the \hyperlink{code}{Appendix} to reproduce meshes.
    
    \vspace{1em} % Adds spacing between rows
 
-   \begin{subfigure}{0.495\linewidth}
+   \begin{subfigure}{0.65\linewidth}
        \centering
        \includegraphics[width=\linewidth]{visuals/re20_p.png}
        \caption{$p/\rho U^{2}$}
    \end{subfigure}
 
-   \caption{Velocity and pressure distributions}
+   \caption{Velocity and pressure distributions for steady solution}
 \end{figure}
 
 
@@ -131,8 +131,32 @@ NOTE: Code included in the \hyperlink{code}{Appendix} to reproduce meshes.
    \caption{Visulaizing streamlines for steady solution}
 \end{figure}
 
-
 \subsection{Re=110}  
+
+\begin{figure}[H]
+   \centering
+   \begin{subfigure}{0.495\linewidth}
+       \centering
+       \includegraphics[width=\linewidth]{visuals/re_110_UX.png}
+       \caption{$u/U$}
+   \end{subfigure}
+   \hfill
+   \begin{subfigure}{0.495\linewidth}
+       \centering
+       \includegraphics[width=\linewidth]{visuals/re_110_Uy.png}
+       \caption{$v/U$}
+   \end{subfigure}
+   
+   \vspace{1em} % Adds spacing between rows
+
+   \begin{subfigure}{0.65\linewidth}
+       \centering
+       \includegraphics[width=\linewidth]{visuals/re_110_pressure.png}
+       \caption{$p/\rho U^{2}$}
+   \end{subfigure}
+
+   \caption{Velocity and pressure distributions for the unsteady solution}
+\end{figure}
 
 \pagebreak 
 
@@ -146,10 +170,20 @@ NOTE: Code included in the \hyperlink{code}{Appendix} to reproduce meshes.
 
 \section{Steady Flow: velocity in the boundary layer, separation length, and rate of strain at the cylinder's wall}
 \subsection{Radial and Tangential velocity}
+We will extract $u$ and $v$ components of velocity along lines at angles $\theta = \{\pi/4,\; \pi/2,\; 3\pi/4\}$. 
 
 \subsection{Rate of strain}
 
 \subsection{Length of recirculation region}
+
+\pagebreak
+\section{Drag Coefficient for the circular cylinder}
+\begin{figure}[H]
+   \centering
+   \includegraphics[width = 0.85\linewidth]{images/bonus_method_paraviewimg.png}
+   \caption{Image of lines used for post processing}
+\end{figure}
+
 
 
 \pagebreak
