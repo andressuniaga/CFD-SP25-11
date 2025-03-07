@@ -92,6 +92,25 @@ Since \textsc{OpenFOAM} is inherently a 3-dimensional solver, we generate our bl
 
 NOTE: Code included in the \hyperlink{code}{Appendix} to reproduce meshes.
 
+\subsection{Mesh files}
+Attached with report submission. Also in the teams Github linked in the \hyperlink{code}{Appendix}.
+
+\subsection{Visualization}
+\begin{figure}[H]
+   \centering
+   \includegraphics[width = 0.85\linewidth]{images/meshAimage.png}   
+   \caption{Mesh A in \textit{ParaView}}
+\end{figure}
+\begin{figure}[H]
+   \centering
+   \includegraphics[width = 0.85\linewidth]{images/meshBimage.png}   
+   \caption{Mesh B in \textit{ParaView}}
+\end{figure}
+
+A longer wake region, $L_{w}$, is chosen for Mesh B to observe the vortex shedding.
+
+
+
 
 
 \pagebreak
@@ -169,12 +188,27 @@ NOTE: Code included in the \hyperlink{code}{Appendix} to reproduce meshes.
 \pagebreak
 
 \section{Steady Flow: velocity in the boundary layer, separation length, and rate of strain at the cylinder's wall}
+\begin{figure}[H]
+   \centering
+   \includegraphics[width = 0.85\linewidth]{images/part9-anglelines.png}   
+   \caption{Lines at angles $\theta = \pi/4,\; \pi/2,\; 3\pi/4$ and horizontal line for finding $L/D$}
+\end{figure}
+
 \subsection{Radial and Tangential velocity}
 We will extract $u$ and $v$ components of velocity along lines at angles $\theta = \{\pi/4,\; \pi/2,\; 3\pi/4\}$. 
 
 \subsection{Rate of strain}
 
 \subsection{Length of recirculation region}
+For finding the length of the recirculation region we will find the point at which velocity reaches $0$ and find the difference in that x-position to point at which the recirculation region begins, i.e. $x = 0.5$.
+
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=0.75\linewidth]{images/ParkPaper_RevsLD.png}
+   \caption{$L/d$ vs $Re$ in \textit{Park} paper,$L/d\approx 1$ at $Re=20$ }
+\end{figure}
+
+
 
 \pagebreak
 \section{Drag Coefficient for the circular cylinder}
@@ -203,6 +237,5 @@ PDF of code starts on next page.
 
 Additionally, team repository: \url{https://github.com/andressuniaga/CFD-SP25-11}
 
-% \includepdf[pages=-]{}
-
+\includepdf[pages=-]{CFDOF2Code.pdf}
 \end{document}
