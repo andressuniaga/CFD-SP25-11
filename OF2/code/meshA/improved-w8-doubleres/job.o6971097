@@ -1,0 +1,8 @@
+/work2/09591/murrater/frontera/COE-347-SP25/OF2/circular-cylinder-MeshA-wake8doubleRes
+Thu Mar  6 18:39:35 CST 2025
+Running blockMesh on /work2/09591/murrater/frontera/COE-347-SP25/OF2/circular-cylinder-MeshA-wake8doubleRes
+Running checkMesh on /work2/09591/murrater/frontera/COE-347-SP25/OF2/circular-cylinder-MeshA-wake8doubleRes
+Running decomposePar on /work2/09591/murrater/frontera/COE-347-SP25/OF2/circular-cylinder-MeshA-wake8doubleRes
+Running icoFoam in parallel on /work2/09591/murrater/frontera/COE-347-SP25/OF2/circular-cylinder-MeshA-wake8doubleRes using 32 processes
+Running reconstructPar on /work2/09591/murrater/frontera/COE-347-SP25/OF2/circular-cylinder-MeshA-wake8doubleRes
+Thu Mar  6 18:39:48 CST 2025
