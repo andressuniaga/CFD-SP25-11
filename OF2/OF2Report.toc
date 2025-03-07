@@ -1,14 +1,16 @@
 \contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
 \contentsline {section}{\numberline {2}Assembly of preliminary meshes}{4}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Schematic of Mesh Generation}{4}{subsection.2.1}%
-\contentsline {section}{\numberline {3}Solution for Re=20 and 110}{6}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Re=20}{6}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Re=110}{8}{subsection.3.2}%
-\contentsline {section}{\numberline {4}Improving the Mesh}{9}{section.4}%
-\contentsline {section}{\numberline {5}Unsteady Flow: Strouhal Number of the vortex shedding}{10}{section.5}%
-\contentsline {section}{\numberline {6}Steady Flow: velocity in the boundary layer, separation length, and rate of strain at the cylinder's wall}{11}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Radial and Tangential velocity}{11}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Rate of strain}{11}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Length of recirculation region}{11}{subsection.6.3}%
-\contentsline {section}{\numberline {7}Drag Coefficient for the circular cylinder}{12}{section.7}%
+\contentsline {subsection}{\numberline {2.2}Mesh files}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Visualization}{6}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Solution for Re=20 and 110}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Re=20}{7}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Re=110}{9}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Improving the Mesh}{10}{section.4}%
+\contentsline {section}{\numberline {5}Unsteady Flow: Strouhal Number of the vortex shedding}{11}{section.5}%
+\contentsline {section}{\numberline {6}Steady Flow: velocity in the boundary layer, separation length, and rate of strain at the cylinder's wall}{12}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Radial and Tangential velocity}{12}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Rate of strain}{12}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Length of recirculation region}{12}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Drag Coefficient for the circular cylinder}{14}{section.7}%
 \contentsline {section}{\numberline {A}Code}{}{appendix.A}%
