@@ -36,6 +36,193 @@
 \pagebreak
 
 \section{Governing Equations}
+\subsection{Two-dimensional Euler equations}
+We consider the Euler equations in $\bR^{2}$ complemented by the equation of state of an ideal gas (Eq. \ref{IGL}) with the specific heat ratio $\gamma = 1.4$. The two-dimensional Euler equations read:
+\begin{equation}
+   \frac{\partial \textbf{U}}{\partial t} + \frac{\partial \textbf{F}}{\partial x} + \frac{\partial \textbf{G}}{\partial y} = 0
+\end{equation}
+
+Where $\textbf{U}$ is the state vector, $\textbf{F}$ is the x-flux vector, and $\textbf{G}$ is the y-flux vector. 
+\vspace{2.5mm}
+
+From the assumptions of Euler equations, e.g., no body forces and inviscid and isothermal flow, the simplified form \textit{Navier-Stokes Equations} read:
+
+\begin{itemize}
+   \item Continuity : 
+   \begin{equation}
+       \frac{\partial \rho}{\partial t} + \rho \left(\frac{\partial u}{\partial x} + \frac{\partial v}{\partial y}\right) = 0 
+   \end{equation}
+
+   \item X-Momentum : 
+   \begin{equation}
+       \frac{\partial \rho \textbf{u}}{\partial t} + \rho \left(\frac{\partial u^{2}}{\partial x} + \frac{\partial uv}{\partial y}\right) = -\frac{\partial p}{\partial x}
+   \end{equation}
+
+   \item Y-Momentum : 
+   \begin{equation}
+       \frac{\partial \rho \textbf{v}}{\partial t} + \rho \left(\frac{\partial uv}{\partial x} + \frac{\partial v^2}{\partial y}\right) = -\frac{\partial p}{\partial y}
+   \end{equation}
+
+   \item Energy (inviscid simplification): 
+   \begin{equation}
+       \frac{\partial E}{\partial t} + E \left(\frac{\partial u}{\partial x} + \frac{\partial v}{\partial y}\right) = -p \left(\frac{\partial u}{\partial x} + \frac{\partial v}{\partial y}\right)
+   \end{equation}
+
+   Where \underline{$E = \rho (e + ||\bm{u}||^{2}/2)$}. $e$ is the internal energy of the fluid per unit mass (Joule per kilogram in SI).
+\end{itemize}
+
+Thus the state vector 
+$\textbf{U} = 
+\begin{bmatrix}
+\rho \\[2mm]
+\rho u \\[2mm]
+\rho v \\[2mm]
+\rho (e + \frac{1}{2}(u^{2}+v^{2}))    
+\end{bmatrix} = \begin{bmatrix}
+   \rho \\[2mm]
+   \rho u \\[2mm]
+   \rho v \\[2mm]
+   E    
+   \end{bmatrix}$.
+\vspace{5mm}
+
+The x-flux vector 
+$\textbf{F} = 
+\begin{bmatrix}
+    \rho u \\[2mm]
+    \rho u^{2} + p \\[2mm]
+    \rho u v \\[2mm]
+    (\rho (e + \frac{1}{2}(u^{2}+v^{2})) + p)* u
+\end{bmatrix} = \begin{bmatrix}
+   \rho u \\[2mm]
+   \rho u^{2} + p \\[2mm]
+   \rho u v \\[2mm]
+   (E + p)(u)
+\end{bmatrix}$
+\vspace{5mm}
+
+The y-flux vector
+$\textbf{G} = 
+\begin{bmatrix}
+    \rho v \\[2mm]
+    \rho v u \\[2mm]
+    \rho v^2 + p \\[2mm]
+    (\rho (e + \frac{1}{2}(u^{2}+v^{2})) + p)(v)
+\end{bmatrix} = \begin{bmatrix}
+   \rho v \\[2mm]
+   \rho v u \\[2mm]
+   \rho v^2 + p \\[2mm]
+   (E + p)(v)
+\end{bmatrix}$
+\vspace{5mm}
+
+
+The \textit{Ideal Gas Law} is our equation of state that relates the variables, $\rho$ which is our fluids density, $p$ the local pressure, $R$ the molecular gas constant, and $T$ the local temperature. 
+\vspace{1mm}
+
+\begin{equation}
+   p = \rho RT 
+   \label{IGL}
+\end{equation}
+\vspace{1.5mm}
+
+Using the first law of Thermodynamics, $p$ can be related to the specific internal energy $e$ and the specific heat ratio $\gamma$ by:
+
+\begin{equation}
+   e = \frac{p}{\rho(\gamma-1)}
+\end{equation}
+\vspace{1.5mm}
+
+These can be combined for a new expression that expresses \( p \) entirely in terms of the state vector \( \mathbf{U} \), allowing the flux vectors \( \mathbf{F(U)} \) and \( \mathbf{G(U)} \) to be evaluated directly from conserved quantities.
+\vspace{1mm}
+
+\begin{equation}
+    p = (\gamma - 1)\left(E - \frac{1}{2} \rho (u^2 + v^2)\right)
+\end{equation}
+\vspace{2mm}
+
+
+\subsection{Local Sound Speed and Mach Number}
+To analyze compressible flow behavior, we often need the local sound speed and Mach number.
+\vspace{2.5mm}
+
+\textbf{Local Sound Speed:}
+
+The local speed of sound \( a \) in a compressible fluid is given by the equation:
+
+\begin{equation}
+    a = \sqrt{\gamma R T} =\sqrt{\gamma \frac{p}{\rho}}
+    \label{speedofsound}
+\end{equation}
+
+\textbf{Local Mach Number:}
+
+The local Mach number \( M \) is defined as the ratio of the flow speed to the local speed of sound:
+
+\begin{equation}
+M = \frac{\sqrt{u^2 + v^2}}{a}
+\label{Mach_equation}
+\end{equation}
+
+where \( u \) and \( v \) are the flow velocity components in the \( x \) and \( y \) directions, respectively.
+
+\subsection{Normal Shock and Isentropic Flow Relations}
+Here we look at the equations for normal shocks and isentropic flows,i.e., adiabatic and reversible.
+\vspace{2.5mm}
+
+For a normal shock with upstream (region 1) Mach number \(M_1\) and downstream (region 2) Mach number \(M_2\), the following standard jump conditions apply (for a perfect gas with ratio of specific heats \(\gamma\)):
+
+\begin{itemize}
+    \item \textbf{Static Pressure Ratio:}
+    \begin{equation}
+        \frac{p_2}{p_1} = 1 + \frac{2\,\gamma}{\gamma + 1} \bigl(M_1^2 - 1\bigr).
+        \label{pressure_ratio}
+    \end{equation}
+    where:
+    \begin{itemize}
+        \item \( p_1 \): upstream (pre-shock) static pressure,
+        \item \( p_2 \): downstream (post-shock) static pressure.
+    \end{itemize}
+
+    \item \textbf{Downstream Mach Number:}
+    \begin{equation}
+        M_2^2 = \frac{1 + \tfrac{\gamma - 1}{2}\,M_1^2}{\gamma\,M_1^2 - \tfrac{\gamma - 1}{2}}.
+        \label{mach2equation}
+    \end{equation}
+\end{itemize}
+
+Once the flow is on either side of a shock (and assuming no further shocks/viscous effects in that region), it can be treated as isentropic. In an isentropic flow of a perfect gas:
+\begin{itemize}
+    \item \textbf{Isentorpic Pressure Relation: }
+    \begin{equation}
+      p_{0} = p\cdot(1+\dfrac{(\gamma - 1)}{2}M_{1}^{2})^{\frac{\gamma}{\gamma-1}}
+      \label{isentropic_pressure}
+   \end{equation}
+   where:
+   \begin{itemize}
+       \item \( p_0 \): total (stagnation) pressure,
+       \item \( p \): static pressure at a given point in the flow,
+       \item \( M \): local Mach number at that point.
+   \end{itemize}
+\end{itemize}
+
+\subsection{Step Example}
+ Considering a flow over our step at $M=3$ and $p=1$ Pa, what is the pressure at the stagnation point (x=0.6m, y=0) on the surface of the step? In effect, we are looking for the static properties past the shock. We will employ the equations laid out above.
+\vspace{2mm}
+
+\begin{figure}[H]
+   \centering
+   \includegraphics[width = 0.75\linewidth]{images/stepexample.png}
+   \caption{Overview of the Flow}
+   \label{overview}
+\end{figure}
+
+
+Using Equation \ref{isentropic_pressure} we can obtain the total pressure in the first region $p_{0_{1}} = 36.73\; \text{Pa}$. We can also obtain the local Mach past the shock using Equation \ref{mach2equation}, $M_{2} = 0.4752$. We can obtain our static pressure past the shock as $\boxed{p_{2} =  p_{1}*\text{Eq. \ref{pressure_ratio}} = 10.33\; \text{Pa}}$.
+\vspace{2mm}
+
+Additionally we can calculate the total pressure past the shock using the same isentropic relation in Equation \ref{isentropic_pressure}, $p_{0_{2}} = 12.06\; \text{Pa}$.
+
 
 \pagebreak
 
