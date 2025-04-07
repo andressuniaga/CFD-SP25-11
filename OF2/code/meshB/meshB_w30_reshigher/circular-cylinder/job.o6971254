@@ -1,8 +1,0 @@
-/work2/09578/nicoleolv/frontera/coe347/circular-cylinder
-Thu Mar  6 20:13:16 CST 2025
-Running blockMesh on /work2/09578/nicoleolv/frontera/coe347/circular-cylinder
-Running checkMesh on /work2/09578/nicoleolv/frontera/coe347/circular-cylinder
-Running decomposePar on /work2/09578/nicoleolv/frontera/coe347/circular-cylinder
-Running icoFoam in parallel on /work2/09578/nicoleolv/frontera/coe347/circular-cylinder using 16 processes
-Running reconstructPar on /work2/09578/nicoleolv/frontera/coe347/circular-cylinder
-Thu Mar  6 20:26:40 CST 2025
