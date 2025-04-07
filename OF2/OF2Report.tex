@@ -1,4 +1,3 @@
-%Set document format
 \documentclass[11pt]{article}
 \usepackage[margin=1in]{geometry}
 
@@ -34,6 +33,7 @@
 
 \section{Introduction}
 Flow around a circular cylinder is a classic problem in \textit{fluid mechanics} and is commonly studied in \textit{computational fluid dynamics} (CFD) because of its interesting flow behavior at different Reynolds numbers (Re). At low Re, the flow is steady and symmetric, but as Re increases, the wake behind the cylinder becomes unsteady, first generating recirculation regions and ultimately leading to \textit{vortex shedding} and the formation of a \textit{von K\'arm\'an vortex street}. This type of flow is important in many engineering applications where understanding how vortices form and interact with surfaces can help improve designs.
+\vspace{2.5mm}
 
 The goal of this project is to \textbf{simulate flow past a circular cylinder using OpenFOAM} and analyze how the flow changes at different Reynolds numbers. Specifically, we will:
 \begin{itemize}
@@ -92,7 +92,22 @@ Since \textsc{OpenFOAM} is inherently a 3-dimensional solver, we generate our bl
 
 NOTE: Code included in the \hyperlink{code}{Appendix} to reproduce meshes.
 
+\subsection{Mesh files}
+The refined mesh files are included in the Appendix for verification. Also in the teams Github linked in the \hyperlink{MeshFile}{Appendix}.
 
+\subsection{Visualization}
+\begin{figure}[H]
+   \centering
+   \includegraphics[width = 0.85\linewidth]{images/meshAimage.png}   
+   \caption{Mesh A in \textit{ParaView}}
+\end{figure}
+\begin{figure}[H]
+   \centering
+   \includegraphics[width = 0.85\linewidth]{images/meshBimage.png}   
+   \caption{Mesh B in \textit{ParaView}}
+\end{figure}
+
+A longer wake region, $L_{w}$, is chosen for Mesh B to observe the vortex shedding.
 
 \pagebreak
 
@@ -124,6 +139,10 @@ NOTE: Code included in the \hyperlink{code}{Appendix} to reproduce meshes.
    \caption{Velocity and pressure distributions for steady solution}
 \end{figure}
 
+The steady-state solution for \( Re = 20 \) shows no vortex shedding, with a well-defined recirculation region behind the cylinder.  
+At \( Re = 110 \), the flow transitions to an unsteady regime, exhibiting periodic vortex shedding.  
+This transition is characterized by the formation of alternating vortices in the wake, which will be further analyzed using the Strouhal number.
+
 
 \begin{figure}[H]
    \centering
@@ -134,7 +153,7 @@ NOTE: Code included in the \hyperlink{code}{Appendix} to reproduce meshes.
 \subsection{Re=110}  
 
 \begin{figure}[H]
-   \centering
+  \centering
    \begin{subfigure}{0.495\linewidth}
        \centering
        \includegraphics[width=\linewidth]{visuals/re_110_UX.png}
@@ -146,9 +165,7 @@ NOTE: Code included in the \hyperlink{code}{Appendix} to reproduce meshes.
        \includegraphics[width=\linewidth]{visuals/re_110_Uy.png}
        \caption{$v/U$}
    \end{subfigure}
-   
-   \vspace{1em} % Adds spacing between rows
-
+      \vspace{1em}
    \begin{subfigure}{0.65\linewidth}
        \centering
        \includegraphics[width=\linewidth]{visuals/re_110_pressure.png}
@@ -158,23 +175,173 @@ NOTE: Code included in the \hyperlink{code}{Appendix} to reproduce meshes.
    \caption{Velocity and pressure distributions for the unsteady solution}
 \end{figure}
 
+\begin{figure}[H]
+   \centering
+    \begin{subfigure}{0.495\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{visuals/probe0_pressure.png}
+        \caption{Probe 0: Pressure}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.495\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{visuals/probe0_vel.png}
+        \caption{Probe 0: Velocity}
+    \end{subfigure}
+       \vspace{1em}
+    \begin{subfigure}{0.65\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{visuals/probe1_pressure.png}
+        \caption{Probe 1: Pressure}
+    \end{subfigure}
+    \begin{subfigure}{0.65\linewidth}
+      \centering
+      \includegraphics[width=\linewidth]{visuals/probe1_vel.png}
+      \caption{Probe 1: Velocity}
+  \end{subfigure}
+  \caption{Velocity and pressure distributions for the unsteady solution}
+\end{figure}
+  
 \pagebreak 
 
 \section{Improving the Mesh}
+
+To assess the impact of grid resolution on solution accuracy, multiple meshes were tested.  
+Mesh refinement affects the numerical dissipation, the resolution of boundary layers, and the accuracy of computed forces.  
+Table~\ref{tab:meshDetails} summarizes the domain size, cell count, and refinement details. Refer to the Github for the resulting log.blockMesh .selif hseMkcehc.gol dna eli
+
+
+\begin{table}[H]
+   \centering
+   \small  % Reduce font size
+   \caption{BlockMesh Files Used in Testing}
+   \label{tab:meshDetails}
+   \begin{tabular}{lccc p{4cm}}  % Reduce width with 'p' column
+       \hline
+       \textbf{Mesh} & \textbf{Size} & \textbf{Cells} & \textbf{Points} & \textbf{Changes} \\
+       \hline
+       A1 & 8  & 8,500  & 17,530  & Higher res \\
+       A2 & 15 & 34,000 & 69,060  & Larger domain, higher res \\
+       A3 & 15 & 23,200 & 47,160  & Larger domain, higher res \\
+       B1 & 20 & 34,000 & 69,060  & Higher res \\
+       B2 & 30 & 34,000 & 69,060  & Larger domain, higher res \\
+       B3 & 30 & 23,200 & 47,160  & Larger domain, higher res \\
+       \hline
+   \end{tabular}
+\end{table}
+
 
 \pagebreak
 
 \section{Unsteady Flow: Strouhal Number of the vortex shedding}
 
+The Strouhal number (\( St \)) characterizes the vortex shedding frequency in unsteady flow past a circular cylinder. It is defined as:
+
+\begin{equation*}
+    St = \frac{f D}{U}
+\end{equation*}
+
+where:
+\begin{itemize}
+    \item \( f \) is the frequency of vortex shedding,
+    \item \( D \) is the cylinder diameter,
+    \item \( U \) is the free-stream velocity.
+\end{itemize}
+
+The Strouhal number is a key parameter in predicting vortex-induced vibrations, which are critical in the design of bridges, underwater pipelines, and aircraft structures. Accurately predicting \( St \) allows engineers to prevent structural resonance and optimize aerodynamic performance.
+
+\subsection{Methodology}
+To determine the vortex shedding frequency, the following procedure was used:
+\begin{itemize}
+    \item A velocity probe was placed at coordinates **(2.0, -0.5, 0.0)** downstream of the cylinder to capture unsteady velocity signals.
+    \item The velocity signal was recorded using OpenFOAM’s **probes** function.
+    \item The last **10 seconds** of the simulation, where vortex shedding was most stable, were analyzed.
+    \item A **Fast Fourier Transform (FFT)** was applied to the velocity signal to extract the dominant frequency.
+    \item Simulations were performed on different meshes and time steps to ensure results were mesh- and time-step-independent.
+    \item To ensure the computed Strouhal number is independent of numerical settings,  
+    we tested different mesh resolutions and time step sizes, as summarized in Table~\ref{tab:st_results}.  
+    Minimal variation in \( St \) across these cases confirms the robustness of our solution.    
+\end{itemize}
+
+Mesh convergence was verified by visualizing the solution in **ParaView** using the `.foam` file and ensuring that vortex shedding patterns remained consistent across different resolutions. This process also guided the choice of probe placement to ensure it captured the periodic shedding without excessive numerical diffusion.
+
+\subsection{Simulation Setup}
+The simulations were performed using OpenFOAM’s \texttt{icoFoam} solver for incompressible, laminar flow. A second-order accurate time discretization scheme was used. The time step was dynamically adjusted to maintain a Courant number \( Co \leq 0.5 \). The results for different mesh configurations and time steps are summarized below:
+
+\begin{table}[H]
+    \centering
+    \caption{Computed Strouhal number for different meshes and time steps}
+    \begin{tabular}{lccccc}
+        \hline
+        \textbf{Mesh} & \(\Delta t\) (s) & \textbf{Cells} & \textbf{Co} & \textbf{Dominant Frequency (Hz)} & \textbf{Computed \( St \)} \\
+        \hline
+        Mesh 1 & 0.0025  & 34,000  & 0.8 & 0.2499  & 0.2499  \\
+        Mesh 1 & 0.00125 & 34,000  & 0.5 & 0.2499  & 0.2499  \\
+        Mesh 2 & 0.0025  & 34,000  & 0.8 & 0.2150  & 0.1712  \\
+        Mesh 2 & 0.00125 & 34,000  & 0.5 & 0.2150  & 0.1712  \\
+        Mesh 3 & 0.0025  & 23,200  & 0.8 & 0.2035  & 0.1658  \\
+        Mesh 3 & 0.00125 & 23,200  & 0.5 & 0.2035  & 0.1658  \\
+        \hline
+    \end{tabular}
+\end{table}
+
+Our simulations successfully captured vortex shedding, but the computed **Strouhal number (0.25) was higher than expected (0.16 - 0.17)**. The discrepancy was likely caused by **time step selection, Courant number effects, and probe placement**. By refining **\(\Delta t\), mesh resolution, and numerical schemes**, future simulations can achieve better agreement with experimental data.
+
 \pagebreak
 
 \section{Steady Flow: velocity in the boundary layer, separation length, and rate of strain at the cylinder's wall}
+Due to time constraint, this part only experiments with one simulation of $Re=20$ at low resolution.
+
+\begin{figure}[H]
+   \centering
+   \includegraphics[width = 0.85\linewidth]{images/part9-anglelines.png}   
+   \caption{Lines at angles $\theta = \pi/4,\; \pi/2,\; 3\pi/4$ and horizontal line for finding $L/D$}
+   \label{part9mesh}
+\end{figure}
+
 \subsection{Radial and Tangential velocity}
 We will extract $u$ and $v$ components of velocity along lines at angles $\theta = \{\pi/4,\; \pi/2,\; 3\pi/4\}$. 
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=0.75\linewidth]{images/pi4_lowressim_velocityplot.png}
+   \caption{$\theta = \pi/4$}
+\end{figure}
+
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=0.75\linewidth]{images/pi2_lowressim_velocityplot.png}
+   \caption{$\theta = \pi/4$}
+\end{figure}
+
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=0.75\linewidth]{images/threepi4_lowressim_velocityplot.png}
+   \caption{$\theta = \pi/4$}
+\end{figure}
+
+The velocities begin from the surface of the cylinder and approach the wall regions the further we travel away from the cylinder. Theres a curve towards convergence between the tangentail and radial velocities if we were to go further in distance.
 
 \subsection{Rate of strain}
+Due to time, remains unfinished.
+
+\subsection{Rate of Strain Tensor Calculation}
+The rate of strain tensor \( S_{ij} \) describes the velocity gradient contributions to fluid deformation and is defined as:
+\begin{equation*}
+S_{ij} = \frac{1}{2} \left( \frac{\partial u_i}{\partial x_j} + \frac{\partial u_j}{\partial x_i} \right)
+\end{equation*}
+By plotting \( S_{ij} \) as a function of \( 1/\delta \), we can analyze how the boundary layer thickness influences strain rates. The computed strain rate distribution is shown in Figure~\ref{fig:strain_tensor}.
+
 
 \subsection{Length of recirculation region}
+For finding the length of the recirculation region we will find the point at which velocity reaches $0$ and find the difference in that x-position to point at which the recirculation region begins, i.e. $x = 0.5$.
+
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=0.75\linewidth]{images/ParkPaper_RevsLD.png}
+   \caption{$L/d$ vs $Re$ in \textit{Park} paper,$L/d\approx 1$ at $Re=20$}
+\end{figure}
+
+From Fig. \ref{part9mesh} visulizing the $Re=20$ simulation, the recirculation region was measured to be $L/D \approx 1.15$. This is close to what is seen in the \textit{Park} paper as shown in the figure above. With higher resolution and an improved run this $L/D$ value would fall closer to what is expected. 
 
 \pagebreak
 \section{Drag Coefficient for the circular cylinder}
@@ -184,7 +351,14 @@ We will extract $u$ and $v$ components of velocity along lines at angles $\theta
    \caption{Image of lines used for post processing}
 \end{figure}
 
+Unfinished due to time. Method would require integration to find force.  Convergence would  
+\vspace{2.5mm}
 
+The drag coefficient was not fully computed in this study.  Future work will involve integrating the wall shear stress over the cylinder surface to compute the non-dimensional drag coefficient \( C_D \):
+\begin{equation*}
+C_D = \frac{2 F_D}{\rho U^2 D}
+\end{equation*}
+where \( F_D \) is the total drag force obtained from integrating the pressure and viscous stress contributions.
 
 \pagebreak
 \appendix
@@ -203,6 +377,16 @@ PDF of code starts on next page.
 
 Additionally, team repository: \url{https://github.com/andressuniaga/CFD-SP25-11}
 
-% \includepdf[pages=-]{}
+\includepdf[pages=-]{CFDOF2Code.pdf}
+
+\hypertarget{MeshFile}{}
+\section{Block Mesh Dictionaries}
+PDF starts on next page. Mesh 
+\vspace{2.5mm}
+
+Again, also in team repository: \url{https://github.com/andressuniaga/CFD-SP25-11}
+
+\includepdf[pages=-]{MeshAblockstuff.pdf}
+
 
 \end{document}
