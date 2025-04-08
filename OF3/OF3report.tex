@@ -160,7 +160,7 @@ The local speed of sound \( a \) in a compressible fluid is given by the equatio
 The local Mach number \( M \) is defined as the ratio of the flow speed to the local speed of sound:
 
 \begin{equation}
-M = \frac{\sqrt{u^2 + v^2}}{a}
+M = \frac{\sqrt{u^2 + v^2}}{a} = \frac{|\textbf{U}|}{a}
 \label{Mach_equation}
 \end{equation}
 
@@ -207,7 +207,7 @@ Once the flow is on either side of a shock (and assuming no further shocks/visco
 \end{itemize}
 
 \subsection{Step Example}
- Considering a flow over our step at $M=3$ and $p=1$ Pa, what is the pressure at the stagnation point (x=0.6m, y=0) on the surface of the step? In effect, we are looking for the static properties past the shock. We will employ the equations laid out above.
+ Considering a flow over our step at $M=3$ and $p=1$ Pa, what is the pressure at the stagnation point (x=0.6m, y=0m in Figure \ref{overview}) on the surface of the step? We will employ the equations laid out above.
 \vspace{2mm}
 
 \begin{figure}[H]
@@ -219,14 +219,64 @@ Once the flow is on either side of a shock (and assuming no further shocks/visco
 
 
 Using Equation \ref{isentropic_pressure} we can obtain the total pressure in the first region $p_{0_{1}} = 36.73\; \text{Pa}$. We can also obtain the local Mach past the shock using Equation \ref{mach2equation}, $M_{2} = 0.4752$. We can obtain our static pressure past the shock as $\boxed{p_{2} =  p_{1}*\text{Eq. \ref{pressure_ratio}} = 10.33\; \text{Pa}}$.
-\vspace{2mm}
-
-Additionally we can calculate the total pressure past the shock using the same isentropic relation in Equation \ref{isentropic_pressure}, $p_{0_{2}} = 12.06\; \text{Pa}$.
-
 
 \pagebreak
 
 \section{First Solution}
+In this section we visualize the properties pressure $p$, density $\rho$, velocity $\textbf{U}$, and temperature $T$ after simulating Mach 3 flow over the step for $T=4\; \text{s}$.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.495\linewidth}
+        \includegraphics[width = \linewidth]{images/5_firstsolution_density.png}
+        \caption{Density $\rho$}
+    \end{subfigure}
+    \begin{subfigure}{0.495\linewidth}
+        \includegraphics[width = \linewidth]{images/5_firstsolution_pressure.png}
+        \caption{Pressure $p$}
+    \end{subfigure}
+    \vspace{2.5mm}
+
+    \begin{subfigure}{0.495\linewidth}
+        \includegraphics[width = \linewidth]{images/5_firstsolution_temperature.png}
+        \caption{Temperature $T$}
+    \end{subfigure}
+    \begin{subfigure}{0.495\linewidth}
+        \includegraphics[width = \linewidth]{images/5_firstsolution_U_magnitude.png}
+        \caption{Magnitude of Velocity $|\textbf{U}|$}
+    \end{subfigure}
+    \vspace{2.5mm}
+
+    \begin{subfigure}{0.495\linewidth}
+        \includegraphics[width = \linewidth]{images/5_firstsolution_U_x.png}
+        \caption{x-velocity $u$}
+    \end{subfigure}
+    \begin{subfigure}{0.495\linewidth}
+        \includegraphics[width = \linewidth]{images/5_firstsolution_U_y.png}
+        \caption{y-velocity $v$}
+    \end{subfigure}
+    \caption{Coarse mesh solution, gridpoints can be seen in the pressure plot}
+    \label{coarsesolution}
+\end{figure}
+\vspace{5mm}
+
+Using the built-in calculator in \textit{Paraview}, we are able to employ Equations \ref{speedofsound} and \ref{Mach_equation} to visulaize the Mach and Speed of Sound in our supersonic simulation.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.495\linewidth}
+        \includegraphics[width = \linewidth]{images/5_firstsolution_soundspeed.png}
+        \caption{Speed of Sound $a$}
+    \end{subfigure}    
+    \begin{subfigure}{0.495\linewidth}
+        \includegraphics[width = \linewidth]{images/5_firstsolution_mach.png}
+        \caption{Mach No. $M$}
+    \end{subfigure}    
+    \caption{White countour lines representing sonic flow, i.e., where $M=1$}
+    \label{machandsoundspeed}
+\end{figure}
+
+The pressure at the stagnation grid point in this coarse mesh is $p = 11.9647\; \text{Pa}$. This is close but greater than what has been computed using our normal shock theory.
 
 \pagebreak
 

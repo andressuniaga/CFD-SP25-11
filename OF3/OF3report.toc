@@ -5,6 +5,6 @@
 \contentsline {subsection}{\numberline {2.3}Normal Shock and Isentropic Flow Relations}{4}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Step Example}{5}{subsection.2.4}%
 \contentsline {section}{\numberline {3}First Solution}{6}{section.3}%
-\contentsline {section}{\numberline {4}Converging the Solution}{7}{section.4}%
-\contentsline {section}{\numberline {5}Parallel Solver Performance}{8}{section.5}%
+\contentsline {section}{\numberline {4}Converging the Solution}{8}{section.4}%
+\contentsline {section}{\numberline {5}Parallel Solver Performance}{9}{section.5}%
 \contentsline {section}{\numberline {A}Code}{}{appendix.A}%
