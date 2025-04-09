@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.15)  8 APR 2025 10:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.15)  9 APR 2025 00:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -474,32 +474,32 @@ Package pdftex.def Info: images/stepexample.png  used on input line 215.
 
 
 [5 <./images/stepexample.png>]
-<images/5_firstsolution_density.png, id=118, 1495.5875pt x 922.44624pt>
+<images/5_firstsolution_density.png, id=119, 1495.5875pt x 922.44624pt>
 File: images/5_firstsolution_density.png Graphic file (type png)
 <use images/5_firstsolution_density.png>
 Package pdftex.def Info: images/5_firstsolution_density.png  used on input line 231.
 (pdftex.def)             Requested size: 232.52643pt x 143.41402pt.
-<images/5_firstsolution_pressure.png, id=119, 1495.5875pt x 922.44624pt>
+<images/5_firstsolution_pressure.png, id=120, 1495.5875pt x 922.44624pt>
 File: images/5_firstsolution_pressure.png Graphic file (type png)
 <use images/5_firstsolution_pressure.png>
 Package pdftex.def Info: images/5_firstsolution_pressure.png  used on input line 235.
 (pdftex.def)             Requested size: 232.52643pt x 143.41402pt.
-<images/5_firstsolution_temperature.png, id=120, 1495.5875pt x 922.44624pt>
+<images/5_firstsolution_temperature.png, id=121, 1495.5875pt x 922.44624pt>
 File: images/5_firstsolution_temperature.png Graphic file (type png)
 <use images/5_firstsolution_temperature.png>
 Package pdftex.def Info: images/5_firstsolution_temperature.png  used on input line 241.
 (pdftex.def)             Requested size: 232.52643pt x 143.41402pt.
-<images/5_firstsolution_U_magnitude.png, id=121, 1495.5875pt x 922.44624pt>
+<images/5_firstsolution_U_magnitude.png, id=122, 1495.5875pt x 922.44624pt>
 File: images/5_firstsolution_U_magnitude.png Graphic file (type png)
 <use images/5_firstsolution_U_magnitude.png>
 Package pdftex.def Info: images/5_firstsolution_U_magnitude.png  used on input line 245.
 (pdftex.def)             Requested size: 232.52643pt x 143.41402pt.
-<images/5_firstsolution_U_x.png, id=122, 1495.5875pt x 922.44624pt>
+<images/5_firstsolution_U_x.png, id=123, 1495.5875pt x 922.44624pt>
 File: images/5_firstsolution_U_x.png Graphic file (type png)
 <use images/5_firstsolution_U_x.png>
 Package pdftex.def Info: images/5_firstsolution_U_x.png  used on input line 251.
 (pdftex.def)             Requested size: 232.52643pt x 143.41402pt.
-<images/5_firstsolution_U_y.png, id=123, 1495.5875pt x 922.44624pt>
+<images/5_firstsolution_U_y.png, id=124, 1495.5875pt x 922.44624pt>
 File: images/5_firstsolution_U_y.png Graphic file (type png)
 <use images/5_firstsolution_U_y.png>
 Package pdftex.def Info: images/5_firstsolution_U_y.png  used on input line 255.
@@ -507,12 +507,12 @@ Package pdftex.def Info: images/5_firstsolution_U_y.png  used on input line 255.
 
 
 [6 <./images/5_firstsolution_density.png (PNG copy)> <./images/5_firstsolution_pressure.png (PNG copy)> <./images/5_firstsolution_temperature.png (PNG copy)> <./images/5_firstsolution_U_magnitude.png (PNG copy)> <./images/5_firstsolution_U_x.png (PNG copy)> <./images/5_firstsolution_U_y.png (PNG copy)>]
-<images/5_firstsolution_soundspeed.png, id=131, 1495.5875pt x 922.44624pt>
+<images/5_firstsolution_soundspeed.png, id=132, 1495.5875pt x 922.44624pt>
 File: images/5_firstsolution_soundspeed.png Graphic file (type png)
 <use images/5_firstsolution_soundspeed.png>
 Package pdftex.def Info: images/5_firstsolution_soundspeed.png  used on input line 268.
 (pdftex.def)             Requested size: 232.52643pt x 143.41402pt.
-<images/5_firstsolution_mach.png, id=132, 1495.5875pt x 922.44624pt>
+<images/5_firstsolution_mach.png, id=133, 1495.5875pt x 922.44624pt>
 File: images/5_firstsolution_mach.png Graphic file (type png)
 <use images/5_firstsolution_mach.png>
 Package pdftex.def Info: images/5_firstsolution_mach.png  used on input line 272.
@@ -549,10 +549,10 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  75i,10n,79p,628b,593s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on OF3report.pdf (11 pages, 900402 bytes).
+Output written on OF3report.pdf (11 pages, 900733 bytes).
 PDF statistics:
- 246 PDF objects out of 1000 (max. 8388607)
- 182 compressed objects within 2 object streams
+ 247 PDF objects out of 1000 (max. 8388607)
+ 183 compressed objects within 2 object streams
  39 named destinations out of 1000 (max. 500000)
  126 words of extra memory for PDF output out of 10000 (max. 10000000)
 
