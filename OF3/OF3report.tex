@@ -313,9 +313,9 @@ Parallel efficiency, \(\eta\), is defined as:
     \text{\(\eta\)} = \frac{{T(1)}}{T(P)}
 \end{equation}
 
-indicating how effecively processor resources are being utilized. 
+indicating how effectively processor resources are being utilized. 
 
-We conducted scaling tests on a mesh of approximately one million cells, varying the number of processors from 1 up to 56 processors. The results of these scaling tests are summarized in Table \ref{table:performance} below, which lists the measured time step \(T(P)\), calculated parallel speedup, and parallel efficiency for each  tested processor \(P\).
+We conducted scaling tests on a mesh of approximately one million cells, varying the number of processors from 1 up to 56 processors. The results of these scaling tests are summarized in Table \ref{table:performance} below, which lists the measured time step \(T(P)\), calculated parallel speedup, and parallel efficiency for each  tested processor \(P\). Additionally, Figure~\ref{fig:speedup} illustrates the observed speedup alongside ideal (linear) scaling and theoretical lines representing 80\% and 60\% parallel efficiency.
 
 \begin{table}[H]
     \centering
@@ -332,7 +332,7 @@ We conducted scaling tests on a mesh of approximately one million cells, varying
         56 & 0.0529 & 26.8098 & 47.87 \\
         \hline
     \end{tabular}
-    \caption{Parallel Performance Metrics for \texttt{rhoCentralFoam} Solver for Different \# of Processors}
+    \caption{Parallel Performance Metrics Using Different \# of Processors}
     \label{table:performance}
 \end{table}
 
@@ -343,7 +343,10 @@ We conducted scaling tests on a mesh of approximately one million cells, varying
     \label{fig:speedup}
 \end{figure}
 
-The collected data and graph clearly demonstrate that initially, as the number of processors increases, the speedup closely follows the ideal linear scaling. 
+The collected data and graph clearly demonstrate that initially, as the number of processors increases, the speedup closely follows the ideal linear scaling, indicating efficient parallelization. This nearly linear behavior occurs because the computational workload is sufficiently large to ensure that each processor remains fully utilized, with minimal communication overhead and synchronization requirements. 
+However, as the number of processors continues to increase beyond a certain point (around 16-32 processors in our tests), we observe diminishing returns in the speedup curve. This slowdown in parallel performance may occur due to several factors including: communication overhead, more processors need an increase in communication between them resulting in additional computational overhead, and synchronization delays, as processors counts rise, synchronizing the solver across multiple process introduces small yet accumulating errors.
+
+This analysis highlights the importance of identifying an optimal number of processors to maximize computational efficiency. While adding processors initially leads to significant speed improvements, the overhead and inherent limitations eventually offset these gains. Thus, performance characterization, as demonstrated by our data, plays a crucial role in practical decision-making for deploying parallel computations effectively.
 
 \pagebreak
 \appendix
