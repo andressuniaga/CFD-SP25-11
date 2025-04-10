@@ -32,6 +32,18 @@
 \pagebreak
 
 \section{Introduction}
+This report entails simluations of Mach 3 supersonic flow over a step as shown in Figure \ref{details}. We first take a walk through the equations that govern this flow such as a simplified \textit{Navier-Stokes} equations which make up Euler's equations and Normal Shock and Isentropic Flow theory. 
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.8\linewidth]{images/detailed_image_from_lecture.png}
+    \caption{Details of the flow studied}
+    \label{details}
+\end{figure}
+\vspace{2.5mm}
+
+We then simulate this flow using \textit{OpenFoam's} \texttt{rhoCentralFoam} solver for various meshes from a coarse solution to more refined grids. \textit{Paraview} is used to visulaize the flow features such as the Mach number, velocity, temperature, pressure, and density. The stagnation point on the step is a point of interest as we compare the result of theory and CFD for the total pressure at this location. Lastly, we evaluate the performance of the parallel solver and observe how the number of processors affects the efficiency of the solver.
 
 \pagebreak
 
@@ -193,7 +205,7 @@ For a normal shock with upstream (region 1) Mach number \(M_1\) and downstream (
 
 Once the flow is on either side of a shock (and assuming no further shocks/viscous effects in that region), it can be treated as isentropic. In an isentropic flow of a perfect gas:
 \begin{itemize}
-    \item \textbf{Isentorpic Pressure Relation: }
+    \item \textbf{Isentropic Pressure Relation: }
     \begin{equation}
       p_{0} = p\cdot(1+\dfrac{(\gamma - 1)}{2}M_{1}^{2})^{\frac{\gamma}{\gamma-1}}
       \label{isentropic_pressure}
@@ -285,7 +297,53 @@ The pressure at the stagnation grid point in this coarse mesh is $p = 11.9647\; 
 \pagebreak
 
 \section{Parallel Solver Performance}
+In this section, we analyze the performance characteristics of the parallel version of the \texttt{rhoCentralFoam} solver. The primary objective is to evaluate how effectively the solver scales when computing one simulation time step on different numbers of processors. Ideally, as we increase the number of processors, T(P), the time taken by the solver to advance one time step should decrease proportionally. We employ two critical performance metrics: parallel speedup and parallel efficiency.
 
+Parallel speedup is defined as:
+
+\begin{equation}
+    \text{Speedup} = \frac{{T(1)}}{T(P)}
+\end{equation}
+
+where \(T(P)\) represents the computational time required by the solver advance the solution over one 
+time step with \(P\) processors, and \(T(1)\) is the baseline computational time 
+Parallel efficiency, \(\eta\), is defined as:
+
+\begin{equation}
+    \text{\(\eta\)} = \frac{{T(1)}}{T(P)}
+\end{equation}
+
+indicating how effecively processor resources are being utilized. 
+
+We conducted scaling tests on a mesh of approximately one million cells, varying the number of processors from 1 up to 56 processors. The results of these scaling tests are summarized in Table \ref{table:performance} below, which lists the measured time step \(T(P)\), calculated parallel speedup, and parallel efficiency for each  tested processor \(P\).
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        \textbf{Processors (P)} & \textbf{Time \(T(P)\) [s]} & \textbf{Speedup} & \textbf{Efficiency (\(\eta\)) [\%]}\\
+        \hline
+        1 & 1.4183 & 1.0000 & 100.00 \\
+        2 & 0.6595 & 2.1505 & 107.53 \\
+        4 & 0.3357 & 4.2239 & 105.60 \\
+        8 & 0.1764 & 8.0392 & 100.49 \\
+        16 & 0.1061 & 13.3668 & 85.54 \\
+        32 & 0.0663 & 21.3712 & 66.79 \\
+        56 & 0.0529 & 26.8098 & 47.87 \\
+        \hline
+    \end{tabular}
+    \caption{Parallel Performance Metrics for \texttt{rhoCentralFoam} Solver for Different \# of Processors}
+    \label{table:performance}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/speedup_vs_processors.png}
+    \caption{Speedup vs. Number of Processors \(P\).}
+    \label{fig:speedup}
+\end{figure}
+
+The collected data and graph clearly demonstrate that initially, as the number of processors increases, the speedup closely follows the ideal linear scaling. 
 
 \pagebreak
 \appendix
