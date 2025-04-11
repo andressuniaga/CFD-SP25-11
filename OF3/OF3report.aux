@@ -25,10 +25,24 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces White countour lines representing sonic flow, i.e., where $M=1$}}{7}{figure.caption.5}\protected@file@percent }
 \newlabel{machandsoundspeed}{{4}{7}{White countour lines representing sonic flow, i.e., where $M=1$}{figure.caption.5}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4}Converging the Solution}{8}{section.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5}Parallel Solver Performance}{9}{section.5}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Parallel Performance Metrics Using Different \# of Processors}}{9}{table.caption.6}\protected@file@percent }
-\newlabel{table:performance}{{1}{9}{Parallel Performance Metrics Using Different \# of Processors}{table.caption.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Speedup vs. Number of Processors \(P\).}}{10}{figure.caption.7}\protected@file@percent }
-\newlabel{fig:speedup}{{5}{10}{Speedup vs. Number of Processors \(P\)}{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Mesh hierarchy and time step}{8}{subsection.4.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces \centering  Mesh and solver parameters used in the convergence study. [2mm] \textbf  {NOTE:} Decrease in delta T for Nx8 mesh since that mesh was ran in parallel on 56 processors.}}{8}{table.caption.6}\protected@file@percent }
+\newlabel{tab:meshes}{{1}{8}{\centering Mesh and solver parameters used in the convergence study.\\[2mm] \textbf {NOTE:} Decrease in delta T for Nx8 mesh since that mesh was ran in parallel on 56 processors}{table.caption.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Grid‑convergence of key variables}{8}{subsection.4.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Static pressure field in [$\mathrm  {Pa}$] at $t=4\tmspace  +\thickmuskip {.2777em} \text  {s}$ for meshes Nx1, Nx2, Nx4, Nx8. All panels share identical contour limits (0.1 Pa - 17 Pa) to highlight sharpening of the shock with refinement.}}{8}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:p_convergence}{{5}{8}{Static pressure field in [$\mathrm {Pa}$] at $t=4\; \text {s}$ for meshes Nx1, Nx2, Nx4, Nx8. All panels share identical contour limits (0.1 Pa - 17 Pa) to highlight sharpening of the shock with refinement}{figure.caption.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Static density field in [$\mathrm  {kg\,m^{-3}}$] at $t = 4\tmspace  +\thickmuskip {.2777em}\text  {s}$ for meshes Nx1, Nx2, Nx4, Nx8. All panels use identical contour limits to emphasise convergence of density gradients across the normal shock and expansion fan.}}{9}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:rho_convergence}{{6}{9}{Static density field in [$\mathrm {kg\,m^{-3}}$] at $t = 4\;\text {s}$ for meshes Nx1, Nx2, Nx4, Nx8. All panels use identical contour limits to emphasise convergence of density gradients across the normal shock and expansion fan}{figure.caption.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Pressure distribution along surfaces}{10}{subsection.4.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Wall-pressure profiles at $t = 4\tmspace  +\thickmuskip {.2777em}\text  {s}$ for meshes Nx1 (blue), Nx2 (orange), Nx4 (green), Nx8 (red). The red “$\times $” denotes the theoretical stagnation pressure $p_{0,2}= 12.06\tmspace  +\thickmuskip {.2777em} \text  {Pa}$.}}{10}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:wallPressureMulti}{{7}{10}{Wall-pressure profiles at $t = 4\;\text {s}$ for meshes Nx1 (blue), Nx2 (orange), Nx4 (green), Nx8 (red). The red “$\times $” denotes the theoretical stagnation pressure $p_{0,2}= 12.06\; \text {Pa}$}{figure.caption.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Converged (Nx8) pressure distribution on horizontal (left) and vertical (right) walls at $t = 4\,\text  {s}$.}}{10}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:wallPressureSingle}{{8}{10}{Converged (Nx8) pressure distribution on horizontal (left) and vertical (right) walls at $t = 4\,\text {s}$}{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Discussion of convergence}{11}{subsection.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Parallel Solver Performance}{12}{section.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Parallel Performance Metrics Using Different \# of Processors}}{12}{table.caption.11}\protected@file@percent }
+\newlabel{table:performance}{{2}{12}{Parallel Performance Metrics Using Different \# of Processors}{table.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Speedup vs. Number of Processors \(P\).}}{13}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:speedup}{{9}{13}{Speedup vs. Number of Processors \(P\)}{figure.caption.12}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {A}Code}{}{appendix.A}\protected@file@percent }
-\gdef \@abspage@last{12}
+\gdef \@abspage@last{27}

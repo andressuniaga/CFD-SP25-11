@@ -11,7 +11,7 @@
 \usepackage{cancel}
 \usepackage{subcaption}
 \usepackage{caption}
- 
+
 \newcommand{\bm}{\boldsymbol}
 \newcommand{\bI}{\mathbb{I}}
 \newcommand{\bR}{\mathbb{R}}
@@ -32,7 +32,7 @@
 \pagebreak
 
 \section{Introduction}
-This report entails simluations of Mach 3 supersonic flow over a step as shown in Figure \ref{details}. We first take a walk through the equations that govern this flow such as a simplified \textit{Navier-Stokes} equations which make up Euler's equations and Normal Shock and Isentropic Flow theory. 
+This report entails simulations of Mach 3 supersonic flow over a step as shown in Figure \ref{details}. We first take a walk through the equations that govern this flow such as a simplified \textit{Navier-Stokes} equations which make up Euler's equations and Normal Shock and Isentropic Flow theory. 
 
 
 \begin{figure}[H]
@@ -43,7 +43,7 @@ This report entails simluations of Mach 3 supersonic flow over a step as shown i
 \end{figure}
 \vspace{2.5mm}
 
-We then simulate this flow using \textit{OpenFoam's} \texttt{rhoCentralFoam} solver for various meshes from a coarse solution to more refined grids. \textit{Paraview} is used to visulaize the flow features such as the Mach number, velocity, temperature, pressure, and density. The stagnation point on the step is a point of interest as we compare the result of theory and CFD for the total pressure at this location. Lastly, we evaluate the performance of the parallel solver and observe how the number of processors affects the efficiency of the solver.
+We then simulate this flow using \textit{OpenFoam's} \texttt{rhoCentralFoam} solver for various meshes from a coarse solution to more refined grids. \textit{Paraview} is used to visualize the flow features such as the Mach number, velocity, temperature, pressure, and density. The stagnation point on the step is a point of interest as we compare the result of theory and CFD for the total pressure at this location. Lastly, we evaluate the performance of the parallel solver and observe how the number of processors affects the efficiency of the solver.
 
 \pagebreak
 
@@ -294,10 +294,133 @@ The pressure at the stagnation grid point in this coarse mesh is $p = 11.9647\; 
 
 \section{Converging the Solution}
 
+\subsection{Mesh hierarchy and time step} %Fix table vaues
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{MeshID} & \textbf{Cells} & $\Delta t$ [s]\\\hline
+Nx1  & 4,032 & 0.006\\  %add in real values
+Nx2  & 16,128 & 0.019\\
+Nx4  & 64,512 & 0.076\\
+Nx8  & 258048 & 0.009\\\hline
+\end{tabular}
+\caption{\centering Mesh and solver parameters used in the convergence study.\\[2mm] \textbf{NOTE:} Decrease in delta T for Nx8 mesh since that mesh was ran in parallel on 56 processors.}
+\label{tab:meshes}
+\end{table}
+
+\subsection{Grid‑convergence of key variables} %Generate Grid-convergence of key variables
+\begin{figure}[H]
+\centering
+\begin{subfigure}{0.495\linewidth}
+    \includegraphics[width=\linewidth]{images/p_Nx1.png}
+    \caption{meshID: Nx1}
+\end{subfigure} 
+\begin{subfigure}{0.495\linewidth}
+    \includegraphics[width=\linewidth]{images/p_Nx2.png}
+    \caption{meshID: Nx2}
+\end{subfigure} 
+\vspace{2mm}
+\begin{subfigure}{0.495\linewidth}
+    \includegraphics[width=\linewidth]{images/p_Nx4.png}
+    \caption{meshID: Nx4}
+    \end{subfigure} 
+\begin{subfigure}{0.495\linewidth}
+    \includegraphics[width=\linewidth]{images/p_Nx8.png}
+    \caption{meshID: Nx8}
+    \end{subfigure} 
+\caption{Static pressure field in [$\mathrm{Pa}$] at $t=4\; \text{s}$ for meshes Nx1, Nx2, Nx4, Nx8. All panels share identical contour limits (0.1 Pa - 17 Pa) to highlight sharpening of the shock with refinement.}
+\label{fig:p_convergence}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.495\linewidth}
+        \includegraphics[width=\linewidth]{images/rho_Nx1.png}
+        \caption{meshID: Nx1}
+    \end{subfigure}
+    \begin{subfigure}{0.495\linewidth}
+        \includegraphics[width=\linewidth]{images/rho_Nx2.png}
+        \caption{meshID: Nx2}
+    \end{subfigure}
+    
+    \vspace{2mm}
+    
+    \begin{subfigure}{0.495\linewidth}
+        \includegraphics[width=\linewidth]{images/rho_Nx4.png}
+        \caption{meshID: Nx4}
+    \end{subfigure}
+    \begin{subfigure}{0.495\linewidth}
+        \includegraphics[width=\linewidth]{images/rho_Nx8.png}
+        \caption{meshID: Nx8}
+    \end{subfigure}
+    
+    \caption{Static density field in [$\mathrm{kg\,m^{-3}}$] at $t = 4\;\text{s}$ for meshes Nx1, Nx2, Nx4, Nx8.  All panels use identical contour limits to emphasise convergence of density gradients across the normal shock and expansion fan.}
+    \label{fig:rho_convergence}
+    \end{figure}
+
+In the following sections the pressure is recorded along a line very close to the surfaces (offset 1e-5 meters) across the span of every surface. 
+\subsection{Pressure distribution along surfaces}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.495\linewidth}
+        \includegraphics[width=\linewidth]{images/entryWallBottom x-plot.png}
+        \caption{Bottom wall (inlet floor)}
+    \end{subfigure}
+    \begin{subfigure}{0.495\linewidth}
+        \includegraphics[width=\linewidth]{images/entryWallTop x-plot.png}
+        \caption{Top wall (tunnel ceiling)}
+    \end{subfigure}
+    
+    \vspace{2mm}
+    
+    \begin{subfigure}{0.495\linewidth}
+        \includegraphics[width=\linewidth]{images/stepFaceHoriz x-plot.png}
+        \caption{Step face — horizontal}
+    \end{subfigure}
+    \begin{subfigure}{0.495\linewidth}
+        \includegraphics[width=\linewidth]{images/stepFaceVert Pressure y-plot.png}
+        \caption{Step face — vertical}
+    \end{subfigure}
+    
+    \caption{Wall-pressure profiles at $t = 4\;\text{s}$ for meshes Nx1 (blue), Nx2 (orange), Nx4 (green), Nx8 (red).  
+    The red “$\times$” denotes the theoretical stagnation pressure $p_{0,2}= 12.06\; \text{Pa}$.}
+    \label{fig:wallPressureMulti}
+\end{figure}
+    
+ 
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.495\linewidth}
+        \includegraphics[width=1.095\linewidth]{images/horizSurfaces.png}
+        \caption{Horizontal walls}
+    \end{subfigure}
+    \begin{subfigure}{0.495\linewidth}
+        \includegraphics[width=\linewidth]{images/vertSurface.png}
+        \caption{Vertical walls}
+    \end{subfigure}
+    \caption{Converged (Nx8) pressure distribution on horizontal (left) and vertical (right) walls at $t = 4\,\text{s}$.}
+    \label{fig:wallPressureSingle}
+\end{figure}
+        
+
+\subsection{Discussion of convergence}
+The leading-edge stagnation pressure on the bottom wall (Fig.~\ref{fig:wallPressureMulti}, upper-left) climbs from $11.3 \; \text{Pa}$ on the coarsest grid to $11.96 \; \text{Pa}$ on Nx8, only $\displaystyle\left|\frac{11.96-12.06}{12.06}\right|\approx 0.8\%$ below the analytical 
+value.
+\vspace{3mm}
+
+Away from the step, the pressure and density fields exhibit convergence:
+peak-to-peak differences becoming smaller and smaller (compare Figs. \ref{fig:p_convergence} and \ref{fig:rho_convergence}).
+\vspace{3mm}
+
+Overall, the Nx4 mesh provides very high accuracy, while Nx8 serves as a reference solution for quantitative validation. All subsequent comparisons in this report therefore use the Nx8 data set.
+
 \pagebreak
 
 \section{Parallel Solver Performance}
 In this section, we analyze the performance characteristics of the parallel version of the \texttt{rhoCentralFoam} solver. The primary objective is to evaluate how effectively the solver scales when computing one simulation time step on different numbers of processors. Ideally, as we increase the number of processors, T(P), the time taken by the solver to advance one time step should decrease proportionally. We employ two critical performance metrics: parallel speedup and parallel efficiency.
+
+\vspace{3mm}
 
 Parallel speedup is defined as:
 
@@ -306,14 +429,17 @@ Parallel speedup is defined as:
 \end{equation}
 
 where \(T(P)\) represents the computational time required by the solver advance the solution over one 
-time step with \(P\) processors, and \(T(1)\) is the baseline computational time 
+time step with \(P\) processors, and \(T(1)\) is the baseline computational time.
+\vspace{3mm}
+
 Parallel efficiency, \(\eta\), is defined as:
 
 \begin{equation}
-    \text{\(\eta\)} = \frac{{T(1)}}{T(P)}
+    \text{\(\eta\)} = P^{-1}\frac{{T(1)}}{T(P)}
 \end{equation}
 
 indicating how effectively processor resources are being utilized. 
+\vspace{3mm}
 
 We conducted scaling tests on a mesh of approximately one million cells, varying the number of processors from 1 up to 56 processors. The results of these scaling tests are summarized in Table \ref{table:performance} below, which lists the measured time step \(T(P)\), calculated parallel speedup, and parallel efficiency for each  tested processor \(P\). Additionally, Figure~\ref{fig:speedup} illustrates the observed speedup alongside ideal (linear) scaling and theoretical lines representing 80\% and 60\% parallel efficiency.
 
@@ -345,6 +471,7 @@ We conducted scaling tests on a mesh of approximately one million cells, varying
 
 The collected data and graph clearly demonstrate that initially, as the number of processors increases, the speedup closely follows the ideal linear scaling, indicating efficient parallelization. This nearly linear behavior occurs because the computational workload is sufficiently large to ensure that each processor remains fully utilized, with minimal communication overhead and synchronization requirements. 
 However, as the number of processors continues to increase beyond a certain point (around 16-32 processors in our tests), we observe diminishing returns in the speedup curve. This slowdown in parallel performance may occur due to several factors including: communication overhead, more processors need an increase in communication between them resulting in additional computational overhead, and synchronization delays, as processors counts rise, synchronizing the solver across multiple process introduces small yet accumulating errors.
+\vspace{3mm}
 
 This analysis highlights the importance of identifying an optimal number of processors to maximize computational efficiency. While adding processors initially leads to significant speed improvements, the overhead and inherent limitations eventually offset these gains. Thus, performance characterization, as demonstrated by our data, plays a crucial role in practical decision-making for deploying parallel computations effectively.
 
@@ -365,6 +492,6 @@ PDF of code starts on next page.
 
 Additionally, team repository: \url{https://github.com/andressuniaga/CFD-SP25-11}
 
-% \includepdf[pages=-]{}
+\includepdf[pages=-]{OF3 Code.pdf}
 
 \end{document}
