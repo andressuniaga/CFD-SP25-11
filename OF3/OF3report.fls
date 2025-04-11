@@ -286,6 +286,76 @@ INPUT ./images/5_firstsolution_mach.png
 INPUT ./images/5_firstsolution_mach.png
 INPUT ./images/5_firstsolution_mach.png
 INPUT ./images/5_firstsolution_mach.png
+INPUT ./images/p_Nx1.png
+INPUT ./images/p_Nx1.png
+INPUT ./images/p_Nx1.png
+INPUT ./images/p_Nx1.png
+INPUT ./images/p_Nx1.png
+INPUT ./images/p_Nx2.png
+INPUT ./images/p_Nx2.png
+INPUT ./images/p_Nx2.png
+INPUT ./images/p_Nx2.png
+INPUT ./images/p_Nx2.png
+INPUT ./images/p_Nx4.png
+INPUT ./images/p_Nx4.png
+INPUT ./images/p_Nx4.png
+INPUT ./images/p_Nx4.png
+INPUT ./images/p_Nx4.png
+INPUT ./images/p_Nx8.png
+INPUT ./images/p_Nx8.png
+INPUT ./images/p_Nx8.png
+INPUT ./images/p_Nx8.png
+INPUT ./images/p_Nx8.png
+INPUT ./images/rho_Nx1.png
+INPUT ./images/rho_Nx1.png
+INPUT ./images/rho_Nx1.png
+INPUT ./images/rho_Nx1.png
+INPUT ./images/rho_Nx1.png
+INPUT ./images/rho_Nx2.png
+INPUT ./images/rho_Nx2.png
+INPUT ./images/rho_Nx2.png
+INPUT ./images/rho_Nx2.png
+INPUT ./images/rho_Nx2.png
+INPUT ./images/rho_Nx4.png
+INPUT ./images/rho_Nx4.png
+INPUT ./images/rho_Nx4.png
+INPUT ./images/rho_Nx4.png
+INPUT ./images/rho_Nx4.png
+INPUT ./images/rho_Nx8.png
+INPUT ./images/rho_Nx8.png
+INPUT ./images/rho_Nx8.png
+INPUT ./images/rho_Nx8.png
+INPUT ./images/rho_Nx8.png
+INPUT ./images/entryWallBottom x-plot.png
+INPUT ./images/entryWallBottom x-plot.png
+INPUT ./images/entryWallBottom x-plot.png
+INPUT ./images/entryWallBottom x-plot.png
+INPUT ./images/entryWallBottom x-plot.png
+INPUT ./images/entryWallTop x-plot.png
+INPUT ./images/entryWallTop x-plot.png
+INPUT ./images/entryWallTop x-plot.png
+INPUT ./images/entryWallTop x-plot.png
+INPUT ./images/entryWallTop x-plot.png
+INPUT ./images/stepFaceHoriz x-plot.png
+INPUT ./images/stepFaceHoriz x-plot.png
+INPUT ./images/stepFaceHoriz x-plot.png
+INPUT ./images/stepFaceHoriz x-plot.png
+INPUT ./images/stepFaceHoriz x-plot.png
+INPUT ./images/stepFaceVert Pressure y-plot.png
+INPUT ./images/stepFaceVert Pressure y-plot.png
+INPUT ./images/stepFaceVert Pressure y-plot.png
+INPUT ./images/stepFaceVert Pressure y-plot.png
+INPUT ./images/stepFaceVert Pressure y-plot.png
+INPUT ./images/horizSurfaces.png
+INPUT ./images/horizSurfaces.png
+INPUT ./images/horizSurfaces.png
+INPUT ./images/horizSurfaces.png
+INPUT ./images/horizSurfaces.png
+INPUT ./images/vertSurface.png
+INPUT ./images/vertSurface.png
+INPUT ./images/vertSurface.png
+INPUT ./images/vertSurface.png
+INPUT ./images/vertSurface.png
 INPUT ./images/speedup_vs_processors.png
 INPUT ./images/speedup_vs_processors.png
 INPUT ./images/speedup_vs_processors.png
@@ -293,6 +363,63 @@ INPUT ./images/speedup_vs_processors.png
 INPUT ./images/speedup_vs_processors.png
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
+INPUT ./OF3 Code.pdf
 INPUT OF3report.aux
 INPUT ./OF3report.out
 INPUT ./OF3report.out
