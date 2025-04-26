@@ -6,5 +6,9 @@
 \contentsline {subsection}{\numberline {2.4}Step Example}{5}{subsection.2.4}%
 \contentsline {section}{\numberline {3}First Solution}{6}{section.3}%
 \contentsline {section}{\numberline {4}Converging the Solution}{8}{section.4}%
-\contentsline {section}{\numberline {5}Parallel Solver Performance}{9}{section.5}%
+\contentsline {subsection}{\numberline {4.1}Mesh hierarchy and time step}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Grid‑convergence of key variables}{8}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Pressure distribution along surfaces}{10}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Discussion of convergence}{11}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Parallel Solver Performance}{12}{section.5}%
 \contentsline {section}{\numberline {A}Code}{}{appendix.A}%
