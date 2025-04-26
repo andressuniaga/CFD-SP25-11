@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.15)  10 APR 2025 12:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.15)  10 APR 2025 23:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -460,7 +460,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 {c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<images/detailed_image_from_lecture.png, id=65, 724.50674pt x 369.17924pt>
+<images/detailed_image_from_lecture.png, id=85, 724.50674pt x 369.17924pt>
 File: images/detailed_image_from_lecture.png Graphic file (type png)
 <use images/detailed_image_from_lecture.png>
 Package pdftex.def Info: images/detailed_image_from_lecture.png  used on input line 40.
@@ -472,7 +472,7 @@ Package pdftex.def Info: images/detailed_image_from_lecture.png  used on input l
 [3{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
 [4]
-<images/stepexample.png, id=103, 524.55975pt x 269.808pt>
+<images/stepexample.png, id=123, 524.55975pt x 269.808pt>
 File: images/stepexample.png Graphic file (type png)
 <use images/stepexample.png>
 Package pdftex.def Info: images/stepexample.png  used on input line 227.
@@ -480,32 +480,32 @@ Package pdftex.def Info: images/stepexample.png  used on input line 227.
 
 
 [5 <./images/stepexample.png>]
-<images/5_firstsolution_density.png, id=124, 1495.5875pt x 922.44624pt>
+<images/5_firstsolution_density.png, id=144, 1495.5875pt x 922.44624pt>
 File: images/5_firstsolution_density.png Graphic file (type png)
 <use images/5_firstsolution_density.png>
 Package pdftex.def Info: images/5_firstsolution_density.png  used on input line 243.
 (pdftex.def)             Requested size: 232.52643pt x 143.41402pt.
-<images/5_firstsolution_pressure.png, id=125, 1495.5875pt x 922.44624pt>
+<images/5_firstsolution_pressure.png, id=145, 1495.5875pt x 922.44624pt>
 File: images/5_firstsolution_pressure.png Graphic file (type png)
 <use images/5_firstsolution_pressure.png>
 Package pdftex.def Info: images/5_firstsolution_pressure.png  used on input line 247.
 (pdftex.def)             Requested size: 232.52643pt x 143.41402pt.
-<images/5_firstsolution_temperature.png, id=126, 1495.5875pt x 922.44624pt>
+<images/5_firstsolution_temperature.png, id=146, 1495.5875pt x 922.44624pt>
 File: images/5_firstsolution_temperature.png Graphic file (type png)
 <use images/5_firstsolution_temperature.png>
 Package pdftex.def Info: images/5_firstsolution_temperature.png  used on input line 253.
 (pdftex.def)             Requested size: 232.52643pt x 143.41402pt.
-<images/5_firstsolution_U_magnitude.png, id=127, 1495.5875pt x 922.44624pt>
+<images/5_firstsolution_U_magnitude.png, id=147, 1495.5875pt x 922.44624pt>
 File: images/5_firstsolution_U_magnitude.png Graphic file (type png)
 <use images/5_firstsolution_U_magnitude.png>
 Package pdftex.def Info: images/5_firstsolution_U_magnitude.png  used on input line 257.
 (pdftex.def)             Requested size: 232.52643pt x 143.41402pt.
-<images/5_firstsolution_U_x.png, id=128, 1495.5875pt x 922.44624pt>
+<images/5_firstsolution_U_x.png, id=148, 1495.5875pt x 922.44624pt>
 File: images/5_firstsolution_U_x.png Graphic file (type png)
 <use images/5_firstsolution_U_x.png>
 Package pdftex.def Info: images/5_firstsolution_U_x.png  used on input line 263.
 (pdftex.def)             Requested size: 232.52643pt x 143.41402pt.
-<images/5_firstsolution_U_y.png, id=129, 1495.5875pt x 922.44624pt>
+<images/5_firstsolution_U_y.png, id=149, 1495.5875pt x 922.44624pt>
 File: images/5_firstsolution_U_y.png Graphic file (type png)
 <use images/5_firstsolution_U_y.png>
 Package pdftex.def Info: images/5_firstsolution_U_y.png  used on input line 267.
@@ -513,12 +513,12 @@ Package pdftex.def Info: images/5_firstsolution_U_y.png  used on input line 267.
 
 
 [6 <./images/5_firstsolution_density.png (PNG copy)> <./images/5_firstsolution_pressure.png (PNG copy)> <./images/5_firstsolution_temperature.png (PNG copy)> <./images/5_firstsolution_U_magnitude.png (PNG copy)> <./images/5_firstsolution_U_x.png (PNG copy)> <./images/5_firstsolution_U_y.png (PNG copy)>]
-<images/5_firstsolution_soundspeed.png, id=137, 1495.5875pt x 922.44624pt>
+<images/5_firstsolution_soundspeed.png, id=157, 1495.5875pt x 922.44624pt>
 File: images/5_firstsolution_soundspeed.png Graphic file (type png)
 <use images/5_firstsolution_soundspeed.png>
 Package pdftex.def Info: images/5_firstsolution_soundspeed.png  used on input line 280.
 (pdftex.def)             Requested size: 232.52643pt x 143.41402pt.
-<images/5_firstsolution_mach.png, id=138, 1495.5875pt x 922.44624pt>
+<images/5_firstsolution_mach.png, id=158, 1495.5875pt x 922.44624pt>
 File: images/5_firstsolution_mach.png Graphic file (type png)
 <use images/5_firstsolution_mach.png>
 Package pdftex.def Info: images/5_firstsolution_mach.png  used on input line 284.
@@ -526,51 +526,441 @@ Package pdftex.def Info: images/5_firstsolution_mach.png  used on input line 284
 
 
 [7 <./images/5_firstsolution_soundspeed.png (PNG copy)> <./images/5_firstsolution_mach.png (PNG copy)>]
+<images/p_Nx1.png, id=165, 1404.24625pt x 817.0525pt>
+File: images/p_Nx1.png Graphic file (type png)
+<use images/p_Nx1.png>
+Package pdftex.def Info: images/p_Nx1.png  used on input line 316.
+(pdftex.def)             Requested size: 232.52643pt x 135.29407pt.
+<images/p_Nx2.png, id=166, 1404.24625pt x 817.0525pt>
+File: images/p_Nx2.png Graphic file (type png)
+<use images/p_Nx2.png>
+Package pdftex.def Info: images/p_Nx2.png  used on input line 320.
+(pdftex.def)             Requested size: 232.52643pt x 135.29407pt.
+<images/p_Nx4.png, id=167, 1404.24625pt x 817.0525pt>
+File: images/p_Nx4.png Graphic file (type png)
+<use images/p_Nx4.png>
+Package pdftex.def Info: images/p_Nx4.png  used on input line 325.
+(pdftex.def)             Requested size: 232.52643pt x 135.29407pt.
+<images/p_Nx8.png, id=168, 1404.24625pt x 817.0525pt>
+File: images/p_Nx8.png Graphic file (type png)
+<use images/p_Nx8.png>
+Package pdftex.def Info: images/p_Nx8.png  used on input line 329.
+(pdftex.def)             Requested size: 232.52643pt x 135.29407pt.
+<images/rho_Nx1.png, id=169, 1404.24625pt x 817.0525pt>
+File: images/rho_Nx1.png Graphic file (type png)
+<use images/rho_Nx1.png>
+Package pdftex.def Info: images/rho_Nx1.png  used on input line 339.
+(pdftex.def)             Requested size: 232.52643pt x 135.29407pt.
+<images/rho_Nx2.png, id=170, 1404.24625pt x 817.0525pt>
+File: images/rho_Nx2.png Graphic file (type png)
+<use images/rho_Nx2.png>
+Package pdftex.def Info: images/rho_Nx2.png  used on input line 343.
+(pdftex.def)             Requested size: 232.52643pt x 135.29407pt.
+<images/rho_Nx4.png, id=171, 1404.24625pt x 817.0525pt>
+File: images/rho_Nx4.png Graphic file (type png)
+<use images/rho_Nx4.png>
+Package pdftex.def Info: images/rho_Nx4.png  used on input line 350.
+(pdftex.def)             Requested size: 232.52643pt x 135.29407pt.
+<images/rho_Nx8.png, id=172, 1404.24625pt x 817.0525pt>
+File: images/rho_Nx8.png Graphic file (type png)
+<use images/rho_Nx8.png>
+Package pdftex.def Info: images/rho_Nx8.png  used on input line 354.
+(pdftex.def)             Requested size: 232.52643pt x 135.29407pt.
 
-[8]
-Overfull \hbox (15.99875pt too wide) in paragraph at lines 300--301
+
+[8 <./images/p_Nx1.png (PNG copy)> <./images/p_Nx2.png (PNG copy)> <./images/p_Nx4.png (PNG copy)> <./images/p_Nx8.png (PNG copy)>]
+<images/entryWallBottom x-plot.png, id=180, 722.7pt x 433.62pt>
+File: images/entryWallBottom x-plot.png Graphic file (type png)
+<use images/entryWallBottom x-plot.png>
+Package pdftex.def Info: images/entryWallBottom x-plot.png  used on input line 367.
+(pdftex.def)             Requested size: 232.52643pt x 139.51552pt.
+<images/entryWallTop x-plot.png, id=181, 722.7pt x 433.62pt>
+File: images/entryWallTop x-plot.png Graphic file (type png)
+<use images/entryWallTop x-plot.png>
+Package pdftex.def Info: images/entryWallTop x-plot.png  used on input line 371.
+(pdftex.def)             Requested size: 232.52643pt x 139.51552pt.
+<images/stepFaceHoriz x-plot.png, id=182, 722.7pt x 433.62pt>
+File: images/stepFaceHoriz x-plot.png Graphic file (type png)
+<use images/stepFaceHoriz x-plot.png>
+Package pdftex.def Info: images/stepFaceHoriz x-plot.png  used on input line 378.
+(pdftex.def)             Requested size: 232.52643pt x 139.51552pt.
+<images/stepFaceVert Pressure y-plot.png, id=183, 722.7pt x 433.62pt>
+File: images/stepFaceVert Pressure y-plot.png Graphic file (type png)
+<use images/stepFaceVert Pressure y-plot.png>
+Package pdftex.def Info: images/stepFaceVert Pressure y-plot.png  used on input line 382.
+(pdftex.def)             Requested size: 232.52643pt x 139.51552pt.
+
+
+[9 <./images/rho_Nx1.png (PNG copy)> <./images/rho_Nx2.png (PNG copy)> <./images/rho_Nx4.png (PNG copy)> <./images/rho_Nx8.png (PNG copy)>]
+<images/horizSurfaces.png, id=189, 602.0091pt x 361.35pt>
+File: images/horizSurfaces.png Graphic file (type png)
+<use images/horizSurfaces.png>
+Package pdftex.def Info: images/horizSurfaces.png  used on input line 395.
+(pdftex.def)             Requested size: 254.61671pt x 152.83011pt.
+
+Overfull \hbox (22.09029pt too wide) in paragraph at lines 395--396
+[][] 
+ []
+
+<images/vertSurface.png, id=190, 578.16pt x 361.35pt>
+File: images/vertSurface.png Graphic file (type png)
+<use images/vertSurface.png>
+Package pdftex.def Info: images/vertSurface.png  used on input line 399.
+(pdftex.def)             Requested size: 232.52643pt x 145.3259pt.
+
+
+[10 <./images/entryWallBottom x-plot.png> <./images/entryWallTop x-plot.png> <./images/stepFaceHoriz x-plot.png> <./images/stepFaceVert Pressure y-plot.png> <./images/horizSurfaces.png> <./images/vertSurface.png>]
+
+[11]
+Overfull \hbox (15.99875pt too wide) in paragraph at lines 421--422
 \OT1/cmr/m/n/10.95 In this sec-tion, we an-a-lyze the per-for-mance char-ac-ter-is-tics of the par-al-lel ver-sion of the \OT1/cmtt/m/n/10.95 rhoCentralFoam
  []
 
-<images/speedup_vs_processors.png, id=151, 578.16pt x 433.62pt>
+<images/speedup_vs_processors.png, id=212, 578.16pt x 433.62pt>
 File: images/speedup_vs_processors.png Graphic file (type png)
 <use images/speedup_vs_processors.png>
-Package pdftex.def Info: images/speedup_vs_processors.png  used on input line 341.
+Package pdftex.def Info: images/speedup_vs_processors.png  used on input line 467.
 (pdftex.def)             Requested size: 328.82707pt x 246.61679pt.
 
 
-[9]
+[12]
 
-[10 <./images/speedup_vs_processors.png>]
+[13 <./images/speedup_vs_processors.png>]
 
 [1]
+<OF3 Code.pdf, id=232, 614.295pt x 794.97pt>
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf>
+Package pdftex.def Info: OF3 Code.pdf  used on input line 495.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf>
+Package pdftex.def Info: OF3 Code.pdf  used on input line 495.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<OF3 Code.pdf, id=235, page=1, 614.295pt x 794.97pt>
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 1>
+Package pdftex.def Info: OF3 Code.pdf , page1 used on input line 495.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 1>
+Package pdftex.def Info: OF3 Code.pdf , page1 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.370 \end{document}
-                     [2] (./OF3report.aux)
+l.495 \includepdf[pages=-]{OF3 Code.pdf}
+                                         [2]
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 1>
+Package pdftex.def Info: OF3 Code.pdf , page1 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 1>
+Package pdftex.def Info: OF3 Code.pdf , page1 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.495 \includepdf[pages=-]{OF3 Code.pdf}
+                                        
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 1>
+Package pdftex.def Info: OF3 Code.pdf , page1 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [3
+
+ <./OF3 Code.pdf>]
+<OF3 Code.pdf, id=275, page=2, 614.295pt x 794.97pt>
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 2>
+Package pdftex.def Info: OF3 Code.pdf , page2 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 2>
+Package pdftex.def Info: OF3 Code.pdf , page2 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.495 \includepdf[pages=-]{OF3 Code.pdf}
+                                        
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 2>
+Package pdftex.def Info: OF3 Code.pdf , page2 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [4
+
+ <./OF3 Code.pdf>]
+<OF3 Code.pdf, id=279, page=3, 614.295pt x 794.97pt>
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 3>
+Package pdftex.def Info: OF3 Code.pdf , page3 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 3>
+Package pdftex.def Info: OF3 Code.pdf , page3 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.495 \includepdf[pages=-]{OF3 Code.pdf}
+                                        
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 3>
+Package pdftex.def Info: OF3 Code.pdf , page3 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [5
+
+ <./OF3 Code.pdf>]
+<OF3 Code.pdf, id=283, page=4, 614.295pt x 794.97pt>
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 4>
+Package pdftex.def Info: OF3 Code.pdf , page4 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 4>
+Package pdftex.def Info: OF3 Code.pdf , page4 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.495 \includepdf[pages=-]{OF3 Code.pdf}
+                                        
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 4>
+Package pdftex.def Info: OF3 Code.pdf , page4 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [6
+
+ <./OF3 Code.pdf>]
+<OF3 Code.pdf, id=288, page=5, 614.295pt x 794.97pt>
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 5>
+Package pdftex.def Info: OF3 Code.pdf , page5 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 5>
+Package pdftex.def Info: OF3 Code.pdf , page5 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.495 \includepdf[pages=-]{OF3 Code.pdf}
+                                        
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 5>
+Package pdftex.def Info: OF3 Code.pdf , page5 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [7
+
+ <./OF3 Code.pdf>]
+<OF3 Code.pdf, id=292, page=6, 614.295pt x 794.97pt>
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 6>
+Package pdftex.def Info: OF3 Code.pdf , page6 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 6>
+Package pdftex.def Info: OF3 Code.pdf , page6 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.495 \includepdf[pages=-]{OF3 Code.pdf}
+                                        
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 6>
+Package pdftex.def Info: OF3 Code.pdf , page6 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [8
+
+ <./OF3 Code.pdf>]
+<OF3 Code.pdf, id=296, page=7, 614.295pt x 794.97pt>
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 7>
+Package pdftex.def Info: OF3 Code.pdf , page7 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 7>
+Package pdftex.def Info: OF3 Code.pdf , page7 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.495 \includepdf[pages=-]{OF3 Code.pdf}
+                                        
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 7>
+Package pdftex.def Info: OF3 Code.pdf , page7 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [9
+
+ <./OF3 Code.pdf>]
+<OF3 Code.pdf, id=300, page=8, 614.295pt x 794.97pt>
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 8>
+Package pdftex.def Info: OF3 Code.pdf , page8 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 8>
+Package pdftex.def Info: OF3 Code.pdf , page8 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.495 \includepdf[pages=-]{OF3 Code.pdf}
+                                        
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 8>
+Package pdftex.def Info: OF3 Code.pdf , page8 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [10
+
+ <./OF3 Code.pdf>]
+<OF3 Code.pdf, id=304, page=9, 614.295pt x 794.97pt>
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 9>
+Package pdftex.def Info: OF3 Code.pdf , page9 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 9>
+Package pdftex.def Info: OF3 Code.pdf , page9 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.495 \includepdf[pages=-]{OF3 Code.pdf}
+                                        
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 9>
+Package pdftex.def Info: OF3 Code.pdf , page9 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [11
+
+ <./OF3 Code.pdf>]
+<OF3 Code.pdf, id=313, page=10, 614.295pt x 794.97pt>
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 10>
+Package pdftex.def Info: OF3 Code.pdf , page10 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 10>
+Package pdftex.def Info: OF3 Code.pdf , page10 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.495 \includepdf[pages=-]{OF3 Code.pdf}
+                                        
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 10>
+Package pdftex.def Info: OF3 Code.pdf , page10 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [12
+
+ <./OF3 Code.pdf>]
+<OF3 Code.pdf, id=318, page=11, 614.295pt x 794.97pt>
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 11>
+Package pdftex.def Info: OF3 Code.pdf , page11 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 11>
+Package pdftex.def Info: OF3 Code.pdf , page11 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.495 \includepdf[pages=-]{OF3 Code.pdf}
+                                        
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 11>
+Package pdftex.def Info: OF3 Code.pdf , page11 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [13
+
+ <./OF3 Code.pdf>]
+<OF3 Code.pdf, id=322, page=12, 614.295pt x 794.97pt>
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 12>
+Package pdftex.def Info: OF3 Code.pdf , page12 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 12>
+Package pdftex.def Info: OF3 Code.pdf , page12 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.495 \includepdf[pages=-]{OF3 Code.pdf}
+                                        
+File: OF3 Code.pdf Graphic file (type pdf)
+<use OF3 Code.pdf, page 12>
+Package pdftex.def Info: OF3 Code.pdf , page12 used on input line 495.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [14
+
+ <./OF3 Code.pdf>] (./OF3report.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-30>
  ***********
 Package rerunfilecheck Info: File `OF3report.out' has not changed.
-(rerunfilecheck)             Checksum: 67B8A5BC7F6FF7E04EC85BB761AE1986;1630.
+(rerunfilecheck)             Checksum: A79ACBCFE8F6BF99755CFF9372105341;2511.
  ) 
 Here is how much of TeX's memory you used:
- 13400 strings out of 473579
- 211640 string characters out of 5732257
- 624254 words of memory out of 5000000
- 36049 multiletter control sequences out of 15000+600000
+ 13564 strings out of 473579
+ 216104 string characters out of 5732257
+ 625264 words of memory out of 5000000
+ 36201 multiletter control sequences out of 15000+600000
  575691 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,10n,79p,680b,593s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,17n,79p,680b,593s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on OF3report.pdf (12 pages, 1229934 bytes).
+Output written on OF3report.pdf (27 pages, 2182067 bytes).
 PDF statistics:
- 264 PDF objects out of 1000 (max. 8388607)
- 195 compressed objects within 2 object streams
- 45 named destinations out of 1000 (max. 500000)
- 136 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 418 PDF objects out of 1000 (max. 8388607)
+ 284 compressed objects within 3 object streams
+ 57 named destinations out of 1000 (max. 500000)
+ 313 words of extra memory for PDF output out of 10000 (max. 10000000)
 
