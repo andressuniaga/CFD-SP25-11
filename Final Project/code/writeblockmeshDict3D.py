@@ -22,6 +22,8 @@ DR = 1.5
 H = 1.0
 DZ = 1.0 # extension of computational domain for 3D effects
 
+b = 1.0
+
 
 diamond = diamondsection(L,theta,0)
 outlet,inlet,top,bott = facevertices(DR,DL,H,L,theta,0)
@@ -31,6 +33,7 @@ p = allvertices(diamond,outlet,inlet,top,bott)
 intro1 = f"""// Diamond Airfoil Mesh Generation 3D
 // Parameters:
 // L (chord) = {L:.3}
+// b (span) = {b:.3}
 // Theta (deflection angle)  =  {theta:.3}
 // DL (fore)  =  {DL:.3}
 // DR  (wake) =  {DR:.3}
@@ -65,12 +68,12 @@ verts = """
 vertices
 (   
 """
-z = 0.5
+z = b/2
 for i in range(4):
     vertex = f"     ({p[0,i]:.13e} {p[1,i]:4e} {-z:.13e}) // {i}\n"
     verts +=vertex
 
-for i in range(5,N):
+for i in range(4,N):
         vertex = f"     ({p[0,i]:.13e} {p[1,i]:4e} {-(z+DZ):.13e}) // {i}\n"
         verts +=vertex
 
@@ -79,7 +82,7 @@ for i in range(4):
     verts +=vertex
 
 
-for i in range(5,N):
+for i in range(4,N):
         vertex = f"     ({p[0,i]:.13e} {p[1,i]:4e} {z+DZ:.13e}) // {i+N}\n"
         verts +=vertex
 
