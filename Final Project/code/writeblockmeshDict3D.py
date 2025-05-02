@@ -146,6 +146,17 @@ boundary
             (6 22 21 5)
         );
     }
+
+    frontAndBack
+    {
+        type empty;  // or wall/patch, depending on simulation type
+        faces
+        (
+            (0 1 2 3)
+            (16 17 18 19)
+        );
+    }
+
     diamond
     {
         type patch;
