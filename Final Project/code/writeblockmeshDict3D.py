@@ -56,6 +56,7 @@ FoamFile
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 convertToMeters 1;
+
 """
 
 verts = """
@@ -67,32 +68,36 @@ for i in range(4):
     vertex = f"     ({p[0,i]:.13e} {p[1,i]:4e} {-z:.13e}) // {i}\n"
     verts +=vertex
 
-for i in range(4,N):
-    vertex = f"     ({p[0,i]:.13e} {p[1,i]:4e} {-(z+DZ):.13e}) // {i}\n"
-    verts +=vertex
+for i in range(5,N):
+    if i == 7 or i == 10 or i ==13:
+        continue
+    else:
+        vertex = f"     ({p[0,i]:.13e} {p[1,i]:4e} {-(z+DZ):.13e}) // {i}\n"
+        verts +=vertex
 
 for i in range(4):
     vertex = f"     ({p[0,i]:.13e} {p[1,i]:4e} {z:.13e}) // {i+N}\n"
     verts +=vertex
 
 
-for i in range(4,N):
-    vertex = f"     ({p[0,i]:.13e} {p[1,i]:4e} {z+DZ:.13e}) // {i+N}\n"
-    verts +=vertex
+for i in range(5,N):
+    if i == 7 or i == 10 or i ==13:
+        continue
+    else:
+        vertex = f"     ({p[0,i]:.13e} {p[1,i]:4e} {z+DZ:.13e}) // {i+N}\n"
+        verts +=vertex
 
 verts = verts + ");"
 
 blocks = """\n
 blocks
 (
-    hex (0 4 5 6 16 20 21 22) (48 32 48) simpleGrading (1 1 1) // block 0
-    hex (6 7 1 0 22 23 17 16) (96 32 48) simpleGrading (1 1 1) // block 1
-    hex (7 8 2 1 23 24 18 17) (96 32 48) simpleGrading (1 1 1) // block 2
-    hex (8 9 10 2 24 25 26 18) (24 32 48) simpleGrading (1 1 1) // block 3
-    hex (2 10 11 12 18 26 27 28) (24 32 48) simpleGrading (1 1 1) // block 4
-    hex (12 13 3 2 28 29 19 18) (96 32 48) simpleGrading (1 1 1) // block 5
-    hex (13 14 0 3 29 30 16 19) (96 32 48) simpleGrading (1 1 1) // block 6
-    hex (14 15 4 0 30 31 20 16) (48 32 48) simpleGrading (1 1 1) // block 7
+    hex (0 1 2 3 16 17 18 19) (96 32 48) simpleGrading (1 1 1) // diamond block
+    hex (11 12 8 9 27 28 24 25) (48 48 72) simpleGrading (1 1 1) // fore domain block
+    hex (12 14 6 8 28 30 22 24) (120 48 72) simpleGrading (1 1 1) // mid domain block
+    hex (14 15 5 6 30 31 21 22) (72 48 72) simpleGrading (1 1 1) // aft domain block
+
+    // Feel free to play with the number of points Nx, Ny, Nz along axes of blocks for refinement
 ); \n
 """
 
@@ -111,38 +116,37 @@ boundary
         type patch;
         faces
         (
-            (11 27 26 10)
-            (10 26 25 9)
+            (11 27 25 9)
         );
     }
+
     outlet
     {
         type patch;
         faces
         (
-            (5 21 20 4)
-            (4 20 31 15)
+            (15 31 21 5)
         );
     }
+
     bottom
     {
         type symmetryPlane;
         faces
         (
             (11 27 28 12)
-            (12 28 29 13)
-            (13 29 30 14)
+            (12 28 30 14)
             (14 30 31 15)
         );
     }
+
     top
     {
         type symmetryPlane;
         faces
         (
             (9 25 24 8)
-            (8 24 23 7)
-            (7 23 22 6)
+            (8 24 22 6)
             (6 22 21 5)
         );
     }
