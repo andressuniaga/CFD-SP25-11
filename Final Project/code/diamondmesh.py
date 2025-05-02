@@ -191,6 +191,7 @@ if __name__ == "__main__":
 
     ax = plt.axes(projection = '3d')
 
+
     x = p[0,4:]
     y = p[1,4:]
 
@@ -206,6 +207,7 @@ if __name__ == "__main__":
 
     ax.plot(x,y,z1,'ks',markersize=2.5,label="Domain")
     ax.plot(x,y,z2,'ks',markersize=2.5)
+
 
     for i in range(4):
         ax.plot(diamondedges[0,i:i+2],diamondedges[1,i:i+2],z1,'b-')
@@ -235,6 +237,7 @@ if __name__ == "__main__":
             vertices3d[2,i] = z1
             vertices3d[2,i+N] = z2
 
+
     # rarrange for edges
         edges3d = np.zeros([3,2*N])
         j = 1
@@ -251,23 +254,6 @@ if __name__ == "__main__":
         else:
             plt.plot(edges3d[0,2*i:2+2*i],edges3d[1,2*i:2+2*i],edges3d[2,2*i:2+2*i],'k')
 
-
-    # 3D Case
-    DZ = 1 # extension of computationl domain in z
-    z1 = z1 - DZ
-    z2 = z2 + DZ
-
-    ax.plot(x,y,z1,'ks',markersize=2.5)
-    ax.plot(x,y,z2,'ks',markersize=2.5)
-
-    for i in range(12):
-        plt.plot(pedges[0,i:i+2],pedges[1,i:i+2],z1,'k-')
-        plt.plot(pedges[0,i:i+2],pedges[1,i:i+2],z2,'k-')
-
-
-    
-
-    
     ax.set_title("Visualization of Diamond Airfoil Mesh")
     ax.grid()
     ax.legend()
