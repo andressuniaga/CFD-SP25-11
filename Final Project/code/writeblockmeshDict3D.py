@@ -85,14 +85,14 @@ verts = verts + ");"
 blocks = """\n
 blocks
 (
-    hex (0 4 5 6 16 20 21 22) (24 32 48) simpleGrading (1 1 1) \\ block 0
-    hex (0 6 7 1 16 22 23 17) (96 32 48) simpleGrading (1 1 1) \\ block 1
-    hex (1 7 8 2 17 23 24 18) (96 32 48) simpleGrading (1 1 1) \\ block 2
-    hex (2 8 9 10 18 24 25 26) (24 32 48) simpleGrading (1 1 1) \\ block 3
-    hex (2 10 11 12 18 26 27 28) (24 32 48) simpleGrading (1 1 1) \\ block 4
-    hex (2 12 13 3 18 28 29 19) (96 32 48) simpleGrading (1 1 1) \\ block 5
-    hex (3 13 14 0 19 29 30 16) (96 32 48) simpleGrading (1 1 1) \\ block 6
-    hex (0 14 15 4 16 30 31 20) (24 32 48) simpleGrading (1 1 1) \\ block 7
+    hex (0 4 5 6 16 20 21 22) (24 32 48) simpleGrading (1 1 1) // block 0
+    hex (0 6 7 1 16 22 23 17) (96 32 48) simpleGrading (1 1 1) // block 1
+    hex (1 7 8 2 17 23 24 18) (96 32 48) simpleGrading (1 1 1) // block 2
+    hex (2 8 9 10 18 24 25 26) (24 32 48) simpleGrading (1 1 1) // block 3
+    hex (2 10 11 12 18 26 27 28) (24 32 48) simpleGrading (1 1 1) // block 4
+    hex (2 12 13 3 18 28 29 19) (96 32 48) simpleGrading (1 1 1) // block 5
+    hex (3 13 14 0 19 29 30 16) (96 32 48) simpleGrading (1 1 1) // block 6
+    hex (0 14 15 4 16 30 31 20) (24 32 48) simpleGrading (1 1 1) // block 7
 ); \n
 """
 
