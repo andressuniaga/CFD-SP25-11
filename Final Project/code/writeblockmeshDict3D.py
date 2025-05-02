@@ -146,7 +146,8 @@ boundary
             (6 22 21 5)
         );
     }
-    diamond
+
+    obstacle
     {
         type patch;
         faces
