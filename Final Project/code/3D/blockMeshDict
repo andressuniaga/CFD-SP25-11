@@ -27,8 +27,6 @@ FoamFile
 convertToMeters 1;
 
 
-// Indices : 4 7 10 13 20 23 26 29 are not used.
-
 vertices
 (   
      (5.0000000000000e-01 0.000000e+00 -5.0000000000000e-01) // 0
