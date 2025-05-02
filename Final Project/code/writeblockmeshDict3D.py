@@ -63,8 +63,6 @@ convertToMeters 1;
 """
 
 verts = """
-// Indices : 4 7 10 13 20 23 26 29 are not used.
-
 vertices
 (   
 """
