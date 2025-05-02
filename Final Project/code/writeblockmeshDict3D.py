@@ -60,6 +60,8 @@ convertToMeters 1;
 """
 
 verts = """
+// Indices : 4 7 10 13 20 23 26 29 are not used.
+
 vertices
 (   
 """
@@ -69,9 +71,6 @@ for i in range(4):
     verts +=vertex
 
 for i in range(5,N):
-    if i == 7 or i == 10 or i ==13:
-        continue
-    else:
         vertex = f"     ({p[0,i]:.13e} {p[1,i]:4e} {-(z+DZ):.13e}) // {i}\n"
         verts +=vertex
 
@@ -81,9 +80,6 @@ for i in range(4):
 
 
 for i in range(5,N):
-    if i == 7 or i == 10 or i ==13:
-        continue
-    else:
         vertex = f"     ({p[0,i]:.13e} {p[1,i]:4e} {z+DZ:.13e}) // {i+N}\n"
         verts +=vertex
 
