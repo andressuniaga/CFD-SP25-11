@@ -1,0 +1,57 @@
+castellatedMesh true;
+snap            true;
+addLayers       false;  // enable later if you want boundary layers
+
+geometry
+{
+    Diamond.stl
+    {
+        type triSurfaceMesh;
+        name obstacle;
+    }
+}
+
+castellatedMeshControls
+{
+    maxLocalCells 100000;
+    maxGlobalCells 2000000;
+    minRefinementCells 10;
+    nCellsBetweenLevels 3;
+
+    features ();  // optional edge refinement
+
+    refinementSurfaces
+    {
+        obstacle
+        {
+            level (2 2);  // surface refinement level
+        }
+    }
+
+    refinementRegions
+    {
+        // optional: refine inside a box
+    }
+
+    locationInMesh (0 0 0);  // must be inside fluid region
+
+    resolveFeatureAngle 30;
+}
+
+snapControls
+{
+    nSmoothPatch 3;
+    tolerance 2.0;
+    nSolveIter 30;
+    nRelaxIter 5;
+}
+
+addLayersControls
+{
+    // Optional – skip for now
+}
+
+meshQualityControls
+{
+    maxNonOrtho 65;
+}
