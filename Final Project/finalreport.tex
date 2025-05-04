@@ -39,7 +39,35 @@
 
 \pagebreak
 
-\section{Simulation Setup}
+\section{Mesh Setup}
+The mesh of the diamond-shaped wing is generated from \textit{OpenFOAM's} \texttt{blockMeshDict} which is set up as follows:
+\subsection{2D}
+In $\bR^{2}$:
+
+\begin{figure}[H]
+   \centering
+   \includegraphics[width = 0.85\linewidth]{images/2D_Diamond_Airfoil_Mesh.png}  
+   \caption{Vertices, Blocks, and Faces of the Diamond Wing Mesh}
+   \label{2dmesh} 
+\end{figure} 
+
+Where for our case:
+\begin{itemize}
+   \item $L = 1.0$ (Chord)
+   \vspace{2mm}
+   \item $\theta = 10\degree$ (Deflection Angle)
+   \vspace{2mm}
+   \item $D_{L} = 1.0$ (Distance Left of the Diamond - Fore)
+   \vspace{2mm}
+   \item $D_{R} = 1.5$ (Distance Right of the Diamond - Aft)
+   \vspace{2mm}
+   \item $H = 1.0$ (Distance Above/Below the top/bottom-most point of the Diamond)
+\end{itemize}
+
+The size of the computational domain is then $(D_{L} + L + D_{R}) \times (2H + L\tan{(\theta)}) \times 0.1 = 3.5 \times 2.176 \times 0.1$. The \texttt{blockMeshDict} for the $\bR^{2}$ case can be found in the \hyperlink{code}{\textbf{Appendix}}.
+
+
+
 
 \pagebreak
 
@@ -65,6 +93,16 @@ PDF of code starts on next page.
 \vspace{2.5mm}
 
 Additionally, team repository: \url{https://github.com/andressuniaga/CFD-SP25-11}
+\vspace{2.5mm}
+
+Order:
+\begin{itemize}
+   \item \texttt{diamondmesh.py}
+   \item \texttt{writeblockmeshDict2D.py}
+   \item \texttt{writeblockmeshDict3D.py}
+   \item $\bR^{2}$ \texttt{blockMeshDict}
+   \item $\bR^{3}$ \texttt{blockMeshDict}
+\end{itemize}
 
 % \includepdf[pages=-]{}
 
