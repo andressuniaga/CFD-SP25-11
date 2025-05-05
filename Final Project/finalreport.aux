@@ -3,9 +3,48 @@
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{2}{section.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {2}Theoritical Background: Oblique Shock Theory}{3}{section.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3}Simulation Setup}{4}{section.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4}Mesh Refinement and Comparison to OST}{5}{section.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{6}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Governing Equations}{2}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Three-dimensional Compressible Euler equations}{2}{subsection.2.1}\protected@file@percent }
+\newlabel{eq:euler3D}{{6}{3}{Three-dimensional Compressible Euler equations}{equation.2.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Equation of state and thermodynamic closure}{3}{subsection.2.2}\protected@file@percent }
+\newlabel{IGL}{{9}{3}{Equation of state and thermodynamic closure}{equation.2.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Local Sound Speed and Mach Number}{4}{subsection.2.3}\protected@file@percent }
+\newlabel{speedofsound}{{12}{4}{Local Sound Speed and Mach Number}{equation.2.12}{}}
+\newlabel{Mach_equation}{{13}{4}{Local Sound Speed and Mach Number}{equation.2.13}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Oblique‑shock theory ($\theta $–$\beta $–$M$ relation)}{4}{subsection.2.4}\protected@file@percent }
+\newlabel{eq:theta-beta-M}{{14}{4}{Oblique‑shock theory ($\theta $–$\beta $–$M$ relation)}{equation.2.14}{}}
+\newlabel{eq:Mn1}{{15}{4}{Oblique‑shock theory ($\theta $–$\beta $–$M$ relation)}{equation.2.15}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Normal‑Shock and Isentropic Relations (using $M_{n1}$)}{4}{subsection.2.5}\protected@file@percent }
+\newlabel{eq:p2p1}{{16}{4}{Normal‑shock jumps}{equation.2.16}{}}
+\newlabel{eq:rho2rho1}{{17}{4}{Normal‑shock jumps}{equation.2.17}{}}
+\newlabel{eq:Mn2}{{18}{4}{Normal‑shock jumps}{equation.2.18}{}}
+\newlabel{eq:total-pressure-ratio}{{19}{4}{Total‑pressure ratio across the shock}{equation.2.19}{}}
+\newlabel{eq:isentropic}{{20}{4}{Isentropic relations (regions 1 and 2)}{equation.2.20}{}}
+\newlabel{eq:M2}{{21}{4}{Isentropic relations (regions 1 and 2)}{equation.2.21}{}}
+\newlabel{eq:pstag}{{22}{5}{Stagnation pressure at the apex}{equation.2.22}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Reference stagnation pressure for the baseline case}{5}{subsection.2.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Mesh Setup}{5}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}2D}{5}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}3D}{6}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Mesh Refinement and Comparison to OST}{6}{section.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces \centering  Mesh and Solver Parameters [2mm]}}{6}{table.caption.9}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:meshes}{{1}{6}{\centering Mesh and Solver Parameters\\[2mm]}{table.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}First Coarse Solution}{6}{subsection.4.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Properties of Coarse Mesh Solution}}{7}{figure.caption.10}\protected@file@percent }
+\newlabel{coarsesolution}{{3}{7}{Properties of Coarse Mesh Solution}{figure.caption.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Mach and Speed of Sound of Coarse Mesh Solution}}{7}{figure.caption.11}\protected@file@percent }
+\newlabel{machandsoundspeed}{{4}{7}{Mach and Speed of Sound of Coarse Mesh Solution}{figure.caption.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Intermediate and Refined Solution}{8}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Wave Angle and Pressure}{8}{subsection.4.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Pressure captured along the top front surface of the diamond wing section}}{8}{figure.caption.13}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Calculation of Shock Angle Visual}}{9}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:your-label}{{7}{9}{Calculation of Shock Angle Visual}{figure.caption.14}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Computed shock‐wave angle $\beta $ for different solution levels}}{9}{table.caption.15}\protected@file@percent }
+\newlabel{tab:shock_angles}{{2}{9}{Computed shock‐wave angle $\beta $ for different solution levels}{table.caption.15}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}In Three Dimensions}{10}{section.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Comparison between the simulation and a real wind tunnel at Mach 3}}{10}{figure.caption.16}\protected@file@percent }
+\newlabel{3dshi}{{8}{10}{Comparison between the simulation and a real wind tunnel at Mach 3}{figure.caption.16}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{11}{section.6}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {A}Code}{}{appendix.A}\protected@file@percent }
-\gdef \@abspage@last{8}
+\gdef \@abspage@last{13}

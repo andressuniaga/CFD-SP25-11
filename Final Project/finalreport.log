@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.15)  26 APR 2025 13:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.15)  5 MAY 2025 00:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -339,31 +339,50 @@ Package caption Info: New subtype `subfigure' on input line 238.
 \c@subfigure=\count304
 Package caption Info: New subtype `subtable' on input line 238.
 \c@subtable=\count305
+) (c:/texlive/2024/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen180
+\lightrulewidth=\dimen181
+\cmidrulewidth=\dimen182
+\belowrulesep=\dimen183
+\belowbottomsep=\dimen184
+\aboverulesep=\dimen185
+\abovetopsep=\dimen186
+\cmidrulesep=\dimen187
+\cmidrulekern=\dimen188
+\defaultaddspace=\dimen189
+\@cmidla=\count306
+\@cmidlb=\count307
+\@aboverulesep=\dimen190
+\@belowrulesep=\dimen191
+\@thisruleclass=\count308
+\@lastruleclass=\count309
+\@thisrulewidth=\dimen192
 ) (c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count306
+\l__color_backend_stack_int=\count310
 \l__pdf_internal_box=\box58
 ) (./finalreport.aux)
 \openout1 = `finalreport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -401,16 +420,16 @@ LaTeX Font Info:    ... okay on input line 26.
 
 (c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count307
-\scratchdimen=\dimen180
+\scratchcounter=\count311
+\scratchdimen=\dimen193
 \scratchbox=\box59
-\nofMPsegments=\count308
-\nofMParguments=\count309
+\nofMPsegments=\count312
+\nofMParguments=\count313
 \everyMPshowfont=\toks35
-\MPscratchCnt=\count310
-\MPscratchDim=\dimen181
-\MPnumerator=\count311
-\makeMPintoPDFobject=\count312
+\MPscratchCnt=\count314
+\MPscratchDim=\dimen194
+\MPnumerator=\count315
+\makeMPintoPDFobject=\count316
 \everyMPtoPDFconversion=\toks36
 ) (c:/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -420,14 +439,14 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \symgns@font=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 26.
-Package gensymb Info: Math companion symbols declared on input line 26.
-LaTeX Info: Redefining \degree on input line 26.
-LaTeX Info: Redefining \celsius on input line 26.
-Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 26.
-LaTeX Info: Redefining \ohm on input line 26.
-Package gensymb Info: Using \textohm for \ohm on input line 26.
-Package gensymb Info: Using \textmu for \micro on input line 26.
+(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 27.
+Package gensymb Info: Math companion symbols declared on input line 27.
+LaTeX Info: Redefining \degree on input line 27.
+LaTeX Info: Redefining \celsius on input line 27.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 27.
+LaTeX Info: Redefining \ohm on input line 27.
+Package gensymb Info: Using \textohm for \ohm on input line 27.
+Package gensymb Info: Using \textmu for \micro on input line 27.
  (c:/texlive/2024/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
  (c:/texlive/2024/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
@@ -437,18 +456,18 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-Package hyperref Info: Link coloring OFF on input line 26.
+Package hyperref Info: Link coloring OFF on input line 27.
  (./finalreport.out) (./finalreport.out)
 \@outlinefile=\write3
 \openout3 = `finalreport.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 29.
  (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
  (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (./finalreport.toc)
@@ -461,15 +480,160 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
-[2]
+[2{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
 [3]
 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 265.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\theta' on input line 265.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 265.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 265.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beta' on input line 265.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 265.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 265.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 265.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 290.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 290.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 290.
+
+
+
 [4]
+<images/2D_Diamond_Airfoil_Mesh.png, id=159, 775.479pt x 471.288pt>
+File: images/2D_Diamond_Airfoil_Mesh.png Graphic file (type png)
+<use images/2D_Diamond_Airfoil_Mesh.png>
+Package pdftex.def Info: images/2D_Diamond_Airfoil_Mesh.png  used on input line 378.
+(pdftex.def)             Requested size: 232.52643pt x 141.31557pt.
+<images/2D_Diamond_Airfoil_Mesh_PARAVIEW.png, id=161, 1495.5875pt x 922.44624pt>
+File: images/2D_Diamond_Airfoil_Mesh_PARAVIEW.png Graphic file (type png)
+<use images/2D_Diamond_Airfoil_Mesh_PARAVIEW.png>
+Package pdftex.def Info: images/2D_Diamond_Airfoil_Mesh_PARAVIEW.png  used on input line 382.
+(pdftex.def)             Requested size: 223.13649pt x 137.61496pt.
+<images/3D_Diamond_Section.png, id=163, 1927.2pt x 965.6075pt>
+File: images/3D_Diamond_Section.png Graphic file (type png)
+<use images/3D_Diamond_Section.png>
+Package pdftex.def Info: images/3D_Diamond_Section.png  used on input line 410.
+(pdftex.def)             Requested size: 258.36668pt x 129.4526pt.
+<images/3D_Diamond_Mesh_PARAVIEW.png, id=164, 1495.5875pt x 922.44624pt>
+File: images/3D_Diamond_Mesh_PARAVIEW.png Graphic file (type png)
+<use images/3D_Diamond_Mesh_PARAVIEW.png>
+Package pdftex.def Info: images/3D_Diamond_Mesh_PARAVIEW.png  used on input line 414.
+(pdftex.def)             Requested size: 204.34229pt x 126.03093pt.
 
-[5]
 
-[6]
+[5 <./images/2D_Diamond_Airfoil_Mesh.png> <./images/2D_Diamond_Airfoil_Mesh_PARAVIEW.png (PNG copy)>]
+<images/2D-coarse-pressure.png, id=176, 1325.95375pt x 862.22125pt>
+File: images/2D-coarse-pressure.png Graphic file (type png)
+<use images/2D-coarse-pressure.png>
+Package pdftex.def Info: images/2D-coarse-pressure.png  used on input line 446.
+(pdftex.def)             Requested size: 232.52643pt x 151.19357pt.
+<images/2D-coarse-rho.png, id=177, 1325.95375pt x 862.22125pt>
+File: images/2D-coarse-rho.png Graphic file (type png)
+<use images/2D-coarse-rho.png>
+Package pdftex.def Info: images/2D-coarse-rho.png  used on input line 450.
+(pdftex.def)             Requested size: 232.52643pt x 151.19357pt.
+<images/2D-coarse-temp.png, id=178, 1325.95375pt x 862.22125pt>
+File: images/2D-coarse-temp.png Graphic file (type png)
+<use images/2D-coarse-temp.png>
+Package pdftex.def Info: images/2D-coarse-temp.png  used on input line 456.
+(pdftex.def)             Requested size: 232.52643pt x 151.19357pt.
+<images/2D-coarse-velocity.png, id=179, 1325.95375pt x 862.22125pt>
+File: images/2D-coarse-velocity.png Graphic file (type png)
+<use images/2D-coarse-velocity.png>
+Package pdftex.def Info: images/2D-coarse-velocity.png  used on input line 460.
+(pdftex.def)             Requested size: 232.52643pt x 151.19357pt.
+
+
+[6 <./images/3D_Diamond_Section.png> <./images/3D_Diamond_Mesh_PARAVIEW.png (PNG copy)>]
+<images/2D-coarse-a.png, id=190, 1325.95375pt x 862.22125pt>
+File: images/2D-coarse-a.png Graphic file (type png)
+<use images/2D-coarse-a.png>
+Package pdftex.def Info: images/2D-coarse-a.png  used on input line 474.
+(pdftex.def)             Requested size: 232.52643pt x 151.19357pt.
+<images/2D-coarse-machnr.png, id=191, 1325.95375pt x 862.22125pt>
+File: images/2D-coarse-machnr.png Graphic file (type png)
+<use images/2D-coarse-machnr.png>
+Package pdftex.def Info: images/2D-coarse-machnr.png  used on input line 478.
+(pdftex.def)             Requested size: 232.52643pt x 151.19357pt.
+<images/2D-interm-pressure.png, id=192, 1325.95375pt x 862.22125pt>
+File: images/2D-interm-pressure.png Graphic file (type png)
+<use images/2D-interm-pressure.png>
+Package pdftex.def Info: images/2D-interm-pressure.png  used on input line 489.
+(pdftex.def)             Requested size: 232.52643pt x 151.19357pt.
+<images/2D-refine-pressure.png, id=193, 1325.95375pt x 862.22125pt>
+File: images/2D-refine-pressure.png Graphic file (type png)
+<use images/2D-refine-pressure.png>
+Package pdftex.def Info: images/2D-refine-pressure.png  used on input line 493.
+(pdftex.def)             Requested size: 232.52643pt x 151.19357pt.
+
+
+[7 <./images/2D-coarse-pressure.png (PNG copy)> <./images/2D-coarse-rho.png (PNG copy)> <./images/2D-coarse-temp.png (PNG copy)> <./images/2D-coarse-velocity.png (PNG copy)> <./images/2D-coarse-a.png (PNG copy)> <./images/2D-coarse-machnr.png (PNG copy)>]
+<images/Pressure_NX8_Plot.png, id=201, 891.93225pt x 552.26324pt>
+File: images/Pressure_NX8_Plot.png Graphic file (type png)
+<use images/Pressure_NX8_Plot.png>
+Package pdftex.def Info: images/Pressure_NX8_Plot.png  used on input line 503.
+(pdftex.def)             Requested size: 352.31625pt x 218.1458pt.
+<images/angle-visual.jpg, id=202, 1027.84pt x 670.505pt>
+File: images/angle-visual.jpg Graphic file (type jpg)
+<use images/angle-visual.jpg>
+Package pdftex.def Info: images/angle-visual.jpg  used on input line 510.
+(pdftex.def)             Requested size: 281.85587pt x 183.86255pt.
+
+
+[8 <./images/2D-interm-pressure.png (PNG copy)> <./images/2D-refine-pressure.png (PNG copy)> <./images/Pressure_NX8_Plot.png>]
+<images/3D_Diamond_Wireframe_Coarse_Mach_PARAVIEW.png, id=211, 1495.5875pt x 922.44624pt>
+File: images/3D_Diamond_Wireframe_Coarse_Mach_PARAVIEW.png Graphic file (type png)
+<use images/3D_Diamond_Wireframe_Coarse_Mach_PARAVIEW.png>
+Package pdftex.def Info: images/3D_Diamond_Wireframe_Coarse_Mach_PARAVIEW.png  used on input line 556.
+(pdftex.def)             Requested size: 232.52643pt x 143.41402pt.
+<images/diamond_vertical_AoA0_M3.png, id=212, 1284.8pt x 1027.84pt>
+File: images/diamond_vertical_AoA0_M3.png Graphic file (type png)
+<use images/diamond_vertical_AoA0_M3.png>
+Package pdftex.def Info: images/diamond_vertical_AoA0_M3.png  used on input line 560.
+(pdftex.def)             Requested size: 187.89914pt x 150.31119pt.
+<images/3D_Diamond_Sim_Coarse_Mach_PARAVIEW.png, id=213, 1495.5875pt x 922.44624pt>
+File: images/3D_Diamond_Sim_Coarse_Mach_PARAVIEW.png Graphic file (type png)
+<use images/3D_Diamond_Sim_Coarse_Mach_PARAVIEW.png>
+Package pdftex.def Info: images/3D_Diamond_Sim_Coarse_Mach_PARAVIEW.png  used on input line 566.
+(pdftex.def)             Requested size: 352.31625pt x 217.29568pt.
+
+
+[9 <./images/angle-visual.jpg>]
+
+[10 <./images/3D_Diamond_Wireframe_Coarse_Mach_PARAVIEW.png (PNG copy)> <./images/diamond_vertical_AoA0_M3.png> <./images/3D_Diamond_Sim_Coarse_Mach_PARAVIEW.png (PNG copy)>]
+
+[11]
 
 [1]
 
@@ -477,28 +641,28 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.71 \end{document}
-                    [2] (./finalreport.aux)
+l.626 \end{document}
+                     [2] (./finalreport.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-30>
  ***********
 Package rerunfilecheck Info: File `finalreport.out' has not changed.
-(rerunfilecheck)             Checksum: 495534D8D8BEC363E0D77851501197CB;904.
+(rerunfilecheck)             Checksum: A34504B194C8A729E9E4AC1D368C5D3A;3339.
  ) 
 Here is how much of TeX's memory you used:
- 13201 strings out of 473579
- 206855 string characters out of 5732257
- 610428 words of memory out of 5000000
- 35899 multiletter control sequences out of 15000+600000
- 567910 words of font info for 72 fonts, out of 8000000 for 9000
+ 13553 strings out of 473579
+ 214983 string characters out of 5732257
+ 625511 words of memory out of 5000000
+ 36178 multiletter control sequences out of 15000+600000
+ 575587 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,79p,640b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on finalreport.pdf (8 pages, 81122 bytes).
+ 75i,14n,79p,946b,650s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on finalreport.pdf (13 pages, 4796214 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 83 compressed objects within 1 object stream
- 16 named destinations out of 1000 (max. 500000)
- 49 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 328 PDF objects out of 1000 (max. 8388607)
+ 256 compressed objects within 3 object streams
+ 70 named destinations out of 1000 (max. 500000)
+ 230 words of extra memory for PDF output out of 10000 (max. 10000000)
 
